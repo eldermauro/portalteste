@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 01-Mar-2023 às 21:44
+-- Tempo de geração: 23-Mar-2023 às 16:49
 -- Versão do servidor: 10.4.25-MariaDB
 -- versão do PHP: 8.1.10
 
@@ -94,21 +94,212 @@ INSERT INTO `associados` (`id`, `nome`, `apelido`, `pessoa`, `doc`, `telefone`, 
 
 CREATE TABLE `bairros` (
   `id` int(11) NOT NULL,
-  `nome` varchar(50) NOT NULL,
-  `cidade` int(11) NOT NULL,
-  `ativo` varchar(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `materia` varchar(50) NOT NULL,
+  `produtor` varchar(100) NOT NULL,
+  `local` varchar(100) NOT NULL,
+  `quantidade` varchar(50) NOT NULL,
+  `medida` varchar(10) NOT NULL,
+  `totall` varchar(30) NOT NULL,
+  `totalll` varchar(30) NOT NULL,
+  `data_entrada` date DEFAULT NULL,
+  `fonte` varchar(50) NOT NULL,
+  `consumo` varchar(50) NOT NULL,
+  `data_aquisicao` date DEFAULT NULL,
+  `maq` varchar(50) NOT NULL,
+  `custo` varchar(50) NOT NULL,
+  `residual` varchar(50) NOT NULL,
+  `anos` varchar(50) NOT NULL,
+  `depreciacao` varchar(50) NOT NULL,
+  `dia` varchar(50) NOT NULL,
+  `util` varchar(50) NOT NULL,
+  `vd` varchar(50) NOT NULL,
+  `obra` varchar(50) NOT NULL,
+  `hora` varchar(50) NOT NULL,
+  `trabalho` varchar(50) NOT NULL,
+  `pago` varchar(50) NOT NULL,
+  `entradois` varchar(50) NOT NULL,
+  `undois` varchar(50) NOT NULL,
+  `maqdois` varchar(50) NOT NULL,
+  `maqfontedois` varchar(50) NOT NULL,
+  `maqconsumodois` varchar(50) NOT NULL,
+  `ferdois` varchar(50) NOT NULL,
+  `ferfontedois` varchar(50) NOT NULL,
+  `ferconsumodois` varchar(50) NOT NULL,
+  `data_aquidois` date DEFAULT NULL,
+  `custodois` varchar(50) NOT NULL,
+  `residualdois` varchar(50) NOT NULL,
+  `anosdois` varchar(50) NOT NULL,
+  `depreciacaodois` varchar(50) NOT NULL,
+  `diadois` varchar(50) NOT NULL,
+  `utildois` varchar(50) NOT NULL,
+  `vddois` varchar(50) NOT NULL,
+  `obradois` varchar(50) NOT NULL,
+  `horadois` varchar(50) NOT NULL,
+  `trabalhadois` varchar(50) NOT NULL,
+  `pagodois` varchar(50) NOT NULL,
+  `resuldois` varchar(50) NOT NULL,
+  `medidadois` varchar(50) NOT NULL,
+  `perdadois` varchar(50) NOT NULL,
+  `percedois` varchar(50) NOT NULL,
+  `entratres` varchar(50) NOT NULL,
+  `untres` varchar(50) NOT NULL,
+  `maqtres` varchar(50) NOT NULL,
+  `maqfontetres` varchar(50) NOT NULL,
+  `maqconsumotres` varchar(50) NOT NULL,
+  `fertres` varchar(50) NOT NULL,
+  `ferfontetres` varchar(50) NOT NULL,
+  `ferconsumotres` varchar(50) NOT NULL,
+  `data_aquitres` date DEFAULT NULL,
+  `custotres` varchar(50) NOT NULL,
+  `residualtres` varchar(50) NOT NULL,
+  `anostres` varchar(50) NOT NULL,
+  `depreciacaotres` varchar(50) NOT NULL,
+  `diatres` varchar(50) NOT NULL,
+  `utiltres` varchar(50) NOT NULL,
+  `vdtres` varchar(50) NOT NULL,
+  `obratres` varchar(50) NOT NULL,
+  `horatres` varchar(50) NOT NULL,
+  `trabalhotres` varchar(50) NOT NULL,
+  `pagotres` varchar(50) NOT NULL,
+  `resultres` varchar(50) NOT NULL,
+  `medidatres` varchar(50) NOT NULL,
+  `perdatres` varchar(50) NOT NULL,
+  `percetres` varchar(50) NOT NULL,
+  `data_arm` date DEFAULT NULL,
+  `armazum` varchar(50) NOT NULL,
+  `medum` varchar(50) NOT NULL,
+  `formaum` varchar(50) NOT NULL,
+  `entraquatro` varchar(50) NOT NULL,
+  `unquatro` varchar(50) NOT NULL,
+  `maqquatro` varchar(50) NOT NULL,
+  `maqfontequatro` varchar(50) NOT NULL,
+  `maqconsumoquatro` varchar(50) NOT NULL,
+  `ferquatro` varchar(50) NOT NULL,
+  `ferfontequatro` varchar(50) NOT NULL,
+  `ferconsumoquatro` varchar(50) NOT NULL,
+  `data_aquiquatro` date DEFAULT NULL,
+  `custoquatro` varchar(50) NOT NULL,
+  `residualquatro` varchar(50) NOT NULL,
+  `anosquatro` varchar(50) NOT NULL,
+  `depreciacaoquatro` varchar(50) NOT NULL,
+  `diaquatro` varchar(50) NOT NULL,
+  `utilquatro` varchar(50) NOT NULL,
+  `vdquatro` varchar(50) NOT NULL,
+  `obraquatro` varchar(50) NOT NULL,
+  `horaquatro` varchar(50) NOT NULL,
+  `trabalhoquatro` varchar(50) NOT NULL,
+  `pagoquatro` varchar(50) NOT NULL,
+  `resulquatro` varchar(50) NOT NULL,
+  `medidaquatro` varchar(50) NOT NULL,
+  `perdaquatro` varchar(50) NOT NULL,
+  `percequatro` varchar(50) NOT NULL,
+  `entracinco` varchar(50) NOT NULL,
+  `uncinco` varchar(50) NOT NULL,
+  `maqcinco` varchar(50) NOT NULL,
+  `maqfontecinco` varchar(50) NOT NULL,
+  `maqconsumocinco` varchar(50) NOT NULL,
+  `fercinco` varchar(500) NOT NULL,
+  `ferfontecinco` varchar(50) NOT NULL,
+  `ferconsumocinco` varchar(50) NOT NULL,
+  `data_aquicinco` date DEFAULT NULL,
+  `custocinco` varchar(50) NOT NULL,
+  `residualcinco` varchar(50) NOT NULL,
+  `anoscinco` varchar(50) NOT NULL,
+  `depreciacaocinco` varchar(50) NOT NULL,
+  `diacinco` varchar(50) NOT NULL,
+  `utilcinco` varchar(50) NOT NULL,
+  `vdcinco` varchar(50) NOT NULL,
+  `obracinco` varchar(50) NOT NULL,
+  `horacinco` varchar(50) NOT NULL,
+  `trabalhocinco` varchar(50) NOT NULL,
+  `pagocinco` varchar(50) NOT NULL,
+  `resulcinco` varchar(50) NOT NULL,
+  `medidacinco` varchar(50) NOT NULL,
+  `perdacinco` varchar(50) NOT NULL,
+  `percecinco` varchar(50) NOT NULL,
+  `produtoum` varchar(50) NOT NULL,
+  `insumoum` varchar(50) NOT NULL,
+  `medidauma` varchar(50) NOT NULL,
+  `data_emum` date DEFAULT NULL,
+  `produtodois` varchar(50) NOT NULL,
+  `insumodois` varchar(50) NOT NULL,
+  `medidasegun` varchar(50) NOT NULL,
+  `data_emdois` date DEFAULT NULL,
+  `entraseis` varchar(50) NOT NULL,
+  `unseis` varchar(50) NOT NULL,
+  `maqseis` varchar(50) NOT NULL,
+  `maqfonteseis` varchar(50) NOT NULL,
+  `maqconsumoseis` varchar(50) NOT NULL,
+  `ferseis` varchar(50) NOT NULL,
+  `ferfonteseis` varchar(50) NOT NULL,
+  `ferconsumoseis` varchar(50) NOT NULL,
+  `data_aquiseis` date DEFAULT NULL,
+  `custoseis` varchar(50) NOT NULL,
+  `residualseis` varchar(50) NOT NULL,
+  `anosseis` varchar(50) NOT NULL,
+  `depreciacaoseis` varchar(50) NOT NULL,
+  `diaseis` varchar(50) NOT NULL,
+  `utilseis` varchar(50) NOT NULL,
+  `vdseis` varchar(50) NOT NULL,
+  `obraseis` varchar(50) NOT NULL,
+  `horaseis` varchar(50) NOT NULL,
+  `trabalhoseis` varchar(50) NOT NULL,
+  `pagoseis` varchar(50) NOT NULL,
+  `resulseis` varchar(50) NOT NULL,
+  `medidaseis` varchar(50) NOT NULL,
+  `perdaseis` varchar(50) NOT NULL,
+  `perceseis` varchar(50) NOT NULL,
+  `insumtres` varchar(50) NOT NULL,
+  `produtotres` varchar(50) NOT NULL,
+  `armaztres` varchar(50) NOT NULL,
+  `medidaterc` varchar(50) NOT NULL,
+  `data_emtres` date DEFAULT NULL,
+  `armazquatro` varchar(50) NOT NULL,
+  `medidaquart` varchar(50) NOT NULL,
+  `formaquatro` varchar(50) NOT NULL,
+  `entrasete` varchar(50) NOT NULL,
+  `unsete` varchar(50) NOT NULL,
+  `maqsete` varchar(50) NOT NULL,
+  `maqfontesete` varchar(50) NOT NULL,
+  `maqconsumosete` varchar(50) NOT NULL,
+  `fersete` varchar(50) NOT NULL,
+  `ferfontesete` varchar(50) NOT NULL,
+  `ferconsumosete` varchar(50) NOT NULL,
+  `data_aquisete` date DEFAULT NULL,
+  `custosete` varchar(50) NOT NULL,
+  `residualsete` varchar(100) NOT NULL,
+  `anossete` varchar(50) NOT NULL,
+  `depreciacaosete` varchar(50) NOT NULL,
+  `diasete` varchar(50) NOT NULL,
+  `utilsete` varchar(50) NOT NULL,
+  `vdsete` varchar(50) NOT NULL,
+  `obrasete` varchar(50) NOT NULL,
+  `horasete` varchar(50) NOT NULL,
+  `trabalhosete` varchar(50) NOT NULL,
+  `pagosete` varchar(50) NOT NULL,
+  `resulsete` varchar(50) NOT NULL,
+  `medidasete` varchar(50) NOT NULL,
+  `perdasete` varchar(50) NOT NULL,
+  `np` varchar(50) NOT NULL,
+  `qua` varchar(50) NOT NULL,
+  `umed` varchar(50) NOT NULL,
+  `totalmateria` varchar(50) NOT NULL,
+  `totaldepre` varchar(50) NOT NULL,
+  `totalrend` varchar(50) NOT NULL,
+  `totalhora` varchar(50) NOT NULL,
+  `totalobra` varchar(50) NOT NULL,
+  `totalproducao` varchar(50) NOT NULL,
+  `totalcusto` varchar(50) NOT NULL,
+  `totalcustodois` varchar(20) NOT NULL,
+  `data_final` date DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=COMPRESSED;
 
 --
 -- Extraindo dados da tabela `bairros`
 --
 
-INSERT INTO `bairros` (`id`, `nome`, `cidade`, `ativo`) VALUES
-(1, 'Santa Mônica', 1, 'Sim'),
-(2, 'Rio Branco', 1, 'Sim'),
-(3, 'Flamengo', 2, 'Sim'),
-(4, 'Centro', 3, 'Sim'),
-(6, 'usina 2', 5, 'Sim');
+INSERT INTO `bairros` (`id`, `materia`, `produtor`, `local`, `quantidade`, `medida`, `totall`, `totalll`, `data_entrada`, `fonte`, `consumo`, `data_aquisicao`, `maq`, `custo`, `residual`, `anos`, `depreciacao`, `dia`, `util`, `vd`, `obra`, `hora`, `trabalho`, `pago`, `entradois`, `undois`, `maqdois`, `maqfontedois`, `maqconsumodois`, `ferdois`, `ferfontedois`, `ferconsumodois`, `data_aquidois`, `custodois`, `residualdois`, `anosdois`, `depreciacaodois`, `diadois`, `utildois`, `vddois`, `obradois`, `horadois`, `trabalhadois`, `pagodois`, `resuldois`, `medidadois`, `perdadois`, `percedois`, `entratres`, `untres`, `maqtres`, `maqfontetres`, `maqconsumotres`, `fertres`, `ferfontetres`, `ferconsumotres`, `data_aquitres`, `custotres`, `residualtres`, `anostres`, `depreciacaotres`, `diatres`, `utiltres`, `vdtres`, `obratres`, `horatres`, `trabalhotres`, `pagotres`, `resultres`, `medidatres`, `perdatres`, `percetres`, `data_arm`, `armazum`, `medum`, `formaum`, `entraquatro`, `unquatro`, `maqquatro`, `maqfontequatro`, `maqconsumoquatro`, `ferquatro`, `ferfontequatro`, `ferconsumoquatro`, `data_aquiquatro`, `custoquatro`, `residualquatro`, `anosquatro`, `depreciacaoquatro`, `diaquatro`, `utilquatro`, `vdquatro`, `obraquatro`, `horaquatro`, `trabalhoquatro`, `pagoquatro`, `resulquatro`, `medidaquatro`, `perdaquatro`, `percequatro`, `entracinco`, `uncinco`, `maqcinco`, `maqfontecinco`, `maqconsumocinco`, `fercinco`, `ferfontecinco`, `ferconsumocinco`, `data_aquicinco`, `custocinco`, `residualcinco`, `anoscinco`, `depreciacaocinco`, `diacinco`, `utilcinco`, `vdcinco`, `obracinco`, `horacinco`, `trabalhocinco`, `pagocinco`, `resulcinco`, `medidacinco`, `perdacinco`, `percecinco`, `produtoum`, `insumoum`, `medidauma`, `data_emum`, `produtodois`, `insumodois`, `medidasegun`, `data_emdois`, `entraseis`, `unseis`, `maqseis`, `maqfonteseis`, `maqconsumoseis`, `ferseis`, `ferfonteseis`, `ferconsumoseis`, `data_aquiseis`, `custoseis`, `residualseis`, `anosseis`, `depreciacaoseis`, `diaseis`, `utilseis`, `vdseis`, `obraseis`, `horaseis`, `trabalhoseis`, `pagoseis`, `resulseis`, `medidaseis`, `perdaseis`, `perceseis`, `insumtres`, `produtotres`, `armaztres`, `medidaterc`, `data_emtres`, `armazquatro`, `medidaquart`, `formaquatro`, `entrasete`, `unsete`, `maqsete`, `maqfontesete`, `maqconsumosete`, `fersete`, `ferfontesete`, `ferconsumosete`, `data_aquisete`, `custosete`, `residualsete`, `anossete`, `depreciacaosete`, `diasete`, `utilsete`, `vdsete`, `obrasete`, `horasete`, `trabalhosete`, `pagosete`, `resulsete`, `medidasete`, `perdasete`, `np`, `qua`, `umed`, `totalmateria`, `totaldepre`, `totalrend`, `totalhora`, `totalobra`, `totalproducao`, `totalcusto`, `totalcustodois`, `data_final`) VALUES
+(0, '', '', '', '', 'Quilo', '', '', '0000-00-00', 'Motor EstacionÃ¡rio', 'Diesel', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-21', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-21', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '2023-03-21', '', 'Quilo', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-21', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-21', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', '', 'Quilo', '0000-00-00', '', '', 'Quilo', '0000-00-00', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-21', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', '', '', 'Quilo', '0000-00-00', '', 'Quilo', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', '', '', '', '', '', '', '', NULL);
 
 -- --------------------------------------------------------
 
@@ -188,7 +379,8 @@ INSERT INTO `coleta` (`id`, `produto`, `produtor`, `avaliacao`, `local`, `bruto`
 (2, 'Andiroba', 'manoel lima', 'Sim', 'usina2', '52', '00', 'NÃ£o', '45,00', '80', '2023-02-01', 3),
 (3, 'CafÃ© Verde', 'sila m auro', 'NÃ£o', 'usina1', '52', '200', 'Impureza', '52', '10400', '2023-02-01', 3),
 (4, 'Ã³leo resina de copaÃ­ba', 'pedro silva silva si', 'Sim', 'usina1', '52', '77', 'NÃ£o', 'R$Â 90,00', 'NaN', '2023-02-01', 3),
-(5, 'CopaÃ­ba', 'Silvio', 'Sim', 'apui', '50', '49.5', 'NÃ£o', '20', '990', '2023-02-14', 3);
+(5, 'CopaÃ­ba', 'Silvio', 'Sim', 'apui', '50', '49.5', 'NÃ£o', '20', '990', '2023-02-14', 3),
+(6, 'Ã³leo resina de sangue de dragÃ£o', 'Silvio junior', 'Sim', 'apui', '55', '1545', 'NÃ£o', '50', '77250', '2023-03-06', 3);
 
 -- --------------------------------------------------------
 
@@ -225,8 +417,9 @@ CREATE TABLE `compradores` (
 --
 
 INSERT INTO `compradores` (`id`, `nome`, `pessoa`, `doc`, `inscricao`, `email`, `logradouro`, `logradouroj`, `cep`, `cepj`, `uf`, `ufj`, `cidade`, `cidadej`, `numero`, `numeroj`, `telefone`, `corretor`, `data_cadastro`, `data_nasc`, `obs`) VALUES
-(1, 'Jessica ', 'FÃ­sica', '456.666.666-66', '55555555777', 'jessica@hotmail.com', 'Rua Inhame', '', '69015-265', '', 'AM', '', 'Manaus', '', '44', '', '(22) 22222-2222', 3, '2023-01-19', '0000-00-00', 'ooo'),
-(3, 'lima', 'JurÃ­dica', '77.777.777/777', '3333333333', 'teste@gmail.com', 'Rua Inhame', '', '69015-265', '', 'AM', '', 'Manaus', '', '44', '', '(33) 33333-3333', 3, '2023-01-09', '0000-00-00', 'uuuu');
+(1, 'Jessica ', 'FÃ­sica', '456.666.666-66', '55555555777', 'jessica@hotmail.com', 'Rua Inhame', '', '69015-265', '', 'AM', '', 'Manaus', '', '44', '', '(22) 22222-2222', 3, '2023-03-07', '0000-00-00', 'ooo'),
+(3, 'mauro lima da silva', 'JurÃ­dica', '77.777.777/777', '3333333333', 'teste@gmail.com', 'Rua Inhame', '', '69015-265', '', 'AM', '', 'Manaus', '', '44', '', '(33) 33333-3333', 3, '2023-03-13', '0000-00-00', 'uuuu'),
+(4, 'apui', 'JurÃ­dica', '88.888.888/8888-88', '55555555777', 'teste2@gmail.com', 'Rua PajÃ©', 'Rua Calopsita', '69015-235', '69015-485', 'AM', 'AM', 'Manaus', 'Manaus', '17', '88', '(33) 33333-3333', 3, '2023-03-13', '0000-00-00', 'eee');
 
 -- --------------------------------------------------------
 
@@ -359,7 +552,7 @@ CREATE TABLE `ferramentas` (
 INSERT INTO `ferramentas` (`id`, `produto`, `produtor`, `avaliacao`, `local`, `bruto`, `liquido`, `reprovado`, `valor`, `pagar`, `depre`, `dia`, `data_cadastro`, `data_nasc`, `corretor`) VALUES
 (2, 'Maquina', 'junior', 'Sim', 'Rede ElÃ©trica', 'Diesel', '29.5', '100', '41', '2', '', '0.08', '2023-01-26', '2023-01-19', 3),
 (3, 'Ferramenta', 'manivela', 'NÃ£o', 'Motor EstacionÃ¡rio', 'Gasolina', '200', 'NÃ£o', '90', '18000', '', '', '2023-01-31', '', 3),
-(4, 'Maquina', 'polpadeira', 'nÃ£o tem', 'Rede ElÃ©trica', 'Gasolina', '75', '200', '50', '2', '', '0.21', '2023-01-31', '2023-01-19', 3);
+(4, 'Maquina', 'polpadeira', 'nÃ£o tem', 'Rede ElÃ©trica', 'Gasolina', '75', '200', '50', '2', '', '0.21', '2023-03-02', '2023-01-19', 3);
 
 -- --------------------------------------------------------
 
@@ -420,133 +613,159 @@ INSERT INTO `funcionarios` (`id`, `nome`, `cpf`, `telefone`, `email`, `logradour
 
 CREATE TABLE `imoveis` (
   `id` int(11) NOT NULL,
-  `materia` varchar(100) NOT NULL,
+  `materia` varchar(50) NOT NULL,
   `corretor` int(11) NOT NULL,
   `produtor` varchar(100) NOT NULL,
   `local` varchar(100) NOT NULL,
   `quantidade` varchar(50) NOT NULL,
   `medida` varchar(10) NOT NULL,
+  `totall` varchar(30) NOT NULL,
+  `totalll` varchar(30) NOT NULL,
+  `total` varchar(10) NOT NULL,
   `data_entrada` date DEFAULT NULL,
-  `fonte` varchar(100) NOT NULL,
-  `consumo` varchar(100) NOT NULL,
+  `fonte` varchar(50) NOT NULL,
+  `consumo` varchar(50) NOT NULL,
   `data_aquisicao` date DEFAULT NULL,
-  `maq` varchar(500) NOT NULL,
+  `maq` varchar(50) NOT NULL,
   `custo` varchar(50) NOT NULL,
-  `residual` varchar(100) NOT NULL,
-  `anos` varchar(100) NOT NULL,
-  `depreciacao` varchar(100) NOT NULL,
-  `dia` varchar(100) NOT NULL,
-  `obra` varchar(100) NOT NULL,
-  `hora` varchar(100) NOT NULL,
-  `pago` varchar(100) NOT NULL,
-  `selecaodois` varchar(100) NOT NULL,
-  `maqdois` varchar(500) NOT NULL,
-  `ferdois` varchar(500) NOT NULL,
-  `fontedois` varchar(100) NOT NULL,
-  `consumodois` varchar(100) NOT NULL,
+  `residual` varchar(50) NOT NULL,
+  `anos` varchar(50) NOT NULL,
+  `depreciacao` varchar(50) NOT NULL,
+  `dia` varchar(50) NOT NULL,
+  `util` varchar(50) NOT NULL,
+  `vd` varchar(50) NOT NULL,
+  `obra` varchar(50) NOT NULL,
+  `hora` varchar(50) NOT NULL,
+  `trabalho` varchar(50) NOT NULL,
+  `pago` varchar(50) NOT NULL,
+  `entradois` varchar(50) NOT NULL,
+  `undois` varchar(50) NOT NULL,
+  `maqdois` varchar(50) NOT NULL,
+  `maqfontedois` varchar(50) NOT NULL,
+  `maqconsumodois` varchar(50) NOT NULL,
+  `ferdois` varchar(50) NOT NULL,
+  `ferfontedois` varchar(50) NOT NULL,
+  `ferconsumodois` varchar(50) NOT NULL,
   `data_aquidois` date DEFAULT NULL,
   `custodois` varchar(50) NOT NULL,
-  `residualdois` varchar(100) NOT NULL,
-  `anosdois` varchar(100) NOT NULL,
-  `depreciacaodois` varchar(100) NOT NULL,
-  `diadois` varchar(100) NOT NULL,
-  `obradois` varchar(100) NOT NULL,
-  `horadois` varchar(100) NOT NULL,
-  `pagodois` varchar(100) NOT NULL,
-  `selecaotres` varchar(100) NOT NULL,
-  `maqtres` varchar(500) NOT NULL,
-  `fertres` varchar(500) NOT NULL,
-  `fontetres` varchar(100) NOT NULL,
-  `consumotres` varchar(100) NOT NULL,
+  `residualdois` varchar(50) NOT NULL,
+  `anosdois` varchar(50) NOT NULL,
+  `depreciacaodois` varchar(50) NOT NULL,
+  `diadois` varchar(50) NOT NULL,
+  `utildois` varchar(50) NOT NULL,
+  `vddois` varchar(50) NOT NULL,
+  `obradois` varchar(50) NOT NULL,
+  `horadois` varchar(50) NOT NULL,
+  `trabalhadois` varchar(50) NOT NULL,
+  `pagodois` varchar(50) NOT NULL,
+  `resuldois` varchar(50) NOT NULL,
+  `medidadois` varchar(50) NOT NULL,
+  `perdadois` varchar(50) NOT NULL,
+  `percedois` varchar(50) NOT NULL,
+  `entratres` varchar(50) NOT NULL,
+  `untres` varchar(50) NOT NULL,
+  `maqtres` varchar(50) NOT NULL,
+  `maqfontetres` varchar(50) NOT NULL,
+  `maqconsumotres` varchar(50) NOT NULL,
+  `fertres` varchar(50) NOT NULL,
+  `ferfontetres` varchar(50) NOT NULL,
+  `ferconsumotres` varchar(50) NOT NULL,
   `data_aquitres` date DEFAULT NULL,
   `custotres` varchar(50) NOT NULL,
-  `residualtres` varchar(100) NOT NULL,
-  `anostres` varchar(100) NOT NULL,
-  `depreciacaotres` varchar(100) NOT NULL,
-  `diatres` varchar(100) NOT NULL,
-  `obratres` varchar(100) NOT NULL,
-  `horatres` varchar(100) NOT NULL,
-  `pagotres` varchar(100) NOT NULL,
+  `residualtres` varchar(50) NOT NULL,
+  `anostres` varchar(50) NOT NULL,
+  `depreciacaotres` varchar(50) NOT NULL,
+  `diatres` varchar(50) NOT NULL,
+  `utiltres` varchar(50) NOT NULL,
+  `vdtres` varchar(50) NOT NULL,
+  `obratres` varchar(50) NOT NULL,
+  `horatres` varchar(50) NOT NULL,
+  `trabalhotres` varchar(50) NOT NULL,
+  `pagotres` varchar(50) NOT NULL,
+  `resultres` varchar(50) NOT NULL,
+  `medidatres` varchar(50) NOT NULL,
+  `perdatres` varchar(50) NOT NULL,
+  `percetres` varchar(50) NOT NULL,
   `data_arm` date DEFAULT NULL,
-  `armaz` varchar(100) NOT NULL,
-  `selecaoquatro` varchar(100) NOT NULL,
-  `maqquatro` varchar(500) NOT NULL,
-  `ferquatro` varchar(500) NOT NULL,
-  `fontequatro` varchar(100) NOT NULL,
-  `consumoquatro` varchar(100) NOT NULL,
-  `data_aquiquatro` date DEFAULT NULL,
-  `custoquatro` varchar(50) NOT NULL,
-  `residualquatro` varchar(100) NOT NULL,
-  `anosquatro` varchar(100) NOT NULL,
-  `depreciacaoquatro` varchar(100) NOT NULL,
-  `diaquatro` varchar(100) NOT NULL,
-  `obraquatro` varchar(100) NOT NULL,
-  `horaquatro` varchar(100) NOT NULL,
-  `pagoquatro` varchar(100) NOT NULL,
-  `selecaocinco` varchar(100) NOT NULL,
-  `maqcinco` varchar(500) NOT NULL,
+  `armazum` varchar(50) NOT NULL,
+  `medum` varchar(50) NOT NULL,
+  `formaum` varchar(50) NOT NULL,
+  `entracinco` varchar(50) NOT NULL,
+  `uncinco` varchar(50) NOT NULL,
+  `maqcinco` varchar(50) NOT NULL,
+  `maqfontecinco` varchar(50) NOT NULL,
+  `maqconsumocinco` varchar(50) NOT NULL,
   `fercinco` varchar(500) NOT NULL,
-  `fontecinco` varchar(100) NOT NULL,
-  `consumocinco` varchar(100) NOT NULL,
+  `ferfontecinco` varchar(50) NOT NULL,
+  `ferconsumocinco` varchar(50) NOT NULL,
   `data_aquicinco` date DEFAULT NULL,
   `custocinco` varchar(50) NOT NULL,
-  `residualcinco` varchar(100) NOT NULL,
-  `anoscinco` varchar(100) NOT NULL,
-  `depreciacaocinco` varchar(100) NOT NULL,
-  `diacinco` varchar(100) NOT NULL,
-  `obracinco` varchar(100) NOT NULL,
-  `horacinco` varchar(100) NOT NULL,
-  `pagocinco` varchar(100) NOT NULL,
-  `insumoum` varchar(100) NOT NULL,
-  `produtoum` varchar(100) NOT NULL,
-  `medidaum` varchar(100) NOT NULL,
+  `residualcinco` varchar(50) NOT NULL,
+  `anoscinco` varchar(50) NOT NULL,
+  `depreciacaocinco` varchar(50) NOT NULL,
+  `diacinco` varchar(50) NOT NULL,
+  `utilcinco` varchar(50) NOT NULL,
+  `vdcinco` varchar(50) NOT NULL,
+  `obracinco` varchar(50) NOT NULL,
+  `horacinco` varchar(50) NOT NULL,
+  `trabalhocinco` varchar(50) NOT NULL,
+  `pagocinco` varchar(50) NOT NULL,
+  `resulcinco` varchar(50) NOT NULL,
+  `medidacinco` varchar(50) NOT NULL,
+  `perdacinco` varchar(50) NOT NULL,
+  `percecinco` varchar(50) NOT NULL,
+  `produtoum` varchar(50) NOT NULL,
+  `insumoum` varchar(50) NOT NULL,
+  `medidauma` varchar(50) NOT NULL,
   `data_emum` date DEFAULT NULL,
-  `insumodois` varchar(100) NOT NULL,
-  `produtodois` varchar(100) NOT NULL,
-  `medidadois` varchar(100) NOT NULL,
+  `produtodois` varchar(50) NOT NULL,
+  `insumodois` varchar(50) NOT NULL,
+  `medidasegun` varchar(50) NOT NULL,
   `data_emdois` date DEFAULT NULL,
-  `selecaoseis` varchar(100) NOT NULL,
-  `maqseis` varchar(500) NOT NULL,
-  `ferseis` varchar(500) NOT NULL,
-  `fonteseis` varchar(100) NOT NULL,
-  `consumoseis` varchar(100) NOT NULL,
+  `entraseis` varchar(50) NOT NULL,
+  `unseis` varchar(50) NOT NULL,
+  `maqseis` varchar(50) NOT NULL,
+  `maqfonteseis` varchar(50) NOT NULL,
+  `maqconsumoseis` varchar(50) NOT NULL,
+  `ferseis` varchar(50) NOT NULL,
+  `ferfonteseis` varchar(50) NOT NULL,
+  `ferconsumoseis` varchar(50) NOT NULL,
   `data_aquiseis` date DEFAULT NULL,
   `custoseis` varchar(50) NOT NULL,
-  `residualseis` varchar(100) NOT NULL,
-  `anosseis` varchar(100) NOT NULL,
-  `depreciacaoseis` varchar(100) NOT NULL,
-  `diaseis` varchar(100) NOT NULL,
-  `obraseis` varchar(100) NOT NULL,
-  `horaseis` varchar(100) NOT NULL,
-  `pagoseis` varchar(100) NOT NULL,
-  `insumtres` varchar(100) NOT NULL,
-  `produtotres` varchar(100) NOT NULL,
-  `medidatres` varchar(100) NOT NULL,
+  `residualseis` varchar(50) NOT NULL,
+  `anosseis` varchar(50) NOT NULL,
+  `depreciacaoseis` varchar(50) NOT NULL,
+  `diaseis` varchar(50) NOT NULL,
+  `utilseis` varchar(50) NOT NULL,
+  `vdseis` varchar(50) NOT NULL,
+  `obraseis` varchar(50) NOT NULL,
+  `horaseis` varchar(50) NOT NULL,
+  `trabalhoseis` varchar(50) NOT NULL,
+  `pagoseis` varchar(50) NOT NULL,
+  `resulseis` varchar(50) NOT NULL,
+  `medidaseis` varchar(50) NOT NULL,
+  `perdaseis` varchar(50) NOT NULL,
+  `perceseis` varchar(50) NOT NULL,
+  `insumtres` varchar(50) NOT NULL,
+  `produtotres` varchar(50) NOT NULL,
+  `armaztres` varchar(50) NOT NULL,
+  `medidaterc` varchar(50) NOT NULL,
   `data_emtres` date DEFAULT NULL,
-  `armazdois` varchar(100) NOT NULL,
-  `selecaosete` varchar(100) NOT NULL,
-  `maqsete` varchar(500) NOT NULL,
-  `fersete` varchar(500) NOT NULL,
-  `fontesete` varchar(100) NOT NULL,
-  `consumosete` varchar(100) NOT NULL,
-  `data_aquisete` date DEFAULT NULL,
-  `custosete` varchar(50) NOT NULL,
-  `residualsete` varchar(100) NOT NULL,
-  `anossete` varchar(100) NOT NULL,
-  `depreciacaosete` varchar(100) NOT NULL,
-  `diasete` varchar(100) NOT NULL,
-  `obrasete` varchar(100) NOT NULL,
-  `horasete` varchar(100) NOT NULL,
-  `pagosete` varchar(100) NOT NULL,
-  `totalmateria` varchar(100) NOT NULL,
-  `totaldepre` varchar(100) NOT NULL,
-  `totalrend` varchar(100) NOT NULL,
-  `totalhora` varchar(100) NOT NULL,
-  `totalobra` varchar(100) NOT NULL,
-  `totalproducao` varchar(100) NOT NULL,
-  `totalcusto` varchar(100) NOT NULL,
+  `armazquatro` varchar(50) NOT NULL,
+  `medidaquart` varchar(50) NOT NULL,
+  `formaquatro` varchar(50) NOT NULL,
+  `np` varchar(50) NOT NULL,
+  `qua` varchar(50) NOT NULL,
+  `umed` varchar(50) NOT NULL,
+  `totalmateria` varchar(50) NOT NULL,
+  `totaldepre` varchar(50) NOT NULL,
+  `totalrend` varchar(50) NOT NULL,
+  `totalhora` varchar(50) NOT NULL,
+  `totalobra` varchar(50) NOT NULL,
+  `totalproducao` varchar(50) NOT NULL,
+  `totalcusto` varchar(50) NOT NULL,
   `data_final` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=COMPRESSED;
 
 -- --------------------------------------------------------
 
@@ -692,28 +911,68 @@ INSERT INTO `locatarios` (`id`, `local`, `comunidade`, `municipio`, `lat`, `lon`
 
 CREATE TABLE `lote` (
   `id` int(11) NOT NULL,
-  `produto` varchar(50) NOT NULL,
-  `produtor` varchar(50) NOT NULL,
-  `avaliacao` varchar(50) NOT NULL,
-  `local` varchar(50) NOT NULL,
-  `bruto` varchar(50) NOT NULL,
-  `liquido` varchar(50) NOT NULL,
-  `reprovado` varchar(50) NOT NULL,
-  `valor` varchar(50) NOT NULL,
-  `pagar` varchar(50) NOT NULL,
   `data_cadastro` date NOT NULL,
-  `corretor` int(11) NOT NULL
+  `empressa` varchar(50) NOT NULL,
+  `placa` varchar(50) NOT NULL,
+  `origem` varchar(50) NOT NULL,
+  `destino` varchar(50) NOT NULL,
+  `numero` varchar(50) NOT NULL,
+  `nota` varchar(50) NOT NULL,
+  `dono` varchar(300) NOT NULL,
+  `fisica` varchar(300) NOT NULL,
+  `juridica` varchar(300) NOT NULL,
+  `produtor` varchar(30) NOT NULL,
+  `produto` varchar(30) NOT NULL,
+  `emb` varchar(30) NOT NULL,
+  `bruto` varchar(30) NOT NULL,
+  `liq` varchar(30) NOT NULL,
+  `valor` varchar(30) NOT NULL,
+  `produtordois` varchar(30) NOT NULL,
+  `produtodois` varchar(30) NOT NULL,
+  `embdois` varchar(30) NOT NULL,
+  `brutodois` varchar(30) NOT NULL,
+  `liqdois` varchar(30) NOT NULL,
+  `valordois` varchar(30) NOT NULL,
+  `produtortres` varchar(30) NOT NULL,
+  `produtotres` varchar(30) NOT NULL,
+  `embtres` varchar(30) NOT NULL,
+  `brutotres` varchar(30) NOT NULL,
+  `liqtres` varchar(30) NOT NULL,
+  `valortres` varchar(30) NOT NULL,
+  `produtorqua` varchar(30) NOT NULL,
+  `produtoqua` varchar(30) NOT NULL,
+  `embqua` varchar(30) NOT NULL,
+  `brutoqua` varchar(30) NOT NULL,
+  `liqqua` varchar(30) NOT NULL,
+  `valorqua` varchar(30) NOT NULL,
+  `produtorcinco` varchar(30) NOT NULL,
+  `produtocinco` varchar(30) NOT NULL,
+  `embcinco` varchar(30) NOT NULL,
+  `brutocinco` varchar(30) NOT NULL,
+  `liqcinco` varchar(30) NOT NULL,
+  `valorcinco` varchar(30) NOT NULL,
+  `produtorseis` varchar(30) NOT NULL,
+  `produtoseis` varchar(30) NOT NULL,
+  `embseis` varchar(30) NOT NULL,
+  `brutoseis` varchar(30) NOT NULL,
+  `liqseis` varchar(30) NOT NULL,
+  `valorseis` varchar(30) NOT NULL,
+  `produtorsete` varchar(30) NOT NULL,
+  `produtosete` varchar(30) NOT NULL,
+  `embsete` varchar(30) NOT NULL,
+  `brutosete` varchar(30) NOT NULL,
+  `liqsete` varchar(30) NOT NULL,
+  `valorsete` varchar(30) NOT NULL,
+  `total` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `lote`
 --
 
-INSERT INTO `lote` (`id`, `produto`, `produtor`, `avaliacao`, `local`, `bruto`, `liquido`, `reprovado`, `valor`, `pagar`, `data_cadastro`, `corretor`) VALUES
-(1, 'castanha', 'manoel lima', 'Sim', 'usina2', '52', '00', 'NÃ£o', '52,00', '45', '2023-01-26', 9),
-(2, 'cafÃ© verde', 'manoel lima', 'Sim', 'usina2', '52', '00', 'Sim', '52', '80', '2023-01-26', 9),
-(3, 'buriti', 'pedro silva silva si', 'Sim', 'usina1', '52', '00', 'NÃ£o', '52', '80', '2023-01-26', 9),
-(4, 'breu', 'luis', 'Sim', 'usina2', '80', '100', 'NÃ£o', '120', '12000', '2023-01-31', 9);
+INSERT INTO `lote` (`id`, `data_cadastro`, `empressa`, `placa`, `origem`, `destino`, `numero`, `nota`, `dono`, `fisica`, `juridica`, `produtor`, `produto`, `emb`, `bruto`, `liq`, `valor`, `produtordois`, `produtodois`, `embdois`, `brutodois`, `liqdois`, `valordois`, `produtortres`, `produtotres`, `embtres`, `brutotres`, `liqtres`, `valortres`, `produtorqua`, `produtoqua`, `embqua`, `brutoqua`, `liqqua`, `valorqua`, `produtorcinco`, `produtocinco`, `embcinco`, `brutocinco`, `liqcinco`, `valorcinco`, `produtorseis`, `produtoseis`, `embseis`, `brutoseis`, `liqseis`, `valorseis`, `produtorsete`, `produtosete`, `embsete`, `brutosete`, `liqsete`, `valorsete`, `total`) VALUES
+(0, '2023-03-05', 'iniciativa inatu idesam', '4444', 'salvador', 'porto velho', '888888', 'NFE888', 'apui - 88.888.888/8888-88 - 55555555777 - (33) 33333-3333', 'Rua Inhame - 44 - Manaus - AM - 69015-265', 'Rua Calopsita - 88 - Manaus - AM - 69015-485', 'mauro', 'castanha', 'c000', '52', '444', '45,00', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', '45.00'),
+(0, '2023-03-05', 'iniciativa inatu idesam', '4444', 'salvador', 'porto velho', '888888', 'NFE888', 'apui - 88.888.888/8888-88 - 55555555777 - (33) 33333-3333', 'Rua Inhame - 44 - Manaus - AM - 69015-265', 'Rua Calopsita - 88 - Manaus - AM - 69015-485', 'mauro', 'castanha', 'c000', '52', '444', '45,00', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', '45.00');
 
 -- --------------------------------------------------------
 
@@ -736,142 +995,6 @@ INSERT INTO `maq` (`id`, `nome`, `foto`, `ativo`) VALUES
 (1, 'NÃ£o tem', '11-01-2023-16-56-17-R.png', 'Sim'),
 (2, 'Furadeira', '11-01-2023-16-59-51-R.jfif', 'Sim'),
 (3, 'arma', 'sem-foto.png', 'Sim');
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `oleo`
---
-
-CREATE TABLE `oleo` (
-  `id` int(11) NOT NULL,
-  `materia` varchar(100) NOT NULL,
-  `corretor` int(11) NOT NULL,
-  `produtor` varchar(100) NOT NULL,
-  `local` varchar(100) NOT NULL,
-  `quantidade` varchar(50) NOT NULL,
-  `medida` varchar(10) NOT NULL,
-  `data_entrada` date DEFAULT NULL,
-  `fonte` varchar(100) NOT NULL,
-  `consumo` varchar(100) NOT NULL,
-  `data_aquisicao` date DEFAULT NULL,
-  `maq` varchar(500) NOT NULL,
-  `custo` varchar(50) NOT NULL,
-  `residual` varchar(100) NOT NULL,
-  `anos` varchar(100) NOT NULL,
-  `depreciacao` varchar(100) NOT NULL,
-  `dia` varchar(100) NOT NULL,
-  `obra` varchar(100) NOT NULL,
-  `hora` varchar(100) NOT NULL,
-  `pago` varchar(100) NOT NULL,
-  `selecaodois` varchar(100) NOT NULL,
-  `maqdois` varchar(500) NOT NULL,
-  `ferdois` varchar(500) NOT NULL,
-  `fontedois` varchar(100) NOT NULL,
-  `consumodois` varchar(100) NOT NULL,
-  `data_aquidois` date DEFAULT NULL,
-  `custodois` varchar(50) NOT NULL,
-  `residualdois` varchar(100) NOT NULL,
-  `anosdois` varchar(100) NOT NULL,
-  `depreciacaodois` varchar(100) NOT NULL,
-  `diadois` varchar(100) NOT NULL,
-  `obradois` varchar(100) NOT NULL,
-  `horadois` varchar(100) NOT NULL,
-  `pagodois` varchar(100) NOT NULL,
-  `selecaotres` varchar(100) NOT NULL,
-  `maqtres` varchar(500) NOT NULL,
-  `fertres` varchar(500) NOT NULL,
-  `fontetres` varchar(100) NOT NULL,
-  `consumotres` varchar(100) NOT NULL,
-  `data_aquitres` date DEFAULT NULL,
-  `custotres` varchar(50) NOT NULL,
-  `residualtres` varchar(100) NOT NULL,
-  `anostres` varchar(100) NOT NULL,
-  `depreciacaotres` varchar(100) NOT NULL,
-  `diatres` varchar(100) NOT NULL,
-  `obratres` varchar(100) NOT NULL,
-  `horatres` varchar(100) NOT NULL,
-  `pagotres` varchar(100) NOT NULL,
-  `data_arm` date DEFAULT NULL,
-  `armaz` varchar(100) NOT NULL,
-  `selecaoquatro` varchar(100) NOT NULL,
-  `maqquatro` varchar(500) NOT NULL,
-  `ferquatro` varchar(500) NOT NULL,
-  `fontequatro` varchar(100) NOT NULL,
-  `consumoquatro` varchar(100) NOT NULL,
-  `data_aquiquatro` date DEFAULT NULL,
-  `custoquatro` varchar(50) NOT NULL,
-  `residualquatro` varchar(100) NOT NULL,
-  `anosquatro` varchar(100) NOT NULL,
-  `depreciacaoquatro` varchar(100) NOT NULL,
-  `diaquatro` varchar(100) NOT NULL,
-  `obraquatro` varchar(100) NOT NULL,
-  `horaquatro` varchar(100) NOT NULL,
-  `pagoquatro` varchar(100) NOT NULL,
-  `selecaocinco` varchar(100) NOT NULL,
-  `maqcinco` varchar(500) NOT NULL,
-  `fercinco` varchar(500) NOT NULL,
-  `fontecinco` varchar(100) NOT NULL,
-  `consumocinco` varchar(100) NOT NULL,
-  `data_aquicinco` date DEFAULT NULL,
-  `custocinco` varchar(50) NOT NULL,
-  `residualcinco` varchar(100) NOT NULL,
-  `anoscinco` varchar(100) NOT NULL,
-  `depreciacaocinco` varchar(100) NOT NULL,
-  `diacinco` varchar(100) NOT NULL,
-  `obracinco` varchar(100) NOT NULL,
-  `horacinco` varchar(100) NOT NULL,
-  `pagocinco` varchar(100) NOT NULL,
-  `insumoum` varchar(100) NOT NULL,
-  `produtoum` varchar(100) NOT NULL,
-  `medidaum` varchar(100) NOT NULL,
-  `data_emum` date DEFAULT NULL,
-  `insumodois` varchar(100) NOT NULL,
-  `produtodois` varchar(100) NOT NULL,
-  `medidadois` varchar(100) NOT NULL,
-  `data_emdois` date DEFAULT NULL,
-  `selecaoseis` varchar(100) NOT NULL,
-  `maqseis` varchar(500) NOT NULL,
-  `ferseis` varchar(500) NOT NULL,
-  `fonteseis` varchar(100) NOT NULL,
-  `consumoseis` varchar(100) NOT NULL,
-  `data_aquiseis` date DEFAULT NULL,
-  `custoseis` varchar(50) NOT NULL,
-  `residualseis` varchar(100) NOT NULL,
-  `anosseis` varchar(100) NOT NULL,
-  `depreciacaoseis` varchar(100) NOT NULL,
-  `diaseis` varchar(100) NOT NULL,
-  `obraseis` varchar(100) NOT NULL,
-  `horaseis` varchar(100) NOT NULL,
-  `pagoseis` varchar(100) NOT NULL,
-  `insumtres` varchar(100) NOT NULL,
-  `produtotres` varchar(100) NOT NULL,
-  `medidatres` varchar(100) NOT NULL,
-  `data_emtres` date DEFAULT NULL,
-  `armazdois` varchar(100) NOT NULL,
-  `selecaosete` varchar(100) NOT NULL,
-  `maqsete` varchar(500) NOT NULL,
-  `fersete` varchar(500) NOT NULL,
-  `fontesete` varchar(100) NOT NULL,
-  `consumosete` varchar(100) NOT NULL,
-  `data_aquisete` date DEFAULT NULL,
-  `custosete` varchar(50) NOT NULL,
-  `residualsete` varchar(100) NOT NULL,
-  `anossete` varchar(100) NOT NULL,
-  `depreciacaosete` varchar(100) NOT NULL,
-  `diasete` varchar(100) NOT NULL,
-  `obrasete` varchar(100) NOT NULL,
-  `horasete` varchar(100) NOT NULL,
-  `pagosete` varchar(100) NOT NULL,
-  `totalmateria` varchar(100) NOT NULL,
-  `totaldepre` varchar(100) NOT NULL,
-  `totalrend` varchar(100) NOT NULL,
-  `totalhora` varchar(100) NOT NULL,
-  `totalobra` varchar(100) NOT NULL,
-  `totalproducao` varchar(100) NOT NULL,
-  `totalcusto` varchar(100) NOT NULL,
-  `data_final` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -923,6 +1046,40 @@ INSERT INTO `produtos` (`id`, `nome`, `cientifico`, `medida`, `valor`, `foto`, `
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `recepcao`
+--
+
+CREATE TABLE `recepcao` (
+  `id` int(11) NOT NULL,
+  `materia` varchar(50) NOT NULL,
+  `corretor` int(11) NOT NULL,
+  `produtor` varchar(100) NOT NULL,
+  `local` varchar(100) NOT NULL,
+  `quantidade` varchar(50) NOT NULL,
+  `medida` varchar(10) NOT NULL,
+  `total` varchar(10) NOT NULL,
+  `data_entrada` date DEFAULT NULL,
+  `fonte` varchar(50) NOT NULL,
+  `consumo` varchar(50) NOT NULL,
+  `data_aquisicao` date DEFAULT NULL,
+  `maq` varchar(50) NOT NULL,
+  `custo` varchar(50) NOT NULL,
+  `residual` varchar(50) NOT NULL,
+  `anos` varchar(50) NOT NULL,
+  `depreciacao` varchar(50) NOT NULL,
+  `dia` varchar(50) NOT NULL,
+  `util` varchar(50) NOT NULL,
+  `vd` varchar(50) NOT NULL,
+  `obra` varchar(50) NOT NULL,
+  `hora` varchar(50) NOT NULL,
+  `trabalho` varchar(50) NOT NULL,
+  `pago` varchar(50) NOT NULL,
+  `data_final` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `tarefas`
 --
 
@@ -942,7 +1099,9 @@ CREATE TABLE `tarefas` (
 --
 
 INSERT INTO `tarefas` (`id`, `titulo`, `descricao`, `hora`, `data`, `usuario`, `status`, `obs`) VALUES
-(1, 'Nova equipe', 'tete', '11:04:00', '2023-01-12', 3, 'Agendada', 'rrr');
+(1, 'Nova equipe', 'tete', '11:04:00', '2023-01-12', 3, 'Agendada', 'rrr'),
+(2, 'Nova equipe', 'tete', '16:21:00', '2023-03-07', 3, 'Agendada', ''),
+(3, 'rio', 'tttt', '18:21:00', '2023-03-07', 3, 'Agendada', '');
 
 -- --------------------------------------------------------
 
@@ -993,7 +1152,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `cpf`, `email`, `senha_crip`, `senha`, `nivel`, `foto`, `id_func`, `ativo`) VALUES
-(3, 'Usina', '958.412.882-53', 'devmauro.professortec@gmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Administrador', '12-12-2022-11-54-42-WhatsApp-Image-2022-11-11-at-11.37.24.jpeg', 0, 'Sim'),
+(3, 'Usina ApuÃ­', '958.412.882-53', 'devmauro.professortec@gmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Administrador', '12-12-2022-11-54-42-WhatsApp-Image-2022-11-11-at-11.37.24.jpeg', 0, 'Sim'),
 (5, 'Marcos Silva', '444.444.444-44', 'marcos@hotmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Recepcionista', '08-02-2022-10-11-56-4.jpg', 2, 'Sim'),
 (6, 'Marcela Tesoureira', '888.888.888-90', 'tesoureiro@hotmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Tesoureiro', '08-02-2022-11-16-25-a.png', 3, 'Sim'),
 (9, 'Corretor Teste', '844.444.444-44', 'corretor@hotmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Corretor', 'sem-perfil.jpg', 7, 'Sim'),
@@ -1052,12 +1211,6 @@ ALTER TABLE `arquivos`
 -- Índices para tabela `associados`
 --
 ALTER TABLE `associados`
-  ADD PRIMARY KEY (`id`);
-
---
--- Índices para tabela `bairros`
---
-ALTER TABLE `bairros`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1133,12 +1286,6 @@ ALTER TABLE `locatarios`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `lote`
---
-ALTER TABLE `lote`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Índices para tabela `maq`
 --
 ALTER TABLE `maq`
@@ -1191,12 +1338,6 @@ ALTER TABLE `associados`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT de tabela `bairros`
---
-ALTER TABLE `bairros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
 -- AUTO_INCREMENT de tabela `cargos`
 --
 ALTER TABLE `cargos`
@@ -1212,13 +1353,13 @@ ALTER TABLE `cidades`
 -- AUTO_INCREMENT de tabela `coleta`
 --
 ALTER TABLE `coleta`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `compradores`
 --
 ALTER TABLE `compradores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `fer`
@@ -1269,12 +1410,6 @@ ALTER TABLE `locatarios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT de tabela `lote`
---
-ALTER TABLE `lote`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
 -- AUTO_INCREMENT de tabela `maq`
 --
 ALTER TABLE `maq`
@@ -1290,7 +1425,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `tarefas`
 --
 ALTER TABLE `tarefas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `tipos`

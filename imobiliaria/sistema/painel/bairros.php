@@ -3367,6 +3367,8 @@ document.addEventListener('change', function () {
 						</div>
 					</div><br>
 
+  					<!--Higienização e Seleção//-->
+
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Higienização e Seleção </b></span><br></div>
 					
@@ -3381,6 +3383,97 @@ document.addEventListener('change', function () {
 							<span id="undois_mostrar"></span>
 						</div>
 					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Máquina </b></span><br>
+						<div class="col-md-4">							
+							<span><b>Nome da Máquina: </b></span>
+							<span id="maqdois_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>Fonte de Energia: </b></span>
+							<span id="maqfontedois_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>Consumo De Enérgia: </b></span>
+							<span id="maqconsumodois_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Ferramenta </b></span><br>
+						<div class="col-md-4">							
+							<span><b>Nome de Ferramenta: </b></span>
+							<span id="ferdois_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>Fonte de Energia: </b></span>
+							<span id="ferfontedois_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>Consumo De Enérgia: </b></span>
+							<span id="ferconsumodois_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Maquinário/depreciação </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Tipo de Máquina: </b></span>
+							<span id="maq_mostrar"></span>							
+						</div>
+
+						<div class="col-md-6">							
+							<span><b>Data de Aquisição: </b></span>
+							<span id="data_aquidois_mostrar"></span>
+						</div>
+		
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					
+						<div class="col-md-6">							
+							<span><b>Valor de custo ($:) </b></span>
+							<span id="custodois_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor residual ($): </b></span>
+							<span id="residualdois_mostrar"></span>							
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						
+						<div class="col-md-6">							
+							<span><b>Vida útil (em anos): </b></span>
+							<span id="anosdois_mostrar"></span>							
+						</div>
+
+						<div class="col-md-6">							
+							<span><b>Depreciação Anual ($): </b></span>
+							<span id="depreciacaodois_mostrar"></span>							
+						</div>	
+
+						
+					</div>	
+					
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						
+						<div class="col-md-6">							
+							<span><b>Depreciação por dia: </b></span>
+							<span id="diadois_mostrar"></span>
+						</div>
+						<div class="col-md-6">							
+							<span><b>Dias utilizados: </b></span>
+							<span id="utildois_mostrar"></span>
+						</div>
+						
+					</div>	
+
+
+
 
 					<div class="row">
 						<div class="col-md-12" align="center">		
