@@ -11,7 +11,7 @@ if($total_reg == 0){
 }
 
 
-//inserir os cargos que geram níveis de usuários
+//inserir os cargos que geram níveis de usuários//
 $query = $pdo->query("SELECT * FROM cargos");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
 $total_reg = @count($res);
