@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 23-Mar-2023 às 16:49
+-- Tempo de geração: 27-Mar-2023 às 16:45
 -- Versão do servidor: 10.4.25-MariaDB
 -- versão do PHP: 8.1.10
 
@@ -280,6 +280,7 @@ CREATE TABLE `bairros` (
   `resulsete` varchar(50) NOT NULL,
   `medidasete` varchar(50) NOT NULL,
   `perdasete` varchar(50) NOT NULL,
+  `percesete` varchar(30) NOT NULL,
   `np` varchar(50) NOT NULL,
   `qua` varchar(50) NOT NULL,
   `umed` varchar(50) NOT NULL,
@@ -298,8 +299,9 @@ CREATE TABLE `bairros` (
 -- Extraindo dados da tabela `bairros`
 --
 
-INSERT INTO `bairros` (`id`, `materia`, `produtor`, `local`, `quantidade`, `medida`, `totall`, `totalll`, `data_entrada`, `fonte`, `consumo`, `data_aquisicao`, `maq`, `custo`, `residual`, `anos`, `depreciacao`, `dia`, `util`, `vd`, `obra`, `hora`, `trabalho`, `pago`, `entradois`, `undois`, `maqdois`, `maqfontedois`, `maqconsumodois`, `ferdois`, `ferfontedois`, `ferconsumodois`, `data_aquidois`, `custodois`, `residualdois`, `anosdois`, `depreciacaodois`, `diadois`, `utildois`, `vddois`, `obradois`, `horadois`, `trabalhadois`, `pagodois`, `resuldois`, `medidadois`, `perdadois`, `percedois`, `entratres`, `untres`, `maqtres`, `maqfontetres`, `maqconsumotres`, `fertres`, `ferfontetres`, `ferconsumotres`, `data_aquitres`, `custotres`, `residualtres`, `anostres`, `depreciacaotres`, `diatres`, `utiltres`, `vdtres`, `obratres`, `horatres`, `trabalhotres`, `pagotres`, `resultres`, `medidatres`, `perdatres`, `percetres`, `data_arm`, `armazum`, `medum`, `formaum`, `entraquatro`, `unquatro`, `maqquatro`, `maqfontequatro`, `maqconsumoquatro`, `ferquatro`, `ferfontequatro`, `ferconsumoquatro`, `data_aquiquatro`, `custoquatro`, `residualquatro`, `anosquatro`, `depreciacaoquatro`, `diaquatro`, `utilquatro`, `vdquatro`, `obraquatro`, `horaquatro`, `trabalhoquatro`, `pagoquatro`, `resulquatro`, `medidaquatro`, `perdaquatro`, `percequatro`, `entracinco`, `uncinco`, `maqcinco`, `maqfontecinco`, `maqconsumocinco`, `fercinco`, `ferfontecinco`, `ferconsumocinco`, `data_aquicinco`, `custocinco`, `residualcinco`, `anoscinco`, `depreciacaocinco`, `diacinco`, `utilcinco`, `vdcinco`, `obracinco`, `horacinco`, `trabalhocinco`, `pagocinco`, `resulcinco`, `medidacinco`, `perdacinco`, `percecinco`, `produtoum`, `insumoum`, `medidauma`, `data_emum`, `produtodois`, `insumodois`, `medidasegun`, `data_emdois`, `entraseis`, `unseis`, `maqseis`, `maqfonteseis`, `maqconsumoseis`, `ferseis`, `ferfonteseis`, `ferconsumoseis`, `data_aquiseis`, `custoseis`, `residualseis`, `anosseis`, `depreciacaoseis`, `diaseis`, `utilseis`, `vdseis`, `obraseis`, `horaseis`, `trabalhoseis`, `pagoseis`, `resulseis`, `medidaseis`, `perdaseis`, `perceseis`, `insumtres`, `produtotres`, `armaztres`, `medidaterc`, `data_emtres`, `armazquatro`, `medidaquart`, `formaquatro`, `entrasete`, `unsete`, `maqsete`, `maqfontesete`, `maqconsumosete`, `fersete`, `ferfontesete`, `ferconsumosete`, `data_aquisete`, `custosete`, `residualsete`, `anossete`, `depreciacaosete`, `diasete`, `utilsete`, `vdsete`, `obrasete`, `horasete`, `trabalhosete`, `pagosete`, `resulsete`, `medidasete`, `perdasete`, `np`, `qua`, `umed`, `totalmateria`, `totaldepre`, `totalrend`, `totalhora`, `totalobra`, `totalproducao`, `totalcusto`, `totalcustodois`, `data_final`) VALUES
-(0, '', '', '', '', 'Quilo', '', '', '0000-00-00', 'Motor EstacionÃ¡rio', 'Diesel', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-21', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-21', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '2023-03-21', '', 'Quilo', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-21', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-21', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', '', 'Quilo', '0000-00-00', '', '', 'Quilo', '0000-00-00', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-21', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', '', '', 'Quilo', '0000-00-00', '', 'Quilo', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', '', '', '', '', '', '', '', NULL);
+INSERT INTO `bairros` (`id`, `materia`, `produtor`, `local`, `quantidade`, `medida`, `totall`, `totalll`, `data_entrada`, `fonte`, `consumo`, `data_aquisicao`, `maq`, `custo`, `residual`, `anos`, `depreciacao`, `dia`, `util`, `vd`, `obra`, `hora`, `trabalho`, `pago`, `entradois`, `undois`, `maqdois`, `maqfontedois`, `maqconsumodois`, `ferdois`, `ferfontedois`, `ferconsumodois`, `data_aquidois`, `custodois`, `residualdois`, `anosdois`, `depreciacaodois`, `diadois`, `utildois`, `vddois`, `obradois`, `horadois`, `trabalhadois`, `pagodois`, `resuldois`, `medidadois`, `perdadois`, `percedois`, `entratres`, `untres`, `maqtres`, `maqfontetres`, `maqconsumotres`, `fertres`, `ferfontetres`, `ferconsumotres`, `data_aquitres`, `custotres`, `residualtres`, `anostres`, `depreciacaotres`, `diatres`, `utiltres`, `vdtres`, `obratres`, `horatres`, `trabalhotres`, `pagotres`, `resultres`, `medidatres`, `perdatres`, `percetres`, `data_arm`, `armazum`, `medum`, `formaum`, `entraquatro`, `unquatro`, `maqquatro`, `maqfontequatro`, `maqconsumoquatro`, `ferquatro`, `ferfontequatro`, `ferconsumoquatro`, `data_aquiquatro`, `custoquatro`, `residualquatro`, `anosquatro`, `depreciacaoquatro`, `diaquatro`, `utilquatro`, `vdquatro`, `obraquatro`, `horaquatro`, `trabalhoquatro`, `pagoquatro`, `resulquatro`, `medidaquatro`, `perdaquatro`, `percequatro`, `entracinco`, `uncinco`, `maqcinco`, `maqfontecinco`, `maqconsumocinco`, `fercinco`, `ferfontecinco`, `ferconsumocinco`, `data_aquicinco`, `custocinco`, `residualcinco`, `anoscinco`, `depreciacaocinco`, `diacinco`, `utilcinco`, `vdcinco`, `obracinco`, `horacinco`, `trabalhocinco`, `pagocinco`, `resulcinco`, `medidacinco`, `perdacinco`, `percecinco`, `produtoum`, `insumoum`, `medidauma`, `data_emum`, `produtodois`, `insumodois`, `medidasegun`, `data_emdois`, `entraseis`, `unseis`, `maqseis`, `maqfonteseis`, `maqconsumoseis`, `ferseis`, `ferfonteseis`, `ferconsumoseis`, `data_aquiseis`, `custoseis`, `residualseis`, `anosseis`, `depreciacaoseis`, `diaseis`, `utilseis`, `vdseis`, `obraseis`, `horaseis`, `trabalhoseis`, `pagoseis`, `resulseis`, `medidaseis`, `perdaseis`, `perceseis`, `insumtres`, `produtotres`, `armaztres`, `medidaterc`, `data_emtres`, `armazquatro`, `medidaquart`, `formaquatro`, `entrasete`, `unsete`, `maqsete`, `maqfontesete`, `maqconsumosete`, `fersete`, `ferfontesete`, `ferconsumosete`, `data_aquisete`, `custosete`, `residualsete`, `anossete`, `depreciacaosete`, `diasete`, `utilsete`, `vdsete`, `obrasete`, `horasete`, `trabalhosete`, `pagosete`, `resulsete`, `medidasete`, `perdasete`, `percesete`, `np`, `qua`, `umed`, `totalmateria`, `totaldepre`, `totalrend`, `totalhora`, `totalobra`, `totalproducao`, `totalcusto`, `totalcustodois`, `data_final`) VALUES
+(4, 'breu', 'marcus', 'USINA APUI', '500', 'Quilo', '', '500', '2023-03-20', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-27', '', '5000', '2000', '50', '60', '0.16', '5', '0.8', '100', '12.50', '4', '50.00', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '2023-03-24', '', 'Quilo', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', '', 'Quilo', '0000-00-00', '', '', 'Quilo', '0000-00-00', '500', '', '50.00', '', '', '50.00', '', '', '0000-00-00', '50.00', '50.00', '50.00', '3', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '', '50.00', '50.00', '', '50.00', '50.00', '', '0000-00-00', '50.00', '', '50.00', '50.00', '', '50.00', '', '', '50.00', '', '', '0000-00-00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '', '50.00', '50.00', '50.00', '50.00', '', '500.00', '100.80', '50.00', '', '150.00', '50.00', '750.80', '15.02', NULL),
+(3, 'teste', 'polpadeira', 'USINA APUI', '500', 'Quilo', '', '7000', '0000-00-00', 'Motor EstacionÃ¡rio', 'Diesel', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '2023-03-24', '', 'Quilo', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', '', 'Quilo', '0000-00-00', '', '', 'Quilo', '0000-00-00', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '7000.00', '0.00', '', '', '0.00', '0.00', '7000.00', 'Infinity', NULL);
 
 -- --------------------------------------------------------
 
@@ -419,7 +421,7 @@ CREATE TABLE `compradores` (
 INSERT INTO `compradores` (`id`, `nome`, `pessoa`, `doc`, `inscricao`, `email`, `logradouro`, `logradouroj`, `cep`, `cepj`, `uf`, `ufj`, `cidade`, `cidadej`, `numero`, `numeroj`, `telefone`, `corretor`, `data_cadastro`, `data_nasc`, `obs`) VALUES
 (1, 'Jessica ', 'FÃ­sica', '456.666.666-66', '55555555777', 'jessica@hotmail.com', 'Rua Inhame', '', '69015-265', '', 'AM', '', 'Manaus', '', '44', '', '(22) 22222-2222', 3, '2023-03-07', '0000-00-00', 'ooo'),
 (3, 'mauro lima da silva', 'JurÃ­dica', '77.777.777/777', '3333333333', 'teste@gmail.com', 'Rua Inhame', '', '69015-265', '', 'AM', '', 'Manaus', '', '44', '', '(33) 33333-3333', 3, '2023-03-13', '0000-00-00', 'uuuu'),
-(4, 'apui', 'JurÃ­dica', '88.888.888/8888-88', '55555555777', 'teste2@gmail.com', 'Rua PajÃ©', 'Rua Calopsita', '69015-235', '69015-485', 'AM', 'AM', 'Manaus', 'Manaus', '17', '88', '(33) 33333-3333', 3, '2023-03-13', '0000-00-00', 'eee');
+(4, 'pedroso', 'JurÃ­dica', '88.888.888/8888-88', '55555555777', 'teste2@gmail.com', 'Rua PajÃ©', 'Rua Calopsita', '69015-235', '69015-485', 'AM', 'AM', 'Manaus', 'Manaus', '17', '88', '(33) 33333-3333', 3, '2023-03-24', '0000-00-00', 'eee');
 
 -- --------------------------------------------------------
 
@@ -603,169 +605,7 @@ INSERT INTO `funcionarios` (`id`, `nome`, `cpf`, `telefone`, `email`, `logradour
 (9, 'Mauro LIma', '999.999.999-99', '(92) 99302-1397', 'mauro.lima@idesam.org', 'av. barrÃ£o', '2023-01-06', '7', '69015-265', 'AM', 'Manaus', '45', 'Sim', '', '06-01-2023-16-58-13-WhatsApp-Image-2022-11-11-at-11.38.00-(1).jpeg', 'teste'),
 (12, 'julio cesar', '111.111.111-11', '(88) 88888-8888', 'cesar@gmail', 'Rua Inhame', '2023-01-06', '7', '', '', '', '', 'Sim', NULL, '06-01-2023-17-02-42-passagem2.jpeg', ''),
 (13, 'lucas', '666.777.777-77', '(44) 44444-4444', 'lucas@gmail.com', 'Rua Inhame', '2023-01-09', '7', '69015-265', 'AM', 'Manaus', '17', 'Sim', NULL, 'sem-perfil.jpg', 'eeee'),
-(14, 'marcus', '555.555.555-55', '(44) 44444-4444', 'marcus@gmail.com', 'Travessa Caburi', '2023-01-13', '7', '69015-015', 'AM', 'Manaus', '34', 'Sim', NULL, 'sem-perfil.jpg', 'ddd');
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `imoveis`
---
-
-CREATE TABLE `imoveis` (
-  `id` int(11) NOT NULL,
-  `materia` varchar(50) NOT NULL,
-  `corretor` int(11) NOT NULL,
-  `produtor` varchar(100) NOT NULL,
-  `local` varchar(100) NOT NULL,
-  `quantidade` varchar(50) NOT NULL,
-  `medida` varchar(10) NOT NULL,
-  `totall` varchar(30) NOT NULL,
-  `totalll` varchar(30) NOT NULL,
-  `total` varchar(10) NOT NULL,
-  `data_entrada` date DEFAULT NULL,
-  `fonte` varchar(50) NOT NULL,
-  `consumo` varchar(50) NOT NULL,
-  `data_aquisicao` date DEFAULT NULL,
-  `maq` varchar(50) NOT NULL,
-  `custo` varchar(50) NOT NULL,
-  `residual` varchar(50) NOT NULL,
-  `anos` varchar(50) NOT NULL,
-  `depreciacao` varchar(50) NOT NULL,
-  `dia` varchar(50) NOT NULL,
-  `util` varchar(50) NOT NULL,
-  `vd` varchar(50) NOT NULL,
-  `obra` varchar(50) NOT NULL,
-  `hora` varchar(50) NOT NULL,
-  `trabalho` varchar(50) NOT NULL,
-  `pago` varchar(50) NOT NULL,
-  `entradois` varchar(50) NOT NULL,
-  `undois` varchar(50) NOT NULL,
-  `maqdois` varchar(50) NOT NULL,
-  `maqfontedois` varchar(50) NOT NULL,
-  `maqconsumodois` varchar(50) NOT NULL,
-  `ferdois` varchar(50) NOT NULL,
-  `ferfontedois` varchar(50) NOT NULL,
-  `ferconsumodois` varchar(50) NOT NULL,
-  `data_aquidois` date DEFAULT NULL,
-  `custodois` varchar(50) NOT NULL,
-  `residualdois` varchar(50) NOT NULL,
-  `anosdois` varchar(50) NOT NULL,
-  `depreciacaodois` varchar(50) NOT NULL,
-  `diadois` varchar(50) NOT NULL,
-  `utildois` varchar(50) NOT NULL,
-  `vddois` varchar(50) NOT NULL,
-  `obradois` varchar(50) NOT NULL,
-  `horadois` varchar(50) NOT NULL,
-  `trabalhadois` varchar(50) NOT NULL,
-  `pagodois` varchar(50) NOT NULL,
-  `resuldois` varchar(50) NOT NULL,
-  `medidadois` varchar(50) NOT NULL,
-  `perdadois` varchar(50) NOT NULL,
-  `percedois` varchar(50) NOT NULL,
-  `entratres` varchar(50) NOT NULL,
-  `untres` varchar(50) NOT NULL,
-  `maqtres` varchar(50) NOT NULL,
-  `maqfontetres` varchar(50) NOT NULL,
-  `maqconsumotres` varchar(50) NOT NULL,
-  `fertres` varchar(50) NOT NULL,
-  `ferfontetres` varchar(50) NOT NULL,
-  `ferconsumotres` varchar(50) NOT NULL,
-  `data_aquitres` date DEFAULT NULL,
-  `custotres` varchar(50) NOT NULL,
-  `residualtres` varchar(50) NOT NULL,
-  `anostres` varchar(50) NOT NULL,
-  `depreciacaotres` varchar(50) NOT NULL,
-  `diatres` varchar(50) NOT NULL,
-  `utiltres` varchar(50) NOT NULL,
-  `vdtres` varchar(50) NOT NULL,
-  `obratres` varchar(50) NOT NULL,
-  `horatres` varchar(50) NOT NULL,
-  `trabalhotres` varchar(50) NOT NULL,
-  `pagotres` varchar(50) NOT NULL,
-  `resultres` varchar(50) NOT NULL,
-  `medidatres` varchar(50) NOT NULL,
-  `perdatres` varchar(50) NOT NULL,
-  `percetres` varchar(50) NOT NULL,
-  `data_arm` date DEFAULT NULL,
-  `armazum` varchar(50) NOT NULL,
-  `medum` varchar(50) NOT NULL,
-  `formaum` varchar(50) NOT NULL,
-  `entracinco` varchar(50) NOT NULL,
-  `uncinco` varchar(50) NOT NULL,
-  `maqcinco` varchar(50) NOT NULL,
-  `maqfontecinco` varchar(50) NOT NULL,
-  `maqconsumocinco` varchar(50) NOT NULL,
-  `fercinco` varchar(500) NOT NULL,
-  `ferfontecinco` varchar(50) NOT NULL,
-  `ferconsumocinco` varchar(50) NOT NULL,
-  `data_aquicinco` date DEFAULT NULL,
-  `custocinco` varchar(50) NOT NULL,
-  `residualcinco` varchar(50) NOT NULL,
-  `anoscinco` varchar(50) NOT NULL,
-  `depreciacaocinco` varchar(50) NOT NULL,
-  `diacinco` varchar(50) NOT NULL,
-  `utilcinco` varchar(50) NOT NULL,
-  `vdcinco` varchar(50) NOT NULL,
-  `obracinco` varchar(50) NOT NULL,
-  `horacinco` varchar(50) NOT NULL,
-  `trabalhocinco` varchar(50) NOT NULL,
-  `pagocinco` varchar(50) NOT NULL,
-  `resulcinco` varchar(50) NOT NULL,
-  `medidacinco` varchar(50) NOT NULL,
-  `perdacinco` varchar(50) NOT NULL,
-  `percecinco` varchar(50) NOT NULL,
-  `produtoum` varchar(50) NOT NULL,
-  `insumoum` varchar(50) NOT NULL,
-  `medidauma` varchar(50) NOT NULL,
-  `data_emum` date DEFAULT NULL,
-  `produtodois` varchar(50) NOT NULL,
-  `insumodois` varchar(50) NOT NULL,
-  `medidasegun` varchar(50) NOT NULL,
-  `data_emdois` date DEFAULT NULL,
-  `entraseis` varchar(50) NOT NULL,
-  `unseis` varchar(50) NOT NULL,
-  `maqseis` varchar(50) NOT NULL,
-  `maqfonteseis` varchar(50) NOT NULL,
-  `maqconsumoseis` varchar(50) NOT NULL,
-  `ferseis` varchar(50) NOT NULL,
-  `ferfonteseis` varchar(50) NOT NULL,
-  `ferconsumoseis` varchar(50) NOT NULL,
-  `data_aquiseis` date DEFAULT NULL,
-  `custoseis` varchar(50) NOT NULL,
-  `residualseis` varchar(50) NOT NULL,
-  `anosseis` varchar(50) NOT NULL,
-  `depreciacaoseis` varchar(50) NOT NULL,
-  `diaseis` varchar(50) NOT NULL,
-  `utilseis` varchar(50) NOT NULL,
-  `vdseis` varchar(50) NOT NULL,
-  `obraseis` varchar(50) NOT NULL,
-  `horaseis` varchar(50) NOT NULL,
-  `trabalhoseis` varchar(50) NOT NULL,
-  `pagoseis` varchar(50) NOT NULL,
-  `resulseis` varchar(50) NOT NULL,
-  `medidaseis` varchar(50) NOT NULL,
-  `perdaseis` varchar(50) NOT NULL,
-  `perceseis` varchar(50) NOT NULL,
-  `insumtres` varchar(50) NOT NULL,
-  `produtotres` varchar(50) NOT NULL,
-  `armaztres` varchar(50) NOT NULL,
-  `medidaterc` varchar(50) NOT NULL,
-  `data_emtres` date DEFAULT NULL,
-  `armazquatro` varchar(50) NOT NULL,
-  `medidaquart` varchar(50) NOT NULL,
-  `formaquatro` varchar(50) NOT NULL,
-  `np` varchar(50) NOT NULL,
-  `qua` varchar(50) NOT NULL,
-  `umed` varchar(50) NOT NULL,
-  `totalmateria` varchar(50) NOT NULL,
-  `totaldepre` varchar(50) NOT NULL,
-  `totalrend` varchar(50) NOT NULL,
-  `totalhora` varchar(50) NOT NULL,
-  `totalobra` varchar(50) NOT NULL,
-  `totalproducao` varchar(50) NOT NULL,
-  `totalcusto` varchar(50) NOT NULL,
-  `data_final` date DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=COMPRESSED;
+(14, 'marcus pedroso', '555.555.555-55', '(44) 44444-4444', 'marcus@gmail.com', 'Travessa Caburi', '2023-01-13', '7', '69015-015', 'AM', 'Manaus', '34', 'Sim', NULL, 'sem-perfil.jpg', 'ddd');
 
 -- --------------------------------------------------------
 
@@ -971,8 +811,8 @@ CREATE TABLE `lote` (
 --
 
 INSERT INTO `lote` (`id`, `data_cadastro`, `empressa`, `placa`, `origem`, `destino`, `numero`, `nota`, `dono`, `fisica`, `juridica`, `produtor`, `produto`, `emb`, `bruto`, `liq`, `valor`, `produtordois`, `produtodois`, `embdois`, `brutodois`, `liqdois`, `valordois`, `produtortres`, `produtotres`, `embtres`, `brutotres`, `liqtres`, `valortres`, `produtorqua`, `produtoqua`, `embqua`, `brutoqua`, `liqqua`, `valorqua`, `produtorcinco`, `produtocinco`, `embcinco`, `brutocinco`, `liqcinco`, `valorcinco`, `produtorseis`, `produtoseis`, `embseis`, `brutoseis`, `liqseis`, `valorseis`, `produtorsete`, `produtosete`, `embsete`, `brutosete`, `liqsete`, `valorsete`, `total`) VALUES
-(0, '2023-03-05', 'iniciativa inatu idesam', '4444', 'salvador', 'porto velho', '888888', 'NFE888', 'apui - 88.888.888/8888-88 - 55555555777 - (33) 33333-3333', 'Rua Inhame - 44 - Manaus - AM - 69015-265', 'Rua Calopsita - 88 - Manaus - AM - 69015-485', 'mauro', 'castanha', 'c000', '52', '444', '45,00', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', '45.00'),
-(0, '2023-03-05', 'iniciativa inatu idesam', '4444', 'salvador', 'porto velho', '888888', 'NFE888', 'apui - 88.888.888/8888-88 - 55555555777 - (33) 33333-3333', 'Rua Inhame - 44 - Manaus - AM - 69015-265', 'Rua Calopsita - 88 - Manaus - AM - 69015-485', 'mauro', 'castanha', 'c000', '52', '444', '45,00', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', '45.00');
+(6, '2023-03-23', 'programador mauro lima', '4444', 'salvador', 'porto velho', '888888', 'NFE888', 'Jessica  - 456.666.666-66 - 55555555777 - (22) 22222-2222', 'Rua PajÃ© - 17 - Manaus - AM - 69015-235', 'Rua Calopsita - 88 - Manaus - AM - 69015-485', 'mauro', '', '', '', '', '', 'mauro', 'copaiba', 'c00', '45', '33', '5000', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', '5000.00'),
+(7, '2023-03-23', 'programador mauro lima', '4444', 'salvador', 'porto velho', '888888', 'NFE888', 'pedroso - 88.888.888/8888-88 - 55555555777 - (33) 33333-3333', 'Rua PajÃ© - 17 - Manaus - AM - 69015-235', 'Rua Calopsita - 88 - Manaus - AM - 69015-485', 'mauro', '', '', '', '', '', 'mauro', 'copaiba', 'c00', '45', '33', '5000', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', 'paulo', '', '', '', '', '', '5000.00');
 
 -- --------------------------------------------------------
 
@@ -1158,7 +998,7 @@ INSERT INTO `usuarios` (`id`, `nome`, `cpf`, `email`, `senha_crip`, `senha`, `ni
 (9, 'Corretor Teste', '844.444.444-44', 'corretor@hotmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Corretor', 'sem-perfil.jpg', 7, 'Sim'),
 (11, 'julio cesar', '111.111.111-11', 'cesar@gmail', '202cb962ac59075b964b07152d234b70', '123', 'Extrativista', '06-01-2023-17-02-42-passagem2.jpeg', 12, 'Sim'),
 (12, 'lucas', '666.777.777-77', 'lucas@gmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Extrativista', 'sem-perfil.jpg', 13, 'Sim'),
-(13, 'marcus', '555.555.555-55', 'marcus@gmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Extrativista', 'sem-perfil.jpg', 14, 'Sim');
+(13, 'marcus pedroso', '555.555.555-55', 'marcus@gmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Extrativista', 'sem-perfil.jpg', 14, 'Sim');
 
 -- --------------------------------------------------------
 
@@ -1211,6 +1051,12 @@ ALTER TABLE `arquivos`
 -- Índices para tabela `associados`
 --
 ALTER TABLE `associados`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `bairros`
+--
+ALTER TABLE `bairros`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1286,6 +1132,12 @@ ALTER TABLE `locatarios`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices para tabela `lote`
+--
+ALTER TABLE `lote`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Índices para tabela `maq`
 --
 ALTER TABLE `maq`
@@ -1336,6 +1188,12 @@ ALTER TABLE `arquivos`
 --
 ALTER TABLE `associados`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT de tabela `bairros`
+--
+ALTER TABLE `bairros`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `cargos`
@@ -1408,6 +1266,12 @@ ALTER TABLE `locais`
 --
 ALTER TABLE `locatarios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT de tabela `lote`
+--
+ALTER TABLE `lote`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de tabela `maq`

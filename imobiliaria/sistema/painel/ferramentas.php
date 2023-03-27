@@ -5,7 +5,7 @@ $pag = 'ferramentas';
 
  ?>
 
- <button onclick="inserir()" type="button" class="btn btn-primary btn-flat btn-pri"><i class="fa fa-plus" aria-hidden="true"></i> Novo Cadastro Maquinas/Equipamentos</button>
+ <button onclick="inserir()" type="button" class="btn btn-primary btn-flat btn-pri"><i class="fa fa-plus" aria-hidden="true"></i> Novo Cadastro Máquinas / Equipamentos</button>
 
 <div class="bs-example widget-shadow" style="padding:15px" id="listar">
 	
@@ -19,7 +19,7 @@ $pag = 'ferramentas';
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h4 class="modal-title" id="">Cadastros - Inserir Maquinas/Equipamentos</h4>
+				<h4 class="modal-title" id="">Cadastros - Inserir Máquinas / Equipamentos</h4>
 				<button id="btn-fechar" type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -20px">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -33,7 +33,7 @@ $pag = 'ferramentas';
 							<div class="form-group"> 
 								<label>Tipo</label> 
 								<select class="form-control" name="produto" id="produto" required>
-									<option value="Maquina">Maquina</option>			
+									<option value="Máquina">Máquina</option>			
 									<option value="Ferramenta">Ferramenta</option>
 								</select> 
 							</div>						
@@ -43,7 +43,7 @@ $pag = 'ferramentas';
 
 						<div class="col-md-3">						
 						<div class="form-group"> 
-							<label>Tipo de Maquina</label> 
+							<label>Tipo de máquina</label> 
 							<input type="text" class="form-control"name="produtor"   id="produtor" required> 
 						</div>						
 					</div>
@@ -51,7 +51,7 @@ $pag = 'ferramentas';
 
 					<div class="col-md-3">						
 						<div class="form-group"> 
-							<label>Tipo de Ferramenta</label> 
+							<label>Tipo de ferramenta</label> 
 							<input type="text" class="form-control" name="avaliacao" id="avaliacao" required> 
 						</div>						
 					</div>
@@ -61,7 +61,7 @@ $pag = 'ferramentas';
 
 					<div class="col-md-3">
 						<div class="form-group"> 
-							<label>Responsavel</small></label> 
+							<label>Responsável</small></label> 
 							<select class="form-control sel2" name="corretor" id="corretor" required style="width:100%;"> 
 									<?php 
 									if($nivel_usu == 'Corretor'){
@@ -108,10 +108,10 @@ $pag = 'ferramentas';
 						
 						<div class="col-md-4">						
 						<div class="form-group"> 
-							<label>Fonte de Energia</label> 
+							<label>Fonte de energia</label> 
 							<select class="form-control" name="local" id="local" required>
-							<option value="Motor Estacionário">Motor Estacionário</option>
-							<option value="Rede Elétrica">Rede Elétrica</option>
+							<option value="Motor Estacionário">Motor estacionário</option>
+							<option value="Rede Elétrica">Rede elétrica</option>
 								
 							</select> 
 						</div>						
@@ -121,11 +121,11 @@ $pag = 'ferramentas';
 
 					<div class="col-md-4">						
 						<div class="form-group"> 
-							<label>Consumo De Enérgia</label> 
+							<label>Consumo de energia</label> 
 							<select class="form-control" name="bruto" id="bruto" required>
 								<option value="Diesel">Diesel</option>
 								<option value="Gasolina">Gasolina</option>
-								<option value="Energia Solar">Energia Solar</option>
+								<option value="Energia Solar">Energia solar</option>
 								<option value="Energia Solar">kW</option>
 										
 							</select> 
@@ -147,13 +147,13 @@ $pag = 'ferramentas';
 					</div>
 					<br>
 						<hr>
-						<h4>Depreciação De Maquinas / Equipamentos</h4>	
+						<h4>Depreciação de Máquinas / Equipamentos</h4>	
 						<br><br>				
 
 
 						<div class="col-md-3">						
 							<div class="form-group"> 
-								<label>Data De Aquisição</label> 
+								<label>Data de aquisição</label> 
 								<input type="date" class="form-control" name="data_nasc" id="data_nasc" value="<?php echo date('Y-m-d') ?>"> 
 							</div>						
 						</div>			
@@ -202,7 +202,7 @@ $pag = 'ferramentas';
 
 					<div class="col-md-3">                      
 								<div class="form-group">
-									<label>Depreciação Anual ($)</label>
+									<label>Depreciação anual ($)</label>
 									<i class="fa fa-question-circle" data-toggle="tooltip" title="Depreciação Anual é o processo de contabilizar o desgaste
 									ou perda de valor de um ativo ao longo do tempo.
 									Ela é calculada normalmente como uma fração do valor original do ativo,
@@ -305,7 +305,7 @@ $pag = 'ferramentas';
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h4 class="modal-title" id=""><span id=""> </span> <small><span class="ml-4"><span id=""> </span> </span> </small>Cadastros - Maquina Ou Ferrameta:</h4>
+				<h4 class="modal-title" id=""><span id=""> </span> <small><span class="ml-4"><span id=""> </span> </span> </small>Cadastros - Máquina / Ferramenta:</h4>
 				<button id="btn-fechar-excluir" type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -20px">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -321,11 +321,15 @@ $pag = 'ferramentas';
 							<span id="produto_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Tipo de Maquina: </b></span>
+							<span><b>Tipo de máquina: </b></span>
 							<span id="produtor_mostrar"></span>
 						</div>
-						<div class="col-md-6">							
-							<span><b>Tipo de Ferramenta: </b></span>
+						
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<div class="col-md-6">							
+							<span><b>Tipo de ferramenta: </b></span>
 							<span id="avaliacao_mostrar"></span>							
 						</div>
 					</div>
@@ -334,54 +338,64 @@ $pag = 'ferramentas';
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						
 						<div class="col-md-6">							
-							<span><b>Fonte de Energia: </b></span>
+							<span><b>Fonte de energia: </b></span>
 							<span id="local_mostrar"></span>							
 						</div>
 
 						<div class="col-md-6">							
-							<span><b>Responsavel: </b></span>
+							<span><b>Responsável: </b></span>
 							<span id="corretor_mostrar"></span>
 						</div>
-						<div class="col-md-4">							
-							<span><b>Consumo De Enérgia: </b></span>
+
+						
+					</div>
+					
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<div class="col-md-6">							
+							<span><b>Consumo de energia: </b></span>
 							<span id="bruto_mostrar"></span>							
 						</div>
 					</div>
 
 
+
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
-					<div class="col-md-4">							
-							<span><b>Data De Aquisição: </b></span>
+					<div class="col-md-6">							
+							<span><b>Data de aquisição: </b></span>
 							<span id="data_nas_mostrar"></span>
 						</div>
 
-						<div class="col-md-4">							
+						<div class="col-md-6">							
 							<span><b>Valor de custo ($:) </b></span>
 							<span id="reprovado_mostrar"></span>							
 						</div>
-						<div class="col-md-4">							
-							<span><b>Valor residual ($): </b></span>
-							<span id="valor_mostrar"></span>							
-						</div>
-
+					
 
 
 					</div>
 
-
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
-						
-						<div class="col-md-4">							
+					<div class="col-md-6">							
+							<span><b>Valor residual ($): </b></span>
+							<span id="valor_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
 							<span><b>Vida útil (em anos): </b></span>
 							<span id="pagar_mostrar"></span>							
 						</div>
 
-						<div class="col-md-4">							
-							<span><b>Depreciação Anual ($): </b></span>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						
+						
+
+						<div class="col-md-6">							
+							<span><b>Depreciação anual ($): </b></span>
 							<span id="liquido_mostrar"></span>							
 						</div>	
 
-						<div class="col-md-4">							
+						<div class="col-md-6">							
 							<span><b>Depreciação por dia ($): </b></span>
 							<span id="dia_mostrar"></span>
 						</div>
@@ -389,8 +403,8 @@ $pag = 'ferramentas';
 					
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 
-						<div class="col-md-4">							
-							<span><b>Data de Cadastro: </b></span>
+						<div class="col-md-6">							
+							<span><b>Data de aquisição: </b></span>
 							<span id="data_cad_mostrar"></span>
 						</div>
 					</div>	

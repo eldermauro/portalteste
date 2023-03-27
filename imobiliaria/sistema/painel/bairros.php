@@ -96,7 +96,7 @@ $pag = 'bairros';
 									</div>
 									<div class="col-md-3">
 										<div class="form-group"> 
-											<label>Local de Coleta</label> 
+											<label>Local de coleta</label> 
 											<input type="text" class="form-control" name="local" id="local" placeholder="" > 
 										</div>
 									</div>
@@ -118,7 +118,7 @@ $pag = 'bairros';
 							</div>
 										<div class="col-md-3">						
 										<div class="form-group"> 
-											<label>Unidade de Medida</label> 
+											<label>Unidade de medida</label> 
 											<select class="form-control" name="medida" id="medida">
 												<option value="Quilo">Kg</option>
 												<option value="Litro">L</option>
@@ -160,28 +160,28 @@ $pag = 'bairros';
 
 									<div class="col-md-3">
 										<div class="form-group"> 
-											<label>Tipo de Máquina</label> 
+											<label>Tipo de máquina</label> 
 											<input type="text" class="form-control" name="maq" id="maq" placeholder="" > 
 										</div>
 									</div>
 
 									<div class="col-md-3">
 										<div class="form-group"> 
-											<label>Data de Aquisição</label> 
+											<label>Data de aquisição</label> 
 											<input type="date" class="form-control" name="data_aquisicao" id="data_aquisicao" placeholder="" > 
 										</div>
 									</div>
 
 									<div class="col-md-3">
 										<div class="form-group">
-											<label>Valor Custo</label>
+											<label>Valor custo</label>
 											<input type="text" class="form-control" name="custo" id="custo" placeholder="">
 										</div>
 									</div>
 
 									<div class="col-md-3">
 												<div class="form-group">
-													<label>Valor Residual</label>
+													<label>Valor residual</label>
 													<input type="text" class="form-control" name="residual" id="residual" placeholder="">
 												</div>
 											</div>			
@@ -196,13 +196,13 @@ $pag = 'bairros';
 
 											<div class="col-md-3">
 												<div class="form-group">
-													<label>Vida Útil (anos)</label>
+													<label>Vida útil (anos)</label>
 													<input type="text" class="form-control" name="anos" id="anos" placeholder="">
 												</div>
 											</div>
 											<div class="col-md-3">
 												<div class="form-group">
-													<label>Depreciação Anual</label>
+													<label>Depreciação anual</label>
 													<input type="text" class="form-control" name="depreciacao" id="depreciacao" placeholder="" >
 												</div>
 											</div>
@@ -239,7 +239,7 @@ $pag = 'bairros';
 							<div class="col-md-3">						
 										<div class="form-group"> 
 											<label>Fonte de energia</label> 
-											<select class="form-control" name="fonte" id="fonte" required>
+											<select class="form-control" name="fonte" id="fonte" >
 											<option value="Motor Estacionário">Motor Estacionário</option>
 											<option value="Rede Elétrica">Rede Elétrica</option>
 												
@@ -250,7 +250,7 @@ $pag = 'bairros';
 							<div class="col-md-3">						
 										<div class="form-group"> 
 											<label>Consumo de energia</label> 
-											<select class="form-control" name="consumo" id="consumo" required>
+											<select class="form-control" name="consumo" id="consumo">
 												<option value="Diesel">Diesel</option>
 												<option value="Gasolina">Gasolina</option>
 												<option value="Energia Solar">Energia Solar</option>
@@ -314,7 +314,7 @@ $pag = 'bairros';
 
 												<div class="col-md-3">
 													<div class="form-group">
-														<label>Custo de Mão de Obra</label>
+														<label>Custo de mão de obra</label>
 														<input type="text" class="form-control" name="obra" id="obra" placeholder="">
 													</div>
 												</div>
@@ -329,7 +329,7 @@ $pag = 'bairros';
 
 												<div class="col-md-3">
 													<div class="form-group">
-														<label>Horas Trabalhadas</label>
+														<label>Horas trabalhadas</label>
 														<input type="text" class="form-control" name="trabalho" id="trabalho" placeholder="">
 													</div>
 												</div>
@@ -399,7 +399,7 @@ $pag = 'bairros';
 
 									<div class="col-md-3">						
 										<div class="form-group"> 
-											<label>Unidade de Medida</label> 
+											<label>Unidade de medida</label> 
 											<select class="form-control" name="undois" id="undois" >
 												<option value="Quilo">Kg</option>
 												<option value="Litro">L</option>
@@ -420,15 +420,15 @@ $pag = 'bairros';
 							
 									<div class="col-md-3">
 										<div class="form-group"> 
-											<label>Nome da Máquina</label> 
+											<label>Nome da máquina</label> 
 											<input type="text" class="form-control" name="maqdois" id="maqdois" placeholder="" > 
 										</div>
 										</div>
 
 										<div class="col-md-3">						
 										<div class="form-group"> 
-											<label>Fonte de Energia</label> 
-											<select class="form-control" name="maqfontedois" id="maqfontedois" required>
+											<label>Fonte de energia</label> 
+											<select class="form-control" name="maqfontedois" id="maqfontedois" >
 											<option value="Motor Estacionário">Motor Estacionário</option>
 											<option value="Rede Elétrica">Rede Elétrica</option>
 												
@@ -439,8 +439,8 @@ $pag = 'bairros';
 
 									<div class="col-md-3">						
 										<div class="form-group"> 
-											<label>Consumo De Enérgia</label> 
-											<select class="form-control" name="maqconsumodois" id="maqconsumodois" required>
+											<label>Consumo de energia</label> 
+											<select class="form-control" name="maqconsumodois" id="maqconsumodois">
 												<option value="Diesel">Diesel</option>
 												<option value="Gasolina">Gasolina</option>
 												<option value="Energia Solar">Energia Solar</option>
@@ -469,15 +469,15 @@ $pag = 'bairros';
 			
 									<div class="col-md-3">						
 										<div class="form-group"> 
-											<label>Nome de Ferramenta</label> 
+											<label>Nome de ferramenta</label> 
 											<input type="text" class="form-control" name="ferdois" id="ferdois" > 
 										</div>						
 									</div>	
 
 									<div class="col-md-3">						
 										<div class="form-group"> 
-											<label>Fonte de Energia</label> 
-											<select class="form-control" name="ferfontedois" id="ferfontedois" required>
+											<label>Fonte de energia</label> 
+											<select class="form-control" name="ferfontedois" id="ferfontedois">
 											<option value="Motor Estacionário">Motor Estacionário</option>
 											<option value="Rede Elétrica">Rede Elétrica</option>
 												
@@ -488,8 +488,8 @@ $pag = 'bairros';
 
 									<div class="col-md-3">						
 										<div class="form-group"> 
-											<label>Consumo De Enérgia</label> 
-											<select class="form-control" name="ferconsumodois" id="ferconsumodois" required>
+											<label>Consumo de energia</label> 
+											<select class="form-control" name="ferconsumodois" id="ferconsumodois">
 												<option value="Diesel">Diesel</option>
 												<option value="Gasolina">Gasolina</option>
 												<option value="Energia Solar">Energia Solar</option>
@@ -509,7 +509,7 @@ $pag = 'bairros';
 							<div class="row">
 
 							<hr>
-								<h4>depreciação</h4>
+								<h4>Maquinario/depreciação</h4>
 								<br>	
 
 
@@ -517,7 +517,7 @@ $pag = 'bairros';
 
 								<div class="col-md-3">						
 											<div class="form-group"> 
-												<label>Data De Aquisição</label> 
+												<label>Data de aquisição</label> 
 												<input type="date" class="form-control" name="data_aquidois" id="data_aquidois" value="<?php echo date('Y-m-d') ?>"> 
 											</div>						
 										</div>	
@@ -526,7 +526,7 @@ $pag = 'bairros';
 
 									<div class="col-md-3">
 										<div class="form-group">
-											<label>Valor Custo</label>
+											<label>Valor custo</label>
 											<input type="text" class="form-control" name="custodois" id="custodois" placeholder="">
 										</div>
 									</div>
@@ -537,7 +537,7 @@ $pag = 'bairros';
 
 								<div class="col-md-3">
 											<div class="form-group">
-												<label>Valor Residual</label>
+												<label>Valor residual</label>
 												<input type="text" class="form-control" name="residualdois" id="residualdois" placeholder="">
 											</div>
 										</div>						
@@ -546,13 +546,13 @@ $pag = 'bairros';
 
 													<div class="col-md-3">
 										<div class="form-group">
-											<label>Vida Útil (anos)</label>
+											<label>Vida útil (anos)</label>
 											<input type="text" class="form-control" name="anosdois" id="anosdois" placeholder="">
 										</div>
 									</div>
 									<div class="col-md-3">
 										<div class="form-group">
-											<label>Depreciação Anual</label>
+											<label>Depreciação anual</label>
 											<input type="text" class="form-control" name="depreciacaodois" id="depreciacaodois" placeholder="">
 										</div>
 									</div>
@@ -636,14 +636,14 @@ $pag = 'bairros';
 
 													<div class="col-md-3">
 														<div class="form-group">
-															<label>Valor Hora</label>
+															<label>Valor hora</label>
 															<input type="text" class="form-control" name="horadois" id="horadois" placeholder="">
 														</div>
 													</div>
 
 													<div class="col-md-3">
 													<div class="form-group">
-														<label>Horas Trabalhadas</label>
+														<label>Horas trabalhadas</label>
 														<input type="text" class="form-control" name="trabalhadois" id="trabalhadois" placeholder="">
 													</div>
 												</div>
@@ -651,7 +651,7 @@ $pag = 'bairros';
 
 													<div class="col-md-3">
 														<div class="form-group">
-															<label>Valor Pago</label>
+															<label>Valor pago</label>
 															<input type="text" class="form-control" name="pagodois" id="pagodois" placeholder="">
 														</div>
 													</div>
@@ -694,15 +694,15 @@ $pag = 'bairros';
 
 										<div class="col-md-3">
 														<div class="form-group">
-															<label>Quantidade Higienizada</label>
+															<label>Quantidade higienizada</label>
 															<input type="text" class="form-control" name="resuldois" id="resuldois" placeholder="">
 														</div>
 													</div>
 										
 													<div class="col-md-3">						
 														<div class="form-group"> 
-															<label>Unidade de Medida</label> 
-															<select class="form-control" name="medidadois" id="medidadois" required>
+															<label>Unidade de medida</label> 
+															<select class="form-control" name="medidadois" id="medidadois" >
 																<option value="Quilo">Kg</option>
 																<option value="Litro">L</option>
 															</select> 
@@ -711,7 +711,7 @@ $pag = 'bairros';
 
 														<div class="col-md-3">
 														<div class="form-group">
-															<label>Perda Na Higienização</label>
+															<label>Perda Na higienização</label>
 															<input type="text" class="form-control" name="perdadois" id="perdadois" placeholder="">
 														</div>
 													</div>
@@ -789,7 +789,7 @@ $pag = 'bairros';
 
 									<div class="col-md-3">						
 										<div class="form-group"> 
-											<label>Unidade de Medida</label> 
+											<label>Unidade de medida</label> 
 											<select class="form-control" name="untres" id="untres" >
 												<option value="Quilo">Kg</option>
 												<option value="Litro">L</option>
@@ -809,7 +809,7 @@ $pag = 'bairros';
 								<div class="row">
 									<div class="col-md-3">
 										<div class="form-group"> 
-											<label>Nome da Máquina</label> 
+											<label>Nome da maquina</label> 
 											<input type="text" class="form-control" name="maqtres" id="maqtres" placeholder="" > 
 										</div>
 									</div>
@@ -817,7 +817,7 @@ $pag = 'bairros';
 								
 									<div class="col-md-3">						
 										<div class="form-group"> 
-											<label>Fonte de Energia</label> 
+											<label>Fonte de energia</label> 
 											<select class="form-control" name="maqfontetres" id="maqfontetres" >
 											<option value="Motor Estacionário">Motor Estacionário</option>
 											<option value="Rede Elétrica">Rede Elétrica</option>
@@ -829,7 +829,7 @@ $pag = 'bairros';
 
 									<div class="col-md-3">						
 										<div class="form-group"> 
-											<label>Consumo De Enérgia</label> 
+											<label>Consumo De energia</label> 
 											<select class="form-control" name="maqconsumotres" id="maqconsumotres" >
 												<option value="Diesel">Diesel</option>
 												<option value="Gasolina">Gasolina</option>
@@ -853,14 +853,14 @@ $pag = 'bairros';
 
 										<div class="col-md-3">						
 										<div class="form-group"> 
-											<label>Nome da Ferramenta</label> 
+											<label>Nome da ferramenta</label> 
 											<input type="text" class="form-control" name="fertres" id="fertres" > 
 										</div>						
 									</div>
 									
 									<div class="col-md-3">						
 										<div class="form-group"> 
-											<label>Fonte de Energia</label> 
+											<label>Fonte de energia</label> 
 											<select class="form-control" name="ferfontetres" id="ferfontetres" >
 											<option value="Motor Estacionário">Motor Estacionário</option>
 											<option value="Rede Elétrica">Rede Elétrica</option>
@@ -872,7 +872,7 @@ $pag = 'bairros';
 
 									<div class="col-md-3">						
 										<div class="form-group"> 
-											<label>Consumo De Enérgia</label> 
+											<label>Consumo De energia</label> 
 											<select class="form-control" name="ferconsumotres" id="ferconsumotres" >
 												<option value="Diesel">Diesel</option>
 												<option value="Gasolina">Gasolina</option>
@@ -896,7 +896,7 @@ $pag = 'bairros';
 								<div class="row">
 											
 								<hr>
-								<h4>depreciação</h4>
+								<h4>Maquinario/depreciação</h4>
 								<br>
 									
 									
@@ -904,7 +904,7 @@ $pag = 'bairros';
 
 									<div class="col-md-3">						
 											<div class="form-group"> 
-												<label>Data De Aquisição</label> 
+												<label>Data de aquisição</label> 
 												<input type="date" class="form-control" name="data_aquitres" id="data_aquitres" value="<?php echo date('Y-m-d') ?>"> 
 											</div>						
 										</div>	
@@ -913,21 +913,21 @@ $pag = 'bairros';
 
 									<div class="col-md-3">
 										<div class="form-group">
-											<label>Valor Custo</label>
+											<label>Valor custo</label>
 											<input type="text" class="form-control" name="custotres" id="custotres" placeholder="00.0">
 										</div>
 									</div>
 
 									<div class="col-md-3">
 											<div class="form-group">
-												<label>Valor Residual</label>
+												<label>Valor residual</label>
 												<input type="text" class="form-control" name="residualtres" id="residualtres" placeholder="00.0">
 											</div>
 										</div>	
 										
 										<div class="col-md-3">
 										<div class="form-group">
-											<label>Vida Útil (anos)</label>
+											<label>Vida útil (anos)</label>
 											<input type="text" class="form-control" name="anostres" id="anostres" placeholder="00.0">
 										</div>
 									</div>
@@ -942,7 +942,7 @@ $pag = 'bairros';
 									
 									<div class="col-md-3">
 										<div class="form-group">
-											<label>Depreciação Anual</label>
+											<label>Depreciação anual</label>
 											<input type="text" class="form-control" name="depreciacaotres" id="depreciacaotres" placeholder="">
 										</div>
 									</div>
@@ -1026,14 +1026,14 @@ $pag = 'bairros';
 
 													<div class="col-md-3">
 														<div class="form-group">
-															<label>Valor Hora</label>
+															<label>Valor hora</label>
 															<input type="text" class="form-control" name="horatres" id="horatres" placeholder="">
 														</div>
 													</div>
 
 													<div class="col-md-3">
 													<div class="form-group">
-														<label>Horas Trabalhadas</label>
+														<label>Horas trabalhadas</label>
 														<input type="text" class="form-control" name="trabalhotres" id="trabalhotres" placeholder="00.0">
 													</div>
 												</div>
@@ -1041,7 +1041,7 @@ $pag = 'bairros';
 
 													<div class="col-md-3">
 														<div class="form-group">
-															<label>Valor Pago</label>
+															<label>Valor pago</label>
 															<input type="text" class="form-control" name="pagotres" id="pagotres" placeholder="">
 														</div>
 													</div>
@@ -1080,15 +1080,15 @@ $pag = 'bairros';
 
 										<div class="col-md-3">
 														<div class="form-group">
-															<label>Quantidade Higienizada</label>
+															<label>Quantidade da secagem</label>
 															<input type="text" class="form-control" name="resultres" id="resultres" placeholder="00.0">
 														</div>
 													</div>
 										
 													<div class="col-md-3">						
 														<div class="form-group"> 
-															<label>Unidade de Medida</label> 
-															<select class="form-control" name="medidatres" id="medidatres" required>
+															<label>Unidade de medida</label> 
+															<select class="form-control" name="medidatres" id="medidatres" >
 																<option value="Quilo">Kg</option>
 																<option value="Litro">L</option>
 															</select> 
@@ -1097,14 +1097,14 @@ $pag = 'bairros';
 
 														<div class="col-md-3">
 														<div class="form-group">
-															<label>Perda Na Higienização</label>
+															<label>Perda Na secagem</label>
 															<input type="text" class="form-control" name="perdatres" id="perdatres" placeholder="">
 														</div>
 													</div>
 
 													<div class="col-md-3">
 														<div class="form-group">
-															<label>Percentual</label><!--perda/entrada da valor em %-->
+															<label>Rendimento</label><!--perda/entrada da valor em %-->
 															<input type="text" class="form-control" name="percetres" id="percetres" placeholder="">
 														</div>
 													</div>
@@ -1153,14 +1153,14 @@ $pag = 'bairros';
 
 											<div class="col-md-3">
 															<div class="form-group">
-																<label>Quantidade Armazenada</label>
+																<label>Quantidade armazenada</label>
 																<input type="text" class="form-control" name="armazum" id="armazum" placeholder="00.0">
 															</div>
 													</div>	
 
 													<div class="col-md-3">						
 											<div class="form-group"> 
-												<label>Unidade de Medida</label> 
+												<label>Unidade de medida</label> 
 												<select class="form-control" name="medum" id="medum" >
 													<option value="Quilo">Kg</option>
 													<option value="Litro">L</option>
@@ -1171,7 +1171,7 @@ $pag = 'bairros';
 
 											<div class="col-md-3">
 															<div class="form-group">
-																<label>Forma Armazenamento</label>
+																<label>Forma armazenamento</label>
 																<input type="text" class="form-control" name="formaum" id="formaum" placeholder="saco,balde..">
 															</div>
 													</div>	
@@ -1209,7 +1209,7 @@ $pag = 'bairros';
 
 														<div class="col-md-3">						
 														<div class="form-group"> 
-														<label>Unidade de Medida</label> 
+														<label>Unidade de medida</label> 
 														<select class="form-control" name="unquatro" id="unquatro" >
 															<option value="Quilo">Kg</option>
 															<option value="Litro">L</option>
@@ -1228,7 +1228,7 @@ $pag = 'bairros';
 
 															<div class="col-md-3">
 																<div class="form-group"> 
-																	<label>Nome de Máquina</label> 
+																	<label>Nome de maquina</label> 
 																	<input type="text" class="form-control" name="maqquatro" id="maqquatro" placeholder="" > 
 																</div>
 																</div>
@@ -1238,8 +1238,8 @@ $pag = 'bairros';
 
 															<div class="col-md-3">						
 																<div class="form-group"> 
-																	<label>Fonte da Energia</label> 
-																	<select class="form-control" name="maqfontequatro" id="maqfontequatro" required>
+																	<label>Fonte da energia</label> 
+																	<select class="form-control" name="maqfontequatro" id="maqfontequatro" >
 																	<option value="Motor Estacionário">Motor Estacionário</option>
 																	<option value="Rede Elétrica">Rede Elétrica</option>
 																		
@@ -1250,8 +1250,8 @@ $pag = 'bairros';
 
 															<div class="col-md-3">						
 																<div class="form-group"> 
-																	<label>Consumo De Enérgia</label> 
-																	<select class="form-control" name="maqconsumoquatro" id="maqconsumoquatro" required>
+																	<label>Consumo de energia</label> 
+																	<select class="form-control" name="maqconsumoquatro" id="maqconsumoquatro" >
 																		<option value="Diesel">Diesel</option>
 																		<option value="Gasolina">Gasolina</option>
 																		<option value="Energia Solar">Energia Solar</option>
@@ -1275,15 +1275,15 @@ $pag = 'bairros';
 																	
 															<div class="col-md-3">						
 																<div class="form-group"> 
-																	<label>Nome da Ferramenta</label> 
+																	<label>Nome da ferramenta</label> 
 																	<input type="text" class="form-control" name="ferquatro" id="ferquatro" > 
 																</div>						
 															</div>	
 
 															<div class="col-md-3">						
 																<div class="form-group"> 
-																	<label>Fonte da Energia</label> 
-																	<select class="form-control" name="ferfontequatro" id="ferfontequatro" required>
+																	<label>Fonte da energia</label> 
+																	<select class="form-control" name="ferfontequatro" id="ferfontequatro" >
 																	<option value="Motor Estacionário">Motor Estacionário</option>
 																	<option value="Rede Elétrica">Rede Elétrica</option>
 																		
@@ -1294,8 +1294,8 @@ $pag = 'bairros';
 
 															<div class="col-md-3">						
 																<div class="form-group"> 
-																	<label>Consumo De Enérgia</label> 
-																	<select class="form-control" name="ferconsumoquatro" id="ferconsumoquatro" required>
+																	<label>Consumo De energia</label> 
+																	<select class="form-control" name="ferconsumoquatro" id="ferconsumoquatro" >
 																		<option value="Diesel">Diesel</option>
 																		<option value="Gasolina">Gasolina</option>
 																		<option value="Energia Solar">Energia Solar</option>
@@ -1317,13 +1317,13 @@ $pag = 'bairros';
 																				<div class="row">
 
 																						<hr>
-																						<h4>depreciação</h4>
+																						<h4>Maquinario/depreciação</h4>
 																						<br>
 
 
 																						<div class="col-md-3">						
 																								<div class="form-group"> 
-																									<label>Data De Aquisição</label> 
+																									<label>Data de aquisição</label> 
 																									<input type="date" class="form-control" name="data_aquiquatro" id="data_aquiquatro" value="<?php echo date('Y-m-d') ?>"> 
 																								</div>						
 																							</div>	
@@ -1332,14 +1332,14 @@ $pag = 'bairros';
 
 																						<div class="col-md-3">
 																							<div class="form-group">
-																								<label>Valor Custo</label>
+																								<label>Valor custo</label>
 																								<input type="text" class="form-control" name="custoquatro" id="custoquatro" placeholder="">
 																							</div>
 																						</div>
 
 																						<div class="col-md-3">
 																								<div class="form-group">
-																									<label>Valor Residual</label>
+																									<label>Valor residual</label>
 																									<input type="text" class="form-control" name="residualquatro" id="residualquatro" placeholder="">
 																								</div>
 																							</div>						
@@ -1348,13 +1348,13 @@ $pag = 'bairros';
 
 																										<div class="col-md-3">
 																							<div class="form-group">
-																								<label>Vida Útil (anos)</label>
+																								<label>Vida útil (anos)</label>
 																								<input type="text" class="form-control" name="anosquatro" id="anosquatro" placeholder="">
 																							</div>
 																						</div>
 																						<div class="col-md-3">
 																							<div class="form-group">
-																								<label>Depreciação Anual</label>
+																								<label>Depreciação anual</label>
 																								<input type="text" class="form-control" name="depreciacaoquatro" id="depreciacaoquatro" placeholder="">
 																							</div>
 																						</div>
@@ -1443,14 +1443,14 @@ $pag = 'bairros';
 
 																		<div class="col-md-3">
 																			<div class="form-group">
-																				<label>Valor Hora</label>
+																				<label>Valor hora</label>
 																				<input type="text" class="form-control" name="horaquatro" id="horaquatro" placeholder="">
 																			</div>
 																		</div>
 
 																		<div class="col-md-3">
 																			<div class="form-group">
-																				<label>Horas Trabalhadas</label>
+																				<label>Horas trabalhadas</label>
 																				<input type="text" class="form-control" name="trabalhoquatro" id="trabalhoquatro" placeholder="00.0">
 																			</div>
 																		</div>
@@ -1458,7 +1458,7 @@ $pag = 'bairros';
 
 																		<div class="col-md-3">
 																			<div class="form-group">
-																				<label>Valor Pago</label>
+																				<label>Valor pago</label>
 																				<input type="text" class="form-control" name="pagoquatro" id="pagoquatro" placeholder="">
 																			</div>
 																		</div>
@@ -1498,14 +1498,14 @@ $pag = 'bairros';
 
 													<div class="col-md-3">
 																<div class="form-group">
-																	<label>Quantidade Higienizada</label>
+																	<label>Quantidade da despolpa</label>
 																	<input type="text" class="form-control" name="resulquatro" id="resulquatro" placeholder="00.0">
 																</div>
 															</div>
 
 															<div class="col-md-3">						
 																<div class="form-group"> 
-																	<label>Unidade de Medida</label> 
+																	<label>Unidade de medida</label> 
 																	<select class="form-control" name="medidaquatro" id="medidaquatro" >
 																		<option value="Quilo">Kg</option>
 																		<option value="Litro">L</option>
@@ -1515,14 +1515,14 @@ $pag = 'bairros';
 
 																<div class="col-md-3">
 																<div class="form-group">
-																	<label>Perda Na Higienização</label>
+																	<label>Perda Na despolpa</label>
 																	<input type="text" class="form-control" name="perdaquatro" id="perdaquatro" placeholder="">
 																</div>
 															</div>
 
 															<div class="col-md-3">
 																<div class="form-group">
-																	<label>Percentual</label><!--perda/entrada da valor em %-->
+																	<label>Rendimento</label><!--perda/entrada da valor em %-->
 																	<input type="text" class="form-control" name="percequatro" id="percequatro" placeholder="">
 																</div>
 															</div>
@@ -1590,7 +1590,7 @@ $pag = 'bairros';
 
 															<div class="col-md-3">						
 																<div class="form-group"> 
-																	<label>Unidade de Medida</label> 
+																	<label>Unidade de medida</label> 
 																	<select class="form-control" name="uncinco" id="uncinco" >
 																		<option value="Quilo">Kg</option>
 																		<option value="Litro">L</option>
@@ -1608,7 +1608,7 @@ $pag = 'bairros';
 
 														<div class="col-md-3">
 															<div class="form-group"> 
-																<label>Nome da Máquina</label> 
+																<label>Nome da maquina</label> 
 																<input type="text" class="form-control" name="maqcinco" id="maqcinco" placeholder="" > 
 															</div>
 															</div>
@@ -1616,7 +1616,7 @@ $pag = 'bairros';
 
 														<div class="col-md-3">						
 															<div class="form-group"> 
-																<label>Fonte de Energia</label> 
+																<label>Fonte de energia</label> 
 																<select class="form-control" name="maqfontecinco" id="maqfontecinco" >
 																<option value="Motor Estacionário">Motor Estacionário</option>
 																<option value="Rede Elétrica">Rede Elétrica</option>
@@ -1627,7 +1627,7 @@ $pag = 'bairros';
 
 														<div class="col-md-3">						
 															<div class="form-group"> 
-																<label>Consumo De Enérgia</label> 
+																<label>Consumo de energia</label> 
 																<select class="form-control" name="maqconsumocinco" id="maqconsumocinco" >
 																	<option value="Diesel">Diesel</option>
 																	<option value="Gasolina">Gasolina</option>
@@ -1658,14 +1658,14 @@ $pag = 'bairros';
 
 												<div class="col-md-3">						
 															<div class="form-group"> 
-																<label>Nome de Ferramenta</label> 
+																<label>Nome de ferramenta</label> 
 																<input type="text" class="form-control" name="fercinco" id="fercinco" > 
 															</div>						
 														</div>	
 
 														<div class="col-md-3">						
 															<div class="form-group"> 
-																<label>Fonte de Energia</label> 
+																<label>Fonte de energia</label> 
 																<select class="form-control" name="ferfontecinco" id="ferfontecinco" >
 																<option value="Motor Estacionário">Motor Estacionário</option>
 																<option value="Rede Elétrica">Rede Elétrica</option>
@@ -1676,7 +1676,7 @@ $pag = 'bairros';
 
 														<div class="col-md-3">						
 															<div class="form-group"> 
-																<label>Consumo De Enérgia</label> 
+																<label>Consumo de energia</label> 
 																<select class="form-control" name="ferconsumocinco" id="ferconsumocinco" >
 																	<option value="Diesel">Diesel</option>
 																	<option value="Gasolina">Gasolina</option>
@@ -1699,14 +1699,14 @@ $pag = 'bairros';
 
 											<div class="row">
 											<hr>
-											<h4>depreciação</h4>
+											<h4>Maquinario/depreciação</h4>
 											<br>
 
 
 
 											<div class="col-md-3">						
 														<div class="form-group"> 
-															<label>Data De Aquisição</label> 
+															<label>Data de aquisição</label> 
 															<input type="date" class="form-control" name="data_aquicinco" id="data_aquicinco" value="<?php echo date('Y-m-d') ?>"> 
 														</div>						
 													</div>	
@@ -1715,7 +1715,7 @@ $pag = 'bairros';
 
 												<div class="col-md-3">
 													<div class="form-group">
-														<label>Valor Custo</label>
+														<label>Valor custo</label>
 														<input type="text" class="form-control" name="custocinco" id="custocinco" placeholder="">
 													</div>
 												</div>
@@ -1727,7 +1727,7 @@ $pag = 'bairros';
 
 													<div class="col-md-3">
 															<div class="form-group">
-																<label>Valor Residual</label>
+																<label>Valor residual</label>
 																<input type="text" class="form-control" name="residualcinco" id="residualcinco" placeholder="">
 															</div>
 														</div>						
@@ -1736,13 +1736,13 @@ $pag = 'bairros';
 
 																	<div class="col-md-3">
 														<div class="form-group">
-															<label>Vida Útil (anos)</label>
+															<label>Vida útil (anos)</label>
 															<input type="text" class="form-control" name="anoscinco" id="anoscinco" placeholder="">
 														</div>
 													</div>
 													<div class="col-md-3">
 														<div class="form-group">
-															<label>Depreciação Anual</label>
+															<label>Depreciação anual</label>
 															<input type="text" class="form-control" name="depreciacaocinco" id="depreciacaocinco" placeholder="">
 														</div>
 													</div>
@@ -1830,14 +1830,14 @@ $pag = 'bairros';
 
 												<div class="col-md-3">
 													<div class="form-group">
-														<label>Valor Hora</label>
+														<label>Valor hora</label>
 														<input type="text" class="form-control" name="horacinco" id="horacinco" placeholder="">
 													</div>
 												</div>
 
 												<div class="col-md-3">
 																	<div class="form-group">
-																		<label>Horas Trabalhadas</label>
+																		<label>Horas trabalhadas</label>
 																		<input type="text" class="form-control" name="trabalhocinco" id="trabalhocinco" placeholder="00.0">
 																	</div>
 																</div>
@@ -1845,7 +1845,7 @@ $pag = 'bairros';
 
 												<div class="col-md-3">
 													<div class="form-group">
-														<label>Valor Pago</label>
+														<label>Valor pago</label>
 														<input type="text" class="form-control" name="pagocinco" id="pagocinco" placeholder="">
 													</div>
 												</div>
@@ -1884,15 +1884,15 @@ $pag = 'bairros';
 
 										<div class="col-md-3">
 														<div class="form-group">
-															<label>Quantidade Higienizada</label>
+															<label>Quant. da prensagem</label>
 															<input type="text" class="form-control" name="resulcinco" id="resulcinco" placeholder="00.0">
 														</div>
 													</div>
 										
 													<div class="col-md-3">						
 														<div class="form-group"> 
-															<label>Unidade de Medida</label> 
-															<select class="form-control" name="medidacinco" id="medidacinco" required>
+															<label>Unidade de medida</label> 
+															<select class="form-control" name="medidacinco" id="medidacinco" >
 																<option value="Quilo">Kg</option>
 																<option value="Litro">L</option>
 															</select> 
@@ -1901,14 +1901,14 @@ $pag = 'bairros';
 
 														<div class="col-md-3">
 														<div class="form-group">
-															<label>Perda Na Higienização</label>
+															<label>Perda Na prensagem</label>
 															<input type="text" class="form-control" name="perdacinco" id="perdacinco" placeholder="">
 														</div>
 													</div>
 
 													<div class="col-md-3">
 														<div class="form-group">
-															<label>Percentual</label><!--perda/entrada da valor em %-->
+															<label>Rendimento</label><!--perda/entrada da valor em %-->
 															<input type="text" class="form-control" name="percecinco" id="percecinco" placeholder="">
 														</div>
 													</div>
@@ -1969,7 +1969,7 @@ $pag = 'bairros';
 
 											<div class="col-md-3">						
 											<div class="form-group"> 
-												<label>Unidade de Medida</label> 
+												<label>Unidade de medida</label> 
 												<select class="form-control" name="medidauma" id="medidauma" >
 													<option value="Quilo">Kg</option>
 													<option value="Litro">L</option>
@@ -1980,7 +1980,7 @@ $pag = 'bairros';
 
 											<div class="col-md-3">						
 												<div class="form-group"> 
-													<label>Data Da Embalagem</label> 
+													<label>Data da embalagem</label> 
 													<input type="date" class="form-control" name="data_emum" id="data_emum"> 
 												</div>						
 											</div>	
@@ -2014,8 +2014,8 @@ $pag = 'bairros';
 
 											<div class="col-md-3">						
 												<div class="form-group"> 
-													<label>Unidade de Medida</label> 
-													<select class="form-control" name="medidasegun" id="medidasegun" required>
+													<label>Unidade de medida</label> 
+													<select class="form-control" name="medidasegun" id="medidasegun" >
 														<option value="Quilo">Kg</option>
 														<option value="Litro">L</option>
 														<option value="Litro">UN</option>
@@ -2025,7 +2025,7 @@ $pag = 'bairros';
 
 											<div class="col-md-3">						
 												<div class="form-group"> 
-													<label>Data Da Embalagem</label> 
+													<label>Data da embalagem</label> 
 													<input type="date" class="form-control" name="data_emdois" id="data_emdois"> 
 												</div>						
 											</div>	
@@ -2065,7 +2065,7 @@ $pag = 'bairros';
 
 															<div class="col-md-3">						
 																<div class="form-group"> 
-																	<label>Unidade de Medida</label> 
+																	<label>Unidade de medida</label> 
 																	<select class="form-control" name="unseis" id="unseis" >
 																		<option value="Quilo">Kg</option>
 																		<option value="Litro">L</option>
@@ -2085,7 +2085,7 @@ $pag = 'bairros';
 
 															<div class="col-md-3">
 																<div class="form-group"> 
-																	<label>Nome da Máquina</label> 
+																	<label>Nome da maquina</label> 
 																	<input type="text" class="form-control" name="maqseis" id="maqseis" placeholder="" > 
 																</div>
 																</div>
@@ -2093,7 +2093,7 @@ $pag = 'bairros';
 
 															<div class="col-md-3">						
 																<div class="form-group"> 
-																	<label>Fonte de Energia</label> 
+																	<label>Fonte de energia</label> 
 																	<select class="form-control" name="maqfonteseis" id="maqfonteseis">
 																	<option value="Motor Estacionário">Motor Estacionário</option>
 																	<option value="Rede Elétrica">Rede Elétrica</option>
@@ -2104,13 +2104,13 @@ $pag = 'bairros';
 
 															<div class="col-md-3">						
 																<div class="form-group"> 
-																	<label>Consumo De Enérgia</label> 
+																	<label>Consumo de energia</label> 
 																	<select class="form-control" name="maqconsumoseis" id="maqconsumoseis">
 																		<option value="Diesel">Diesel</option>
 																		<option value="Gasolina">Gasolina</option>
 																		<option value="Energia Solar">Energia Solar</option>
 																		<option value="Energia Solar">kW</option>
-																		v
+																		
 																				
 																	</select> 
 																</div>						
@@ -2131,14 +2131,14 @@ $pag = 'bairros';
 
 															<div class="col-md-3">						
 																<div class="form-group"> 
-																	<label>Nome da Ferramenta</label> 
+																	<label>Nome da ferramenta</label> 
 																	<input type="text" class="form-control" name="ferseis" id="ferseis" > 
 																</div>						
 															</div>		
 
 															<div class="col-md-3">						
 																<div class="form-group"> 
-																	<label>Fonte de Energia</label> 
+																	<label>Fonte de energia</label> 
 																	<select class="form-control" name="ferfonteseis" id="ferfonteseis">
 																	<option value="Motor Estacionário">Motor Estacionário</option>
 																	<option value="Rede Elétrica">Rede Elétrica</option>
@@ -2149,7 +2149,7 @@ $pag = 'bairros';
 
 															<div class="col-md-3">						
 																<div class="form-group"> 
-																	<label>Consumo De Enérgia</label> 
+																	<label>Consumo De energia</label> 
 																	<select class="form-control" name="ferconsumoseis" id="ferconsumoseis">
 																		<option value="Diesel">Diesel</option>
 																		<option value="Gasolina">Gasolina</option>
@@ -2170,14 +2170,14 @@ $pag = 'bairros';
 
 															<div class="row">
 															<hr>
-															<h4>depreciação</h4>
+															<h4>Maquinario/depreciação</h4>
 															<br>
 
 
 
 															<div class="col-md-3">						
 															<div class="form-group"> 
-																<label>Data De Aquisição</label> 
+																<label>Data de aquisição</label> 
 																<input type="date" class="form-control" name="data_aquiseis" id="data_aquiseis" value="<?php echo date('Y-m-d') ?>"> 
 															</div>						
 															</div>	
@@ -2186,14 +2186,14 @@ $pag = 'bairros';
 
 															<div class="col-md-3">
 															<div class="form-group">
-															<label>Valor Custo</label>
+															<label>Valor custo</label>
 															<input type="text" class="form-control" name="custoseis" id="custoseis" placeholder="">
 															</div>
 															</div>
 
 															<div class="col-md-3">
 																<div class="form-group">
-																	<label>Valor Residual</label>
+																	<label>Valor residual</label>
 																	<input type="text" class="form-control" name="residualseis" id="residualseis" placeholder="">
 																</div>
 															</div>						
@@ -2202,13 +2202,13 @@ $pag = 'bairros';
 
 																		<div class="col-md-3">
 															<div class="form-group">
-																<label>Vida Útil (anos)</label>
+																<label>Vida útil (anos)</label>
 																<input type="text" class="form-control" name="anosseis" id="anosseis" placeholder="">
 															</div>
 															</div>
 															<div class="col-md-3">
 															<div class="form-group">
-																<label>Depreciação Anual</label>
+																<label>Depreciação anual</label>
 																<input type="text" class="form-control" name="depreciacaoseis" id="depreciacaoseis" placeholder="">
 															</div>
 															</div>
@@ -2295,14 +2295,14 @@ $pag = 'bairros';
 
 															<div class="col-md-3">
 															<div class="form-group">
-															<label>Valor Hora</label>
+															<label>Valor hora</label>
 															<input type="text" class="form-control" name="horaseis" id="horaseis" placeholder="">
 															</div>
 															</div>
 
 															<div class="col-md-3">
 																	<div class="form-group">
-																		<label>Horas Trabalhadas</label>
+																		<label>Horas trabalhadas</label>
 																		<input type="text" class="form-control" name="trabalhoseis" id="trabalhoseis" placeholder="00.0">
 																	</div>
 																</div>
@@ -2310,7 +2310,7 @@ $pag = 'bairros';
 
 															<div class="col-md-3">
 															<div class="form-group">
-															<label>Valor Pago</label>
+															<label>Valor pago</label>
 															<input type="text" class="form-control" name="pagoseis" id="pagoseis" placeholder="">
 															</div>
 															</div>
@@ -2350,14 +2350,14 @@ $pag = 'bairros';
 
 										<div class="col-md-3">
 														<div class="form-group">
-															<label>Quantidade Higienizada</label>
+															<label>Quantidade da filtragem</label>
 															<input type="text" class="form-control" name="resulseis" id="resulseis" placeholder="00.0">
 														</div>
 													</div>
 										
 													<div class="col-md-3">						
 														<div class="form-group"> 
-															<label>Unidade de Medida</label> 
+															<label>Unidade de medida</label> 
 															<select class="form-control" name="medidaseis" id="medidaseis" >
 																<option value="Quilo">Kg</option>
 																<option value="Litro">L</option>
@@ -2367,14 +2367,14 @@ $pag = 'bairros';
 
 														<div class="col-md-3">
 														<div class="form-group">
-															<label>Perda Na Higienização</label>
+															<label>Perda na filtragem</label>
 															<input type="text" class="form-control" name="perdaseis" id="perdaseis" placeholder="">
 														</div>
 													</div>
 
 													<div class="col-md-3">
 														<div class="form-group">
-															<label>Percentual</label><!--perda/entrada da valor em %-->
+															<label>Rendimento</label><!--perda/entrada da valor em %-->
 															<input type="text" class="form-control" name="perceseis" id="perceseis" placeholder="">
 														</div>
 													</div>
@@ -2438,7 +2438,7 @@ $pag = 'bairros';
 
 											<div class="col-md-3">						
 											<div class="form-group"> 
-												<label>Unidade de Medida</label> 
+												<label>Unidade de medida</label> 
 												<select class="form-control" name="medidaterc" id="medidaterc" >
 													<option value="Quilo">Kg</option>
 													<option value="Litro">L</option>
@@ -2449,7 +2449,7 @@ $pag = 'bairros';
 
 											<div class="col-md-3">						
 												<div class="form-group"> 
-													<label>Data da Embalagem</label> 
+													<label>Data da embalagem</label> 
 													<input type="date" class="form-control" name="data_emtres" id="data_emtres"> 
 												</div>						
 											</div>	
@@ -2463,7 +2463,7 @@ $pag = 'bairros';
 										<div class="row">
 										<div class="col-md-3">
 															<div class="form-group">
-																<label>Quantidade Armazenada</label>
+																<label>Quantidade armazenada</label>
 																<input type="text" class="form-control" name="armazquatro" id="armazquatro" placeholder="00.0">
 															</div>
 													</div>	
@@ -2483,7 +2483,7 @@ $pag = 'bairros';
 
 													<div class="col-md-3">
 															<div class="form-group">
-																<label>Forma Armazenamento</label>
+																<label>Forma armazenamento</label>
 																<input type="text" class="form-control" name="formaquatro" id="formaquatro" placeholder="saco,balde..">
 															</div>
 													</div>	
@@ -2517,7 +2517,7 @@ $pag = 'bairros';
 
 															<div class="col-md-3">						
 																<div class="form-group"> 
-																	<label>Unidade de Medida</label> 
+																	<label>Unidade de medida</label> 
 																	<select class="form-control" name="unsete" id="unsete" >
 																		<option value="Quilo">Kg</option>
 																		<option value="Litro">L</option>
@@ -2529,7 +2529,7 @@ $pag = 'bairros';
 
 
 											<hr>
-											<h4>Máquina</h4>
+											<h4>Maquina</h4>
 											<br>
 											<div class="row">
 
@@ -2537,7 +2537,7 @@ $pag = 'bairros';
 
 												<div class="col-md-3">
 													<div class="form-group"> 
-														<label>Nome da Máquina</label> 
+														<label>Nome da maquina</label> 
 														<input type="text" class="form-control" name="maqsete" id="maqsete" placeholder="" > 
 													</div>
 													</div>
@@ -2545,8 +2545,8 @@ $pag = 'bairros';
 
 												<div class="col-md-3">						
 													<div class="form-group"> 
-														<label>Fonte de Energia</label> 
-														<select class="form-control" name="maqfontesete" id="maqfontesete" required>
+														<label>Fonte de energia</label> 
+														<select class="form-control" name="maqfontesete" id="maqfontesete" >
 														<option value="Motor Estacionário">Motor Estacionário</option>
 														<option value="Rede Elétrica">Rede Elétrica</option>
 															
@@ -2556,8 +2556,8 @@ $pag = 'bairros';
 
 												<div class="col-md-3">						
 													<div class="form-group"> 
-														<label>Consumo De Enérgia</label> 
-														<select class="form-control" name="maqconsumosete" id="maqconsumosete" required>
+														<label>Consumo De energia</label> 
+														<select class="form-control" name="maqconsumosete" id="maqconsumosete" >
 															<option value="Diesel">Diesel</option>
 															<option value="Gasolina">Gasolina</option>
 															<option value="Energia Solar">Energia Solar</option>
@@ -2582,14 +2582,14 @@ $pag = 'bairros';
 
 												<div class="col-md-3">						
 													<div class="form-group"> 
-														<label>Nome da Ferramenta</label> 
+														<label>Nome da ferramenta</label> 
 														<input type="text" class="form-control" name="fersete" id="fersete" > 
 													</div>						
 												</div>	
 
 												<div class="col-md-3">						
 													<div class="form-group"> 
-														<label>Fonte de Energia</label> 
+														<label>Fonte de energia</label> 
 														<select class="form-control" name="ferfontesete" id="ferfontesete" >
 														<option value="Motor Estacionário">Motor Estacionário</option>
 														<option value="Rede Elétrica">Rede Elétrica</option>
@@ -2600,7 +2600,7 @@ $pag = 'bairros';
 
 												<div class="col-md-3">						
 													<div class="form-group"> 
-														<label>Consumo De Enérgia</label> 
+														<label>Consumo de energia</label> 
 														<select class="form-control" name="ferconsumosete" id="ferconsumosete" >
 															<option value="Diesel">Diesel</option>
 															<option value="Gasolina">Gasolina</option>
@@ -2625,13 +2625,13 @@ $pag = 'bairros';
 
 												<div class="row">
 												<hr>
-												<h4>depreciação</h4>
+												<h4>Maquinario/depreciação</h4>
 												<br>
 
 
 												<div class="col-md-3">						
 														<div class="form-group"> 
-															<label>Data De Aquisição</label> 
+															<label>Data de aquisição</label> 
 															<input type="date" class="form-control" name="data_aquisete" id="data_aquisete"> 
 														</div>						
 													</div>	
@@ -2640,14 +2640,14 @@ $pag = 'bairros';
 
 												<div class="col-md-3">
 													<div class="form-group">
-														<label>Valor Custo</label>
+														<label>Valor custo</label>
 														<input type="text" class="form-control" name="custosete" id="custosete" placeholder="">
 													</div>
 												</div>
 
 												<div class="col-md-3">
 														<div class="form-group">
-															<label>Valor Residual</label>
+															<label>Valor residual</label>
 															<input type="text" class="form-control" name="residualsete" id="residualsete" placeholder="">
 														</div>
 													</div>						
@@ -2656,13 +2656,13 @@ $pag = 'bairros';
 
 																<div class="col-md-3">
 													<div class="form-group">
-														<label>Vida Útil (anos)</label>
+														<label>Vida útil (anos)</label>
 														<input type="text" class="form-control" name="anossete" id="anossete" placeholder="">
 													</div>
 												</div>
 												<div class="col-md-3">
 													<div class="form-group">
-														<label>Depreciação Anual</label>
+														<label>Depreciação anual</label>
 														<input type="text" class="form-control" name="depreciacaosete" id="depreciacaosete" placeholder="">
 													</div>
 												</div>
@@ -2748,14 +2748,14 @@ $pag = 'bairros';
 
 																<div class="col-md-3">
 																	<div class="form-group">
-																		<label>Valor Hora</label>
+																		<label>Valor hora</label>
 																		<input type="text" class="form-control" name="horasete" id="horasete" placeholder="">
 																	</div>
 																</div>
 
 																<div class="col-md-3">
 																	<div class="form-group">
-																		<label>Horas Trabalhadas</label>
+																		<label>Horas trabalhadas</label>
 																		<input type="text" class="form-control" name="trabalhosete" id="trabalhosete" placeholder="">
 																	</div>
 																</div>
@@ -2763,7 +2763,7 @@ $pag = 'bairros';
 
 																<div class="col-md-3">
 																	<div class="form-group">
-																		<label>Valor Pago</label>
+																		<label>Valor pago</label>
 																		<input type="text" class="form-control" name="pagosete" id="pagosete" placeholder="">
 																	</div>
 																</div>
@@ -2802,7 +2802,7 @@ $pag = 'bairros';
 
 										<div class="col-md-3">
 														<div class="form-group">
-															<label>Quantidade Higienizada</label>
+															<label>Quantidade destilada</label>
 															<input type="text" class="form-control" name="resulsete" id="resulsete" placeholder="">
 														</div>
 													</div>
@@ -2810,7 +2810,7 @@ $pag = 'bairros';
 												
 													<div class="col-md-3">						
 														<div class="form-group"> 
-															<label>Unidade de Medida</label> 
+															<label>Unidade de medida</label> 
 															<select class="form-control" name="medidasete" id="medidasete" >
 																<option value="Quilo">Kg</option>
 																<option value="Litro">L</option>
@@ -2819,14 +2819,14 @@ $pag = 'bairros';
 														</div>
 														<div class="col-md-3">
 														<div class="form-group">
-															<label>Perda Na Higienização</label>
+															<label>Perda na destilação</label>
 															<input type="text" class="form-control" name="perdasete" id="perdasete" placeholder="">
 														</div>
 													</div>
 
 												<div class="col-md-3">
 														<div class="form-group">
-															<label>Percentual</label><!--perda/entrada da valor em %-->
+															<label>Rendimento</label><!--perda/entrada da valor em %-->
 															<input type="text" class="form-control" name="percesete" id="percesete" placeholder="">
 														</div>
 													</div>
@@ -2890,8 +2890,8 @@ $pag = 'bairros';
 
 											<div class="col-md-3">						
 										<div class="form-group"> 
-											<label>Unidade de Medida</label> 
-											<select class="form-control" name="umed" id="umed" required>
+											<label>Unidade de medida</label> 
+											<select class="form-control" name="umed" id="umed">
 												<option value="Quilo">Kg</option>
 												<option value="Litro">L</option>
 											</select> 
@@ -2916,7 +2916,7 @@ $pag = 'bairros';
 
 							<div class="tab-pane fade" id="resultados" role="tabpanel" aria-labelledby="resultados-tab"><!--fim começo resultado-->
 							<br>
-													<h4>resultados</h4>
+													<h4>Resultados</h4>
 									<div class="row">
 													<div class="col-md-3">
 														<div class="form-group">
@@ -2945,7 +2945,7 @@ $pag = 'bairros';
 
 											<div class="col-md-3">
 												<div class="form-group">
-													<label>depreciação total</label>
+													<label>Depreciação total</label>
 													<input type="text" class="form-control" name="totaldepre" id="totaldepre" placeholder="">
 												</div>
 											</div>
@@ -2982,7 +2982,7 @@ $pag = 'bairros';
 
 											<div class="col-md-3">
 												<div class="form-group">
-													<label>redimento produtivo</label>
+													<label>Redimento produtivo</label>
 													<input type="text" class="form-control" name="totalrend" id="totalrend" placeholder="">
 												</div>
 											</div>
@@ -3032,7 +3032,7 @@ quaInput.addEventListener("change", calcularPorcentagem);
 									<div class="row">
 										<div class="col-md-3">
 												<div class="form-group">
-													<label>custo total de mão de obra</label>
+													<label>Custo total de mão de obra</label>
 													<input type="text" class="form-control" name="totalobra" id="totalobra" placeholder="">
 												</div>
 											</div>
@@ -3092,7 +3092,7 @@ quaInput.addEventListener("change", calcularPorcentagem);
 
 											<div class="col-md-3">
 												<div class="form-group">
-													<label>custo total</label>
+													<label>Custo total</label>
 													<input type="text" class="form-control" name="totalcusto" id="totalcusto" placeholder="">
 												</div>
 											</div>
@@ -3132,7 +3132,7 @@ document.addEventListener('change', function () {
 
 											<div class="col-md-3">
 												<div class="form-group">
-													<label>custo unitario</label>
+													<label>custo unitário</label>
 													<input type="text" class="form-control" name="totalcustodois" id="totalcustodois" placeholder="">
 												</div>
 											</div>
@@ -3418,10 +3418,6 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Maquinário/depreciação </b></span><br>
-						<div class="col-md-6">							
-							<span><b>Tipo de Máquina: </b></span>
-							<span id="maq_mostrar"></span>							
-						</div>
 
 						<div class="col-md-6">							
 							<span><b>Data de Aquisição: </b></span>
@@ -3471,6 +3467,1019 @@ document.addEventListener('change', function () {
 						</div>
 						
 					</div>	
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">	
+					<div class="col-md-6">							
+							<span><b>Valor total da depreciação: </b></span>
+							<span id="vddois_mostrar"></span>
+						</div>
+						</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Mão de obra </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Custo de Mão de Obra: </b></span>
+							<span id="obradois_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor hora: </b></span>
+							<span id="horadois_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Horas Trabalhadas: </b></span>
+							<span id="trabalho_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor pago: </b></span>
+							<span id="pagodois_mostrar"></span>
+						</div>
+
+						<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Resultado </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Quantidade Higienizada: </b></span>
+							<span id="resuldois_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Unidade de Medida: </b></span>
+							<span id="medidadois_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Perda Na Higienização: </b></span>
+							<span id="perdadois_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Rendimento: </b></span>
+							<span id="percedois_mostrar"></span>
+						</div>
+
+
+						<!--Secagem e Refrigeração//-->
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Secagem e Refrigeração </b></span><br></div>
+  					
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Entrada </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Quantidade da entrada: </b></span>
+							<span id="entratres_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Unidade de Medida: </b></span>
+							<span id="untres_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Máquina </b></span><br>
+						<div class="col-md-4">							
+							<span><b>Nome da Máquina: </b></span>
+							<span id="maqtres_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>Fonte de Energia: </b></span>
+							<span id="maqfontetres_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>Consumo De Enérgia: </b></span>
+							<span id="maqconsumotres_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Ferramenta </b></span><br>
+						<div class="col-md-4">							
+							<span><b>Nome de Ferramenta: </b></span>
+							<span id="fertres_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>Fonte de Energia: </b></span>
+							<span id="ferfontetres_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>Consumo De Enérgia: </b></span>
+							<span id="ferconsumotres_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Maquinário/depreciação </b></span><br>
+
+						<div class="col-md-6">							
+							<span><b>Data de Aquisição: </b></span>
+							<span id="data_aquitres_mostrar"></span>
+						</div>
+		
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					
+						<div class="col-md-6">							
+							<span><b>Valor de custo ($:) </b></span>
+							<span id="custotres_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor residual ($): </b></span>
+							<span id="residualtres_mostrar"></span>							
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						
+						<div class="col-md-6">							
+							<span><b>Vida útil (em anos): </b></span>
+							<span id="anostres_mostrar"></span>							
+						</div>
+
+						<div class="col-md-6">							
+							<span><b>Depreciação Anual ($): </b></span>
+							<span id="depreciacaotres_mostrar"></span>							
+						</div>	
+
+						
+					</div>	
+					
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						
+						<div class="col-md-6">							
+							<span><b>Depreciação por dia: </b></span>
+							<span id="diatres_mostrar"></span>
+						</div>
+						<div class="col-md-6">							
+							<span><b>Dias utilizados: </b></span>
+							<span id="utiltres_mostrar"></span>
+						</div>
+						
+					</div>	
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">	
+					<div class="col-md-6">							
+							<span><b>Valor total da depreciação: </b></span>
+							<span id="vdtres_mostrar"></span>
+						</div>
+						</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Mão de obra </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Custo de Mão de Obra: </b></span>
+							<span id="obratres_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor hora: </b></span>
+							<span id="horatres_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Horas Trabalhadas: </b></span>
+							<span id="trabalhotres_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor pago: </b></span>
+							<span id="pagotres_mostrar"></span>
+						</div>
+
+						<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Resultado </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Quantidade Higienizada: </b></span>
+							<span id="resultres_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Unidade de Medida: </b></span>
+							<span id="medidatres_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Perda Na Higienização: </b></span>
+							<span id="perdatres_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Rendimento: </b></span>
+							<span id="percetres_mostrar"></span>
+						</div>
+
+
+						<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Refrigeração </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Data Do armazenamento: </b></span>
+							<span id="data_arm_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Quantidade Armazenada: </b></span>
+							<span id="armazum_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Unidade de Medida: </b></span>
+							<span id="medum_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Forma Armazenamento: </b></span>
+							<span id="formaum_mostrar"></span>
+						</div>
+
+						<!--Despolpa//-->
+
+						<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Despolpa </b></span><br></div>
+  					
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Entrada </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Quantidade da entrada: </b></span>
+							<span id="entraquatro_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Unidade de Medida: </b></span>
+							<span id="unquatro_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Máquina </b></span><br>
+						<div class="col-md-4">							
+							<span><b>Nome da Máquina: </b></span>
+							<span id="maqquatro_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>Fonte de Energia: </b></span>
+							<span id="maqfontequatro_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>Consumo De Enérgia: </b></span>
+							<span id="maqconsumoquatro_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Ferramenta </b></span><br>
+						<div class="col-md-4">							
+							<span><b>Nome de Ferramenta: </b></span>
+							<span id="ferquatro_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>Fonte de Energia: </b></span>
+							<span id="ferfontequatro_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>Consumo De Enérgia: </b></span>
+							<span id="ferconsumoquatro_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Maquinário/depreciação </b></span><br>
+
+						<div class="col-md-6">							
+							<span><b>Data de Aquisição: </b></span>
+							<span id="data_aquiquatro_mostrar"></span>
+						</div>
+		
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					
+						<div class="col-md-6">							
+							<span><b>Valor de custo ($:) </b></span>
+							<span id="custoquatro_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor residual ($): </b></span>
+							<span id="residualquatro_mostrar"></span>							
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						
+						<div class="col-md-6">							
+							<span><b>Vida útil (em anos): </b></span>
+							<span id="anosquatro_mostrar"></span>							
+						</div>
+
+						<div class="col-md-6">							
+							<span><b>Depreciação Anual ($): </b></span>
+							<span id="depreciacaoquatro_mostrar"></span>							
+						</div>	
+
+						
+					</div>	
+					
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						
+						<div class="col-md-6">							
+							<span><b>Depreciação por dia: </b></span>
+							<span id="diaquatro_mostrar"></span>
+						</div>
+						<div class="col-md-6">							
+							<span><b>Dias utilizados: </b></span>
+							<span id="utilquatro_mostrar"></span>
+						</div>
+						
+					</div>	
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">	
+					<div class="col-md-6">							
+							<span><b>Valor total da depreciação: </b></span>
+							<span id="vdquatro_mostrar"></span>
+						</div>
+						</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Mão de obra </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Custo de Mão de Obra: </b></span>
+							<span id="obraquatro_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor hora: </b></span>
+							<span id="horaquatro_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Horas Trabalhadas: </b></span>
+							<span id="trabalhoquatro_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor pago: </b></span>
+							<span id="pagoquatro_mostrar"></span>
+						</div>
+
+						<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Resultado </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Quantidade Higienizada: </b></span>
+							<span id="resulquatro_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Unidade de Medida: </b></span>
+							<span id="medidaquatro_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Perda Na Higienização: </b></span>
+							<span id="perdaquatro_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Rendimento: </b></span>
+							<span id="percequatro_mostrar"></span>
+						</div>
+
+
+  						<!--Prensagem//-->
+
+						  <div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Prensagem </b></span><br></div>
+  					
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Entrada </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Quantidade da entrada: </b></span>
+							<span id="entracinco_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Unidade de Medida: </b></span>
+							<span id="uncinco_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Máquina </b></span><br>
+						<div class="col-md-4">							
+							<span><b>Nome da Máquina: </b></span>
+							<span id="maqcinco_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>Fonte de Energia: </b></span>
+							<span id="maqfontecinco_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>Consumo De Enérgia: </b></span>
+							<span id="maqconsumocinco_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Ferramenta </b></span><br>
+						<div class="col-md-4">							
+							<span><b>Nome de Ferramenta: </b></span>
+							<span id="ferquatro_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>Fonte de Energia: </b></span>
+							<span id="fercinco_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>Consumo De Enérgia: </b></span>
+							<span id="ferconsumocinco_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Maquinário/depreciação </b></span><br>
+
+						<div class="col-md-6">							
+							<span><b>Data de Aquisição: </b></span>
+							<span id="data_aquicinco_mostrar"></span>
+						</div>
+		
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					
+						<div class="col-md-6">							
+							<span><b>Valor de custo ($:) </b></span>
+							<span id="custocinco_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor residual ($): </b></span>
+							<span id="residualcinco_mostrar"></span>							
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						
+						<div class="col-md-6">							
+							<span><b>Vida útil (em anos): </b></span>
+							<span id="anoscinco_mostrar"></span>							
+						</div>
+
+						<div class="col-md-6">							
+							<span><b>Depreciação Anual ($): </b></span>
+							<span id="depreciacaocinco_mostrar"></span>							
+						</div>	
+
+						
+					</div>	
+					
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						
+						<div class="col-md-6">							
+							<span><b>Depreciação por dia: </b></span>
+							<span id="diacinco_mostrar"></span>
+						</div>
+						<div class="col-md-6">							
+							<span><b>Dias utilizados: </b></span>
+							<span id="utilcinco_mostrar"></span>
+						</div>
+						
+					</div>	
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">	
+					<div class="col-md-6">							
+							<span><b>Valor total da depreciação: </b></span>
+							<span id="vdcinco_mostrar"></span>
+						</div>
+						</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Mão de obra </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Custo de Mão de Obra: </b></span>
+							<span id="obracinco_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor hora: </b></span>
+							<span id="horacinco_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Horas Trabalhadas: </b></span>
+							<span id="trabalhocinco_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor pago: </b></span>
+							<span id="pagocinco_mostrar"></span>
+						</div>
+
+						<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Resultado </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Quantidade Higienizada: </b></span>
+							<span id="resulcinco_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Unidade de Medida: </b></span>
+							<span id="medidacinco_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Perda Na Higienização: </b></span>
+							<span id="perdacinco_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Rendimento: </b></span>
+							<span id="percecinco_mostrar"></span>
+						</div>
+					</div>
+
+						<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>armazenamento de Insumos </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Produto: </b></span>
+							<span id="produtoum_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Insumos: </b></span>
+							<span id="insumoum_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Unidade de Medida: </b></span>
+							<span id="medidauma_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Data Da Embalagem: </b></span>
+							<span id="data_emum_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Produto: </b></span>
+							<span id="produtodois_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Insumos: </b></span>
+							<span id="insumodois_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Unidade de Medida: </b></span>
+							<span id="medidasegun_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Data Da Embalagem: </b></span>
+							<span id="data_emdois_mostrar"></span>
+						</div>
+					</div><br>
+
+					
+
+  						<!--Filtragem/Embalagem/Armazenamento//-->
+
+						  <div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Filtragem/Embalagem/Armazenamento </b></span><br></div>
+  					
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Entrada </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Quantidade da entrada: </b></span>
+							<span id="entraseis_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Unidade de Medida: </b></span>
+							<span id="unseis_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Máquina </b></span><br>
+						<div class="col-md-4">							
+							<span><b>Nome da Máquina: </b></span>
+							<span id="maqseis_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>Fonte de Energia: </b></span>
+							<span id="maqfonteseis_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>Consumo De Enérgia: </b></span>
+							<span id="maqconsumoseis_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Ferramenta </b></span><br>
+						<div class="col-md-4">							
+							<span><b>Nome de Ferramenta: </b></span>
+							<span id="ferseis_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>Fonte de Energia: </b></span>
+							<span id="ferfonteseis_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>Consumo De Enérgia: </b></span>
+							<span id="ferconsumoseis_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Maquinário/depreciação </b></span><br>
+
+						<div class="col-md-6">							
+							<span><b>Data de Aquisição: </b></span>
+							<span id="data_aquiseis_mostrar"></span>
+						</div>
+		
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					
+						<div class="col-md-6">							
+							<span><b>Valor de custo ($:) </b></span>
+							<span id="custoseis_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor residual ($): </b></span>
+							<span id="residualseis_mostrar"></span>							
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						
+						<div class="col-md-6">							
+							<span><b>Vida útil (em anos): </b></span>
+							<span id="anosseis_mostrar"></span>							
+						</div>
+
+						<div class="col-md-6">							
+							<span><b>Depreciação Anual ($): </b></span>
+							<span id="depreciacaoseis_mostrar"></span>							
+						</div>	
+
+						
+					</div>	
+					
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						
+						<div class="col-md-6">							
+							<span><b>Depreciação por dia: </b></span>
+							<span id="diaseis_mostrar"></span>
+						</div>
+						<div class="col-md-6">							
+							<span><b>Dias utilizados: </b></span>
+							<span id="utilseis_mostrar"></span>
+						</div>
+						
+					</div>	
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">	
+					<div class="col-md-6">							
+							<span><b>Valor total da depreciação: </b></span>
+							<span id="vdseis_mostrar"></span>
+						</div>
+						</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Mão de obra </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Custo de Mão de Obra: </b></span>
+							<span id="obraseis_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor hora: </b></span>
+							<span id="horaseis_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Horas Trabalhadas: </b></span>
+							<span id="trabalhoseis_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor pago: </b></span>
+							<span id="pagoseis_mostrar"></span>
+						</div>
+
+						<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Resultado </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Quantidade Higienizada: </b></span>
+							<span id="resulseis_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Unidade de Medida: </b></span>
+							<span id="medidaseis_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Perda Na Higienização: </b></span>
+							<span id="perdaseis_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Rendimento: </b></span>
+							<span id="perceseis_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Embalagem/Envase </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Produto: </b></span>
+							<span id="produtotres_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Quantidade: </b></span>
+							<span id="armaztres_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Unidade de Medida: </b></span>
+							<span id="medidatres_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Data da Embalagem: </b></span>
+							<span id="data_emtres_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Armazenamento </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Quantidade Armazenada: </b></span>
+							<span id="armazquatro_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Unidade de medida: </b></span>
+							<span id="medidaquart_mostrar"></span>
+						</div>
+
+						<div class="col-md-6">							
+							<span><b>Forma Armazenamento: </b></span>
+							<span id="formaquatro_mostrar"></span>
+						</div>
+					</div><br>
+
+					
+  						<!--Destilação//-->
+
+						  <div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Destilação </b></span><br></div>
+  					
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Entrada </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Quantidade da entrada: </b></span>
+							<span id="entrasete_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Unidade de Medida: </b></span>
+							<span id="unsete_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Máquina </b></span><br>
+						<div class="col-md-4">							
+							<span><b>Nome da Máquina: </b></span>
+							<span id="maqsete_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>Fonte de Energia: </b></span>
+							<span id="maqfontesete_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>Consumo De Enérgia: </b></span>
+							<span id="maqconsumosete_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Ferramenta </b></span><br>
+						<div class="col-md-4">							
+							<span><b>Nome de Ferramenta: </b></span>
+							<span id="fersete_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>Fonte de Energia: </b></span>
+							<span id="ferfontesete_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>Consumo De Enérgia: </b></span>
+							<span id="ferconsumosete_mostrar"></span>
+						</div>
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Maquinário/depreciação </b></span><br>
+
+						<div class="col-md-6">							
+							<span><b>Data de Aquisição: </b></span>
+							<span id="data_aquisete_mostrar"></span>
+						</div>
+		
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					
+						<div class="col-md-6">							
+							<span><b>Valor de custo ($:) </b></span>
+							<span id="custosete_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor residual ($): </b></span>
+							<span id="residualsete_mostrar"></span>							
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						
+						<div class="col-md-6">							
+							<span><b>Vida útil (em anos): </b></span>
+							<span id="anossete_mostrar"></span>							
+						</div>
+
+						<div class="col-md-6">							
+							<span><b>Depreciação Anual ($): </b></span>
+							<span id="depreciacaosete_mostrar"></span>							
+						</div>	
+
+						
+					</div>	
+					
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						
+						<div class="col-md-6">							
+							<span><b>Depreciação por dia: </b></span>
+							<span id="diasete_mostrar"></span>
+						</div>
+						<div class="col-md-6">							
+							<span><b>Dias utilizados: </b></span>
+							<span id="utilsete_mostrar"></span>
+						</div>
+						
+					</div>	
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">	
+					<div class="col-md-6">							
+							<span><b>Valor total da depreciação: </b></span>
+							<span id="vdsete_mostrar"></span>
+						</div>
+						</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Mão de obra </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Custo de Mão de Obra: </b></span>
+							<span id="obrasete_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor hora: </b></span>
+							<span id="horasete_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Horas Trabalhadas: </b></span>
+							<span id="trabalhosete_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Valor pago: </b></span>
+							<span id="pagosete_mostrar"></span>
+						</div>
+
+						<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Resultado </b></span><br>
+						<div class="col-md-6">							
+							<span><b>Quantidade Higienizada: </b></span>
+							<span id="resulsete_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Unidade de Medida: </b></span>
+							<span id="medidasete_mostrar"></span>
+						</div>
+					</div>
+
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+						<div class="col-md-6">							
+							<span><b>Perda Na Higienização: </b></span>
+							<span id="perdasete_mostrar"></span>							
+						</div>
+						<div class="col-md-6">							
+							<span><b>Rendimento: </b></span>
+							<span id="percesete_mostrar"></span>
+						</div>
+					</div><br>
+
+  						<!--produto final-->
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Produto final </b></span><br>
+						<div class="col-md-4">							
+							<span><b>Nome produto: </b></span>
+							<span id="np_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>Quantidade: </b></span>
+							<span id="qua_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>Unidade de Medida: </b></span>
+							<span id="umed_mostrar"></span>							
+						</div>
+						
+					</div>
+
+					<!--resultados-->
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>resultados </b></span><br>
+						<div class="col-md-4">							
+							<span><b>custo materia prima: </b></span>
+							<span id="totalmateria_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>depreciação total: </b></span>
+							<span id="totaldepre_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>redimento produtivo: </b></span>
+							<span id="totalrend_mostrar"></span>							
+						</div>
+						
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+		
+						<div class="col-md-4">							
+							<span><b>custo total de mão de obra: </b></span>
+							<span id="totalobra_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>Resultado da produção: </b></span>
+							<span id="totalproducao_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>custo total: </b></span>
+							<span id="totalcusto_mostrar"></span>							
+						</div>
+						
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+		
+						<div class="col-md-4">							
+							<span><b>custo unitario: </b></span>
+							<span id="totalcustodois_mostrar"></span>							
+						</div>
+					</div>
+
+					
+		
+						
+
+
+						
+
 
 
 

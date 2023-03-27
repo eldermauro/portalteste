@@ -21,8 +21,8 @@ if($total_reg > 0){
 	<thead> 
 	<tr> 
 	<th>Tipo</th>
-	<th class="esc">Tipo de Maquina</th> 
-	<th class="esc">Tipo de Ferramenta</th> 
+	<th class="esc">Tipo de máquina</th> 
+	<th class="esc">Tipo de ferramenta</th> 
 	<th class="esc">Valor de custo ($)</th>
 	<th>Ações</th>
 	</tr> 

@@ -159,7 +159,7 @@ $perdaseis = $_POST['perdaseis'];
 $perceseis = $_POST['perceseis'];
 $produtotres = $_POST['produtotres'];
 $armaztres = $_POST['armaztres'];
-$medidatres = $_POST['medidatres'];
+$medidaterc = $_POST['medidaterc'];
 $data_emtres = $_POST['data_emtres'];
 $armazquatro = $_POST['armazquatro'];
 $medidaquart = $_POST['medidaquart'];
@@ -338,7 +338,7 @@ perdaseis = :perdaseis,
 perceseis = :perceseis,
 produtotres = :produtotres,
 armaztres = :armaztres,
-medidatres = :medidatres,
+medidaterc = :medidaterc,
 data_emtres = :data_emtres,
 armazquatro = :armazquatro,
 medidaquart = :medidaquart,
@@ -498,7 +498,7 @@ perdaseis = :perdaseis,
 perceseis = :perceseis,
 produtotres = :produtotres,
 armaztres = :armaztres,
-medidatres = :medidatres,
+medidaterc = :medidaterc,
 data_emtres = :data_emtres,
 armazquatro = :armazquatro,
 medidaquart = :medidaquart,
@@ -550,7 +550,6 @@ $query->bindValue(":obra", "$obra");
 $query->bindValue(":hora", "$hora");
 $query->bindValue(":trabalho", "$trabalho");
 $query->bindValue(":pago", "$pago");
-
 $query->bindValue(":entradois", "$entradois");
 $query->bindValue(":undois", "$undois");
 $query->bindValue(":maqdois", "$maqdois");
@@ -685,7 +684,7 @@ $query->bindValue(":perdaseis", "$perdaseis");
 $query->bindValue(":perceseis", "$perceseis");
 $query->bindValue(":produtotres", "$produtotres");
 $query->bindValue(":armaztres", "$armaztres");
-$query->bindValue(":medidatres", "$medidatres");
+$query->bindValue(":medidaterc", "$medidaterc");
 $query->bindValue(":data_emtres", "$data_emtres");
 $query->bindValue(":armazquatro", "$armazquatro");
 $query->bindValue(":medidaquart", "$medidaquart");

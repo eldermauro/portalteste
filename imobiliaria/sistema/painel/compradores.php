@@ -19,7 +19,7 @@ $pag = 'compradores';  //clientes
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h4 class="modal-title" id="">Cadastros - Inserir Cliente </h4>
+				<h4 class="modal-title" id="">Cadastros - Inserir cliente </h4>
 				<button id="btn-fechar" type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -20px">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -30,7 +30,7 @@ $pag = 'compradores';  //clientes
 					<div class="row">
 						<div class="col-md-6">						
 							<div class="form-group"> 
-								<label>Nome Completo</label> 
+								<label>Nome completo</label> 
 								<input type="text" class="form-control" name="nome" id="nome" required> 
 							</div>						
 						</div>
@@ -68,7 +68,7 @@ $pag = 'compradores';  //clientes
 
 					<div class="col-md-3">						
 							<div class="form-group"> 
-								<label>Inscrição Estadual</label> 
+								<label>Inscrição estadual</label> 
 								<input type="text" class="form-control" name="inscricao" id="inscricao" required> 
 							</div>						
 						</div>
@@ -107,7 +107,7 @@ $pag = 'compradores';  //clientes
 
 						<div class="col-md-2">
 						<div class="form-group"> 
-							<label>Responsavel</small></label> 
+							<label>Responsável</small></label> 
 							<select class="form-control sel2" name="corretor" id="corretor" required style="width:100%;"> 
 									<?php 
 									if($nivel_usu == 'Corretor'){
@@ -187,7 +187,7 @@ $pag = 'compradores';  //clientes
 
 					<div class="col-md-2">
 						<div class="form-group"> 
-							<label>Numero</label> 
+							<label>Número</label> 
 							<input type="text" class="form-control" name="numero" id="numero" placeholder=""> 
 						</div>
 					</div>	
@@ -234,7 +234,7 @@ $pag = 'compradores';  //clientes
 
 					<div class="col-md-2">
 						<div class="form-group"> 
-							<label>Numero</label> 
+							<label>Número</label> 
 							<input type="text" class="form-control" name="numeroj" id="numeroj" placeholder=""> 
 						</div>
 					</div>	
@@ -248,7 +248,7 @@ $pag = 'compradores';  //clientes
 					<div class="row">
 						<div class="col-md-12">
 							<div class="form-group"> 
-								<label>OBS <small>(Max 500 Caracteres)</small></label> 
+								<label>Obs.: <small>(Max 500 Caracteres)</small></label> 
 								<textarea maxlength="500" type="text" class="form-control" name="obs" id="obs"> </textarea>
 							</div>
 						</div>	
@@ -324,7 +324,7 @@ $pag = 'compradores';  //clientes
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h4 class="modal-title" id=""><span id="nome_mostrar"> </span> <small><span class="ml-4">(Pessoa: <span id="pessoa_mostrar"> </span>) </span> </small>-Cliente</h4>
+				<h4 class="modal-title" id="">Cliente - <span id="nome_mostrar"> </span> <small><span class="ml-4">(Pessoa: <span id="pessoa_mostrar"> </span>) </span> </small></h4>
 				<button id="btn-fechar-excluir" type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -20px">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -349,7 +349,7 @@ $pag = 'compradores';  //clientes
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 
 					<div class="col-md-6">							
-							<span><b>Inscrição Estadual: </b></span>
+							<span><b>Inscrição estadual: </b></span>
 							<span id="inscricao_mostrar"></span>							
 						</div>
 									
@@ -364,16 +364,16 @@ $pag = 'compradores';  //clientes
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<div class="col-md-6">							
-							<span><b>Responsavel: </b></span>
+							<span><b>Responsável: </b></span>
 							<span id="corretor_mostrar"></span>
 						</div>				
 
 
 						<div class="col-md-6">							
-							<span><b>Data de Cadastro: </b></span>
+							<span><b>Data de cadastro: </b></span>
 							<span id="data_cad_mostrar"></span>
 						</div>
-					</div>
+					</div><br><br>
 
 				
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
@@ -404,11 +404,11 @@ $pag = 'compradores';  //clientes
 						</div>
 
 						<div class="col-md-4">							
-							<span><b>Numero: </b></span>
+							<span><b>Número: </b></span>
 							<span id="numero_mostrar"></span>							
 						</div>
 
-					</div>
+					</div><br><br>
 
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
@@ -439,7 +439,7 @@ $pag = 'compradores';  //clientes
 						</div>
 
 						<div class="col-md-4">							
-							<span><b>Numero: </b></span>
+							<span><b>Número: </b></span>
 							<span id="numeroj_mostrar"></span>							
 						</div>
 
@@ -453,7 +453,7 @@ $pag = 'compradores';  //clientes
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-12">							
-							<span><b>OBS: </b></span>
+							<span><b>Obs.: </b></span>
 							<span id="obs_mostrar"></span>							
 						</div>
 					</div>

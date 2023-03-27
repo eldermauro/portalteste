@@ -226,7 +226,7 @@ exit();
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-			<h4 class="modal-title" id=""><span id="nome_mostrar"> </span> <small><span class="ml-4"><span id="pessoa_mostrar"> </span> </span> </small>-Colaborador</h4>
+			<h4 class="modal-title" id=""><span id="nome_mostrar"> </span> <small><span class="ml-4"><span id="pessoa_mostrar"> </span> </span> </small></h4>
 				<button id="btn-fechar-excluir" type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -20px">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -288,7 +288,7 @@ exit();
 						</div>
 
 						<div class="col-md-4">							
-							<span><b>Numero: </b></span>
+							<span><b>Número: </b></span>
 							<span id="numero_mostrar"></span>							
 						</div>
 
@@ -300,7 +300,7 @@ exit();
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Data de Admissão: </b></span>
+							<span><b>Data de admissão: </b></span>
 							<span id="data_adm_mostrar"></span>							
 						</div>
 						<!--<div class="col-md-6">							
@@ -315,7 +315,7 @@ exit();
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-12">							
-							<span><b>OBS: </b></span>
+							<span><b>Obs.: </b></span>
 							<span id="obs_mostrar"></span>							
 						</div>
 					</div>

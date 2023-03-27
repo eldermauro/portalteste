@@ -351,9 +351,9 @@ if($nivel_usu != "Administrador"){
 									<ul class="treeview-menu">
 									<li class=""><a href="index.php?pagina=contas_banco"><i class="fa fa-angle-right"></i>Contas a Pagar</a></li>
 									<li class=""><a href="index.php?pagina=pagar"><i class="fa fa-angle-right"></i>Contas a Receber</a></li>
-									<li class=""><a href="index.php?pagina=buscar_local"><i class="fa fa-angle-right"></i>Extrato Caixa</a></li>
+									<!--<li class=""><a href="index.php?pagina=buscar_local"><i class="fa fa-angle-right"></i>Extrato Caixa</a></li>
 									<li class=""><a href="index.php?pagina=buscar_local"><i class="fa fa-angle-right"></i>Comissões</a></li>
-									<li class=""><a href="index.php?pagina=buscar_local"><i class="fa fa-angle-right"></i>Relatorio de Movimentações</a></li> <!--Criar Lote-->
+									<li class=""><a href="index.php?pagina=buscar_local"><i class="fa fa-angle-right"></i>Relatorio de Movimentações</a></li>Criar Lote-->
 							
 										
 										

@@ -12,9 +12,12 @@ if($total_reg > 0){
 	<table class="table table-hover" id="tabela">
 	<thead> 
 	<tr> 
-	<th>Nome</th>
-	<th>Cidade</th>		
-	<th>Ações</th>
+	<th>Custo materia prima</th>
+	<th>Depreciação total</th>		
+	<th>Custo total de mão de obra</th>
+	<th>Resultado da produção</th>
+	<th>custo total</th>
+	<th>custo unitario</th>
 	</tr> 
 	</thead> 
 	<tbody> 
@@ -22,7 +25,7 @@ if($total_reg > 0){
 	for($i=0; $i < $total_reg; $i++){
 		foreach ($res[$i] as $key => $value){}
 			$id = $res[$i]['id'];
-			$nome = $res[$i]['nome'];
+			$materia = $res[$i]['materia'];
 			$produtor = $res[$i]['produtor'];
 			$local = $res[$i]['local'];
 			$quantidade = $res[$i]['quantidade'];
@@ -79,14 +82,14 @@ if($total_reg > 0){
 			$data_aquitres = $res[$i]['data_aquitres'];
 			$custotres = $res[$i]['custotres'];
 			$residualtres = $res[$i]['residualtres'];
-			$anotres = $res[$i]['anotres'];
+			$anostres = $res[$i]['anostres'];
 			$depreciacaotres = $res[$i]['depreciacaotres'];
 			$diatres = $res[$i]['diatres'];
 			$utiltres = $res[$i]['utiltres'];
 			$vdtres = $res[$i]['vdtres'];
 			$obratres = $res[$i]['obratres'];
 			$horatres = $res[$i]['horatres'];
-			$trabalhadois = $res[$i]['trabalhadois'];
+			$trabalhotres = $res[$i]['trabalhotres'];
 			$pagotres = $res[$i]['pagotres'];
 			$resultres = $res[$i]['resultres'];
 			$medidatres = $res[$i]['medidatres'];
@@ -160,12 +163,12 @@ if($total_reg > 0){
 			$ferseis = $res[$i]['ferseis'];
 			$ferfonteseis = $res[$i]['ferfonteseis'];
 			$ferconsumoseis = $res[$i]['ferconsumoseis'];
-			$data_aquisseis = $res[$i]['data_aquiseis'];
+			$data_aquiseis = $res[$i]['data_aquiseis'];
 			$custoseis = $res[$i]['custoseis'];
 			$residualseis = $res[$i]['residualseis'];
 			$anosseis = $res[$i]['anosseis'];
 			$depreciacaoseis = $res[$i]['depreciacaoseis'];
-			$diasseis = $res[$i]['diaseis'];
+			$diaseis = $res[$i]['diaseis'];
 			$utilseis = $res[$i]['utilseis'];
 			$vdseis = $res[$i]['vdseis'];
 			$obraseis = $res[$i]['obraseis'];
@@ -176,9 +179,8 @@ if($total_reg > 0){
 			$medidaseis = $res[$i]['medidaseis'];
 			$perdaseis = $res[$i]['perdaseis'];
 			$perceseis = $res[$i]['perceseis'];
-			$insumtres = $res[$i]['insumtres'];
 			$produtotres = $res[$i]['produtotres'];
-			$armatres = $res[$i]['armaztres'];
+			$armaztres = $res[$i]['armaztres'];
 			$medidaterc = $res[$i]['medidaterc'];
 			$data_emtres = $res[$i]['data_emtres'];
 			$armazquatro = $res[$i]['armazquatro'];
@@ -202,7 +204,7 @@ if($total_reg > 0){
 			$vdsete = $res[$i]['vdsete'];
 			$obrasete = $res[$i]['obrasete'];
 			$horasete = $res[$i]['horasete'];
-			$trabalhoete = $res[$i]['trabalhoete'];
+			$trabalhosete = $res[$i]['trabalhosete'];
 			$pagosete = $res[$i]['pagosete'];
 			$resulsete = $res[$i]['resulsete'];
 			$medidasete = $res[$i]['medidasete'];
@@ -222,52 +224,30 @@ if($total_reg > 0){
 		
 		
 
-		//$query2 = $pdo->query("SELECT * FROM cidades where id = '$cidade'");
-		//$res2 = $query2->fetchAll(PDO::FETCH_ASSOC);
-		//if(@count($res2) > 0){
-		//	$nome_cidade = $res2[0]['nome'];
-		///}else{
-		//	$nome_cidade = 'Sem Cidade';
-		//}	
-		
-		//$ativo = $res[$i]['ativo'];
-
-		//if($ativo == 'Sim'){
-		//	$icone = 'fa-check-square';
-		//	$titulo_link = 'Desativar Item';
-		//	$acao = 'Não';
-		//	$classe_linha = '';
-		//}else{
-		//	$icone = 'fa-square-o';
-		//	$titulo_link = 'Ativar Item';
-		//	$acao = 'Sim';
-		//	$classe_linha = 'text-muted';
-		//}
-
 
 
 		echo <<<HTML
 		<tr>
-		<td class="esc">{$id}	</td>  
-		<td class="esc">{$nome}	</td> 
-		<td class="esc">{$telefone}</td>
-		<td class="esc">{$doc}</td>
-		<td class="esc">{$email}</td>
-		<td class="esc">{$nome_corretor}</td>
+		<td class="esc">{$totalmateria}	</td>  
+		<td class="esc">{$totaldepre}	</td> 
+		<td class="esc">{$totalobra}</td>
+		<td class="esc">{$totalproducao}</td>
+		<td class="esc">{$totalcusto}</td>
+		<td class="esc">{$totalcustodois}</td>
 		<td>
 	
 
-		<big><a href="#" onclick="editar('{$id}', '{$materia}', '{$produtor}', '{$local}', '{$lquantidade}', '{$medida}', '{$totalll}', '{$data_entrada}', '{$fonte}', '{$consumo}', '{$data_aquisicao}', '{$maq}', '{$custo}', '{$residual}',  '{$anos}', '{$depreciacao}', '{$dia}', '{$util}', '{$vd}', '{$obra}', '{$hora}', '{$trabalho}', '{$pago}', '{$entradois}', '{$undois}', '{$maqdois}', '{$maqfontedois}', '{$maqconsumodois}', '{$ferdois}', '{$ferfontedois}', '{$ferconsumodois}', '{$data_aquidois}', '{$custodois}', '{$residualdois}', '{$anosdois}', '{$depreciacaodois}', '{$diadois}', '{$utildois}', '{$vddois}', '{$obradois}', '{$horadois}', '{$trabalhadois}', '{$pagodois}', '{$resuldois}', '{$medidadois}', '{$perdadois}', '{$percedois}', '{$entratres}', '{$untres}', '{$maqtres}', '{$maqfontetres}', '{$maqconsumotres}', '{$fertres}', '{$ferfontetres}', '{$ferconsumotres}', '{$data_aquitres}', '{$custotres}', '{$residualtres}', '{$anostres}', '{$depreciacaotres}', '{$diatres}', '{$utiltres}', '{$vdtres}', '{$obratres}', '{$horatres}', '{$trabalhatres}', '{$pagotres}', '{$resultres}', '{$medidatres}', '{$perdatres}', '{$percetres}', '{$data_arm}', '{$armazum}', '{$medum}', '{$formaum}', '{$entraquatro}', '{$unquatro}', '{$maqquatro}', '{$maqfontequatro}', '{$maqconsumoquatro}', '{$ferquatro}', '{$ferfontequatro}', '{$ferconsumoquatro}', '{$data_aquiquatro}', '{$custoquatro}', '{$residualquatro}', '{$anosquatro}', '{$depreciacaoquatro}', '{$diaquatro}', '{$utilquatro}', '{$vdquatro}', '{$obraquatro}', '{$horaquatro}', '{$trabalhaquatro}', '{$pagoquatro}', '{$resulquatro}', '{$medidaquatro}', '{$perdaquatro}', '{$percequatro}', '{$entracinco}', '{$uncinco}', '{$maqcinco}', '{$maqfontecinco}', '{$maqconsumocinco}', '{$fercinco}', '{$ferfontecinco}', '{$ferconsumocinco}', '{$data_aquicinco}', '{$custocinco}', '{$residualcinco}', '{$anoscinco}', '{$depreciacaocinco}', '{$diacinco}', '{$utilcinco}', '{$vdcinco}', '{$obracinco}', '{$horacinco}', '{$trabalhacinco}', '{$pagocinco}', '{$resulcinco}', '{$medidacinco}', '{$perdacinco}','{$percecinco}','{$produtoum}','{$insumoum}','{$medidauma}','{$data_emum}','{$produtodois}','{$insumodois}','{$medidasegun}','{$data_emdois}', '{$entraseis}', '{$unseis}', '{$maqseis}', '{$maqfonteseis}', '{$maqconsumoseis}', '{$ferseis}', '{$ferfonteseis}', '{$ferconsumoseis}', '{$data_aquiseis}', '{$custoseis}', '{$residualseis}', '{$anosseis}', '{$depreciacaoseis}', '{$diaseis}', '{$utilseis}', '{$vdseis}', '{$obraseis}', '{$horaseis}', '{$trabalhaseis}', '{$pagoseis}', '{$resulseis}', '{$medidaseis}', '{$perdaseis}', '{$perceseis}', '{$produtotres}', '{$armaztres}', '{$medidaterc}', '{$data_emtres}', '{$armazquatro}', '{$medidaquart}', '{$formaquatro}', '{$entrasete}', '{$unsete}', '{$maqsete}', '{$maqfontesete}', '{$maqconsumosete}', '{$fersete}', '{$ferfontesete}', '{$ferconsumosete}', '{$data_aquisete}', '{$custosete}', '{$residualsete}', '{$anossete}', '{$depreciacaosete}', '{$diasete}', '{$utilsete}', '{$vdsete}', '{$obrasete}', '{$horasete}', '{$trabalhasete}', '{$pagosete}', '{$resulsete}', '{$medidasete}', '{$perdasete}', '{$percesete}', '{$np}', '{$qua}', '{$umed}', '{$totalmateria}', '{$totaldepre}', '{$totalrend}', '{$totalobra}', '{$totalproducao}', '{$totalcusto}', '{$totalcustodois}')" title="Editar Dados"><i class="fa fa-edit text-primary"></i></a></big>
+		<big><a href="#" onclick="editar('{$id}', '{$materia}', '{$produtor}', '{$local}', '{$quantidade}', '{$medida}', '{$totalll}', '{$data_entrada}', '{$fonte}', '{$consumo}', '{$data_aquisicao}', '{$maq}', '{$custo}', '{$residual}',  '{$anos}', '{$depreciacao}', '{$dia}', '{$util}', '{$vd}', '{$obra}', '{$hora}', '{$trabalho}', '{$pago}', '{$entradois}', '{$undois}', '{$maqdois}', '{$maqfontedois}', '{$maqconsumodois}', '{$ferdois}', '{$ferfontedois}', '{$ferconsumodois}', '{$data_aquidois}', '{$custodois}', '{$residualdois}', '{$anosdois}', '{$depreciacaodois}', '{$diadois}', '{$utildois}', '{$vddois}', '{$obradois}', '{$horadois}', '{$trabalhadois}', '{$pagodois}', '{$resuldois}', '{$medidadois}', '{$perdadois}', '{$percedois}', '{$entratres}', '{$untres}', '{$maqtres}', '{$maqfontetres}', '{$maqconsumotres}', '{$fertres}', '{$ferfontetres}', '{$ferconsumotres}', '{$data_aquitres}', '{$custotres}', '{$residualtres}', '{$anostres}', '{$depreciacaotres}', '{$diatres}', '{$utiltres}', '{$vdtres}', '{$obratres}', '{$horatres}', '{$trabalhotres}', '{$pagotres}', '{$resultres}', '{$medidatres}', '{$perdatres}', '{$percetres}', '{$data_arm}', '{$armazum}', '{$medum}', '{$formaum}', '{$entraquatro}', '{$unquatro}', '{$maqquatro}', '{$maqfontequatro}', '{$maqconsumoquatro}', '{$ferquatro}', '{$ferfontequatro}', '{$ferconsumoquatro}', '{$data_aquiquatro}', '{$custoquatro}', '{$residualquatro}', '{$anosquatro}', '{$depreciacaoquatro}', '{$diaquatro}', '{$utilquatro}', '{$vdquatro}', '{$obraquatro}', '{$horaquatro}', '{$trabalhoquatro}', '{$pagoquatro}', '{$resulquatro}', '{$medidaquatro}', '{$perdaquatro}', '{$percequatro}', '{$entracinco}', '{$uncinco}', '{$maqcinco}', '{$maqfontecinco}', '{$maqconsumocinco}', '{$fercinco}', '{$ferfontecinco}', '{$ferconsumocinco}', '{$data_aquicinco}', '{$custocinco}', '{$residualcinco}', '{$anoscinco}', '{$depreciacaocinco}', '{$diacinco}', '{$utilcinco}', '{$vdcinco}', '{$obracinco}', '{$horacinco}', '{$trabalhocinco}', '{$pagocinco}', '{$resulcinco}', '{$medidacinco}', '{$perdacinco}','{$percecinco}','{$produtoum}','{$insumoum}','{$medidauma}','{$data_emum}','{$produtodois}','{$insumodois}','{$medidasegun}','{$data_emdois}', '{$entraseis}', '{$unseis}', '{$maqseis}', '{$maqfonteseis}', '{$maqconsumoseis}', '{$ferseis}', '{$ferfonteseis}', '{$ferconsumoseis}', '{$data_aquiseis}', '{$custoseis}', '{$residualseis}', '{$anosseis}', '{$depreciacaoseis}', '{$diaseis}', '{$utilseis}', '{$vdseis}', '{$obraseis}', '{$horaseis}', '{$trabalhoseis}', '{$pagoseis}', '{$resulseis}', '{$medidaseis}', '{$perdaseis}', '{$perceseis}', '{$produtotres}', '{$armaztres}', '{$medidaterc}', '{$data_emtres}', '{$armazquatro}', '{$medidaquart}', '{$formaquatro}', '{$entrasete}', '{$unsete}', '{$maqsete}', '{$maqfontesete}', '{$maqconsumosete}', '{$fersete}', '{$ferfontesete}', '{$ferconsumosete}', '{$data_aquisete}', '{$custosete}', '{$residualsete}', '{$anossete}', '{$depreciacaosete}', '{$diasete}', '{$utilsete}', '{$vdsete}', '{$obrasete}', '{$horasete}', '{$trabalhosete}', '{$pagosete}', '{$resulsete}', '{$medidasete}', '{$perdasete}', '{$percesete}', '{$np}', '{$qua}', '{$umed}', '{$totalmateria}', '{$totaldepre}', '{$totalrend}', '{$totalobra}', '{$totalproducao}', '{$totalcusto}', '{$totalcustodois}')" title="Editar Dados"><i class="fa fa-edit text-primary"></i></a></big>
 
 		
-		<big><a href="#" onclick="mostrar('{$id}', '{$materia}', '{$produtor}', '{$local}', '{$lquantidade}', '{$medida}', '{$totalll}', '{$data_entrada}', '{$fonte}', '{$consumo}', '{$data_aquisicao}', '{$maq}', '{$custo}', '{$residual}',  '{$anos}', '{$depreciacao}', '{$dia}', '{$util}', '{$vd}', '{$obra}', '{$hora}', '{$trabalho}', '{$pago}', '{$entradois}', '{$undois}', '{$maqdois}', '{$maqfontedois}', '{$maqconsumodois}', '{$ferdois}', '{$ferfontedois}', '{$ferconsumodois}', '{$data_aquidois}', '{$custodois}', '{$residualdois}', '{$anosdois}', '{$depreciacaodois}', '{$diadois}', '{$utildois}', '{$vddois}', '{$obradois}', '{$horadois}', '{$trabalhadois}', '{$pagodois}', '{$resuldois}', '{$medidadois}', '{$perdadois}', '{$percedois}', '{$entratres}', '{$untres}', '{$maqtres}', '{$maqfontetres}', '{$maqconsumotres}', '{$fertres}', '{$ferfontetres}', '{$ferconsumotres}', '{$data_aquitres}', '{$custotres}', '{$residualtres}', '{$anostres}', '{$depreciacaotres}', '{$diatres}', '{$utiltres}', '{$vdtres}', '{$obratres}', '{$horatres}', '{$trabalhatres}', '{$pagotres}', '{$resultres}', '{$medidatres}', '{$perdatres}', '{$percetres}', '{$data_arm}', '{$armazum}', '{$medum}', '{$formaum}', '{$entraquatro}', '{$unquatro}', '{$maqquatro}', '{$maqfontequatro}', '{$maqconsumoquatro}', '{$ferquatro}', '{$ferfontequatro}', '{$ferconsumoquatro}', '{$data_aquiquatro}', '{$custoquatro}', '{$residualquatro}', '{$anosquatro}', '{$depreciacaoquatro}', '{$diaquatro}', '{$utilquatro}', '{$vdquatro}', '{$obraquatro}', '{$horaquatro}', '{$trabalhaquatro}', '{$pagoquatro}', '{$resulquatro}', '{$medidaquatro}', '{$perdaquatro}', '{$percequatro}', '{$entracinco}', '{$uncinco}', '{$maqcinco}', '{$maqfontecinco}', '{$maqconsumocinco}', '{$fercinco}', '{$ferfontecinco}', '{$ferconsumocinco}', '{$data_aquicinco}', '{$custocinco}', '{$residualcinco}', '{$anoscinco}', '{$depreciacaocinco}', '{$diacinco}', '{$utilcinco}', '{$vdcinco}', '{$obracinco}', '{$horacinco}', '{$trabalhacinco}', '{$pagocinco}', '{$resulcinco}', '{$medidacinco}', '{$perdacinco}','{$percecinco}','{$produtoum}','{$insumoum}','{$medidauma}','{$data_emum}','{$produtodois}','{$insumodois}','{$medidasegun}','{$data_emdois}', '{$entraseis}', '{$unseis}', '{$maqseis}', '{$maqfonteseis}', '{$maqconsumoseis}', '{$ferseis}', '{$ferfonteseis}', '{$ferconsumoseis}', '{$data_aquiseis}', '{$custoseis}', '{$residualseis}', '{$anosseis}', '{$depreciacaoseis}', '{$diaseis}', '{$utilseis}', '{$vdseis}', '{$obraseis}', '{$horaseis}', '{$trabalhaseis}', '{$pagoseis}', '{$resulseis}', '{$medidaseis}', '{$perdaseis}', '{$perceseis}', '{$produtotres}', '{$armaztres}', '{$medidaterc}', '{$data_emtres}', '{$armazquatro}', '{$medidaquart}', '{$formaquatro}', '{$entrasete}', '{$unsete}', '{$maqsete}', '{$maqfontesete}', '{$maqconsumosete}', '{$fersete}', '{$ferfontesete}', '{$ferconsumosete}', '{$data_aquisete}', '{$custosete}', '{$residualsete}', '{$anossete}', '{$depreciacaosete}', '{$diasete}', '{$utilsete}', '{$vdsete}', '{$obrasete}', '{$horasete}', '{$trabalhasete}', '{$pagosete}', '{$resulsete}', '{$medidasete}', '{$perdasete}', '{$percesete}', '{$np}', '{$qua}', '{$umed}', '{$totalmateria}', '{$totaldepre}', '{$totalrend}', '{$totalobra}', '{$totalproducao}', '{$totalcusto}', '{$totalcustodois}')" title="Ver Dados"><i class="fa fa-info-circle text-secondary"></i></a></big>
+		<big><a href="#" onclick="mostrar('{$data_entrada}', '{$materia}', '{$produtor}', '{$local}', '{$quantidade}', '{$medida}', '{$totalll}',  '{$fonte}', '{$consumo}', '{$data_aquisicao}', '{$maq}', '{$custo}', '{$residual}',  '{$anos}', '{$depreciacao}', '{$dia}', '{$util}', '{$vd}', '{$obra}', '{$hora}', '{$trabalho}', '{$pago}', '{$entradois}', '{$undois}', '{$maqdois}', '{$maqfontedois}', '{$maqconsumodois}', '{$ferdois}', '{$ferfontedois}', '{$ferconsumodois}', '{$data_aquidois}', '{$custodois}', '{$residualdois}', '{$anosdois}', '{$depreciacaodois}', '{$diadois}', '{$utildois}', '{$vddois}', '{$obradois}', '{$horadois}', '{$trabalhadois}', '{$pagodois}', '{$resuldois}', '{$medidadois}', '{$perdadois}', '{$percedois}', '{$entratres}', '{$untres}', '{$maqtres}', '{$maqfontetres}', '{$maqconsumotres}', '{$fertres}', '{$ferfontetres}', '{$ferconsumotres}', '{$data_aquitres}', '{$custotres}', '{$residualtres}', '{$anostres}', '{$depreciacaotres}', '{$diatres}', '{$utiltres}', '{$vdtres}', '{$obratres}', '{$horatres}', '{$trabalhotres}', '{$pagotres}', '{$resultres}', '{$medidatres}', '{$perdatres}', '{$percetres}', '{$data_arm}', '{$armazum}', '{$medum}', '{$formaum}', '{$entraquatro}', '{$unquatro}', '{$maqquatro}', '{$maqfontequatro}', '{$maqconsumoquatro}', '{$ferquatro}', '{$ferfontequatro}', '{$ferconsumoquatro}', '{$data_aquiquatro}', '{$custoquatro}', '{$residualquatro}', '{$anosquatro}', '{$depreciacaoquatro}', '{$diaquatro}', '{$utilquatro}', '{$vdquatro}', '{$obraquatro}', '{$horaquatro}', '{$trabalhoquatro}', '{$pagoquatro}', '{$resulquatro}', '{$medidaquatro}', '{$perdaquatro}', '{$percequatro}', '{$entracinco}', '{$uncinco}', '{$maqcinco}', '{$maqfontecinco}', '{$maqconsumocinco}', '{$fercinco}', '{$ferfontecinco}', '{$ferconsumocinco}', '{$data_aquicinco}', '{$custocinco}', '{$residualcinco}', '{$anoscinco}', '{$depreciacaocinco}', '{$diacinco}', '{$utilcinco}', '{$vdcinco}', '{$obracinco}', '{$horacinco}', '{$trabalhocinco}', '{$pagocinco}', '{$resulcinco}', '{$medidacinco}', '{$perdacinco}','{$percecinco}','{$produtoum}','{$insumoum}','{$medidauma}','{$data_emum}','{$produtodois}','{$insumodois}','{$medidasegun}','{$data_emdois}', '{$entraseis}', '{$unseis}', '{$maqseis}', '{$maqfonteseis}', '{$maqconsumoseis}', '{$ferseis}', '{$ferfonteseis}', '{$ferconsumoseis}', '{$data_aquiseis}', '{$custoseis}', '{$residualseis}', '{$anosseis}', '{$depreciacaoseis}', '{$diaseis}', '{$utilseis}', '{$vdseis}', '{$obraseis}', '{$horaseis}', '{$trabalhoseis}', '{$pagoseis}', '{$resulseis}', '{$medidaseis}', '{$perdaseis}', '{$perceseis}', '{$produtotres}', '{$armaztres}', '{$medidaterc}', '{$data_emtres}', '{$armazquatro}', '{$medidaquart}', '{$formaquatro}', '{$entrasete}', '{$unsete}', '{$maqsete}', '{$maqfontesete}', '{$maqconsumosete}', '{$fersete}', '{$ferfontesete}', '{$ferconsumosete}', '{$data_aquisete}', '{$custosete}', '{$residualsete}', '{$anossete}', '{$depreciacaosete}', '{$diasete}', '{$utilsete}', '{$vdsete}', '{$obrasete}', '{$horasete}', '{$trabalhosete}', '{$pagosete}', '{$resulsete}', '{$medidasete}', '{$perdasete}', '{$percesete}', '{$np}', '{$qua}', '{$umed}', '{$totalmateria}', '{$totaldepre}', '{$totalrend}', '{$totalobra}', '{$totalproducao}', '{$totalcusto}', '{$totalcustodois}')" title="Ver Dados"><i class="fa fa-info-circle text-secondary"></i></a></big>
 		<li class="dropdown head-dpdn2" style="display: inline-block;">
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><big><i class="fa fa-trash-o text-danger"></i></big></a>
 
 		<ul class="dropdown-menu" style="margin-left:-230px;">
 		<li>
 		<div class="notification_desc2">
-		<p>Confirmar Exclusão? <a href="#" onclick="excluir('{$id}', '{$nome}')"><span class="text-danger">Sim</span></a></p>
+		<p>Confirmar Exclusão? <a href="#" onclick="excluir('{$id}', '{$materia}')"><span class="text-danger">Sim</span></a></p>
 		</div>
 		</li>										
 		</ul>
@@ -277,7 +257,7 @@ if($total_reg > 0){
 
 
 
-		<!--<big><a href="#" onclick="ativar('{$id}', '{$nome}', '{$acao}')" title="{$titulo_link}"><i class="fa {$icone} text-success"></i></a></big>-->
+		
 
 
 		</td>  
@@ -344,7 +324,6 @@ if($total_reg > 0){
 		$('#hora').val(hora).change();
 		$('#trabalho').val(trabalho).change();
 		$('#pago').val(pago).change();
-
 		$('#entradodois').val(entradois).change();
 $('#undois').val(undois).change();
 $('#maqdois').val(maqdois).change();
@@ -363,7 +342,7 @@ $('#utildois').val(utildois).change();
 $('#vddois').val(vddois).change();
 $('#obradois').val(obradois).change();
 $('#horadois').val(horadois).change();
-$('#trabalhadois').val(trabalhadois).change();
+$('#trabalhodois').val(trabalhadois).change();
 $('#pagodois').val(pagodois).change();
 $('#resuldois').val(resuldois).change();
 $('#medidadois').val(medidadois).change();
@@ -528,20 +507,19 @@ $('#totalcustodois').val(totalcustodois).change();
 
 
 
-	function mostrar(materia, produtor, local, quantidade, medida, totalll, data_entrada, fonte, consumo, data_aquisicao, maq, custo, residual, anos, depreciacao, dia, util, vd, obra, hora, trabalho, pago, entradois,
+	function mostrar(data_entrada, materia, produtor, local, quantidade, medida, totalll,  fonte, consumo, data_aquisicao, maq, custo, residual, anos, depreciacao, dia, util, vd, obra, hora, trabalho, pago, entradois,
 	undois, maqdois, maqfontedois, maqconsumodois, ferdois, ferfontedois, ferconsumodois, data_aquidois, custodois,
 	residualdois, anosdois, depreciacaodois, diadois, utildois, vddois, obradois, horadois,trabalhadois, pagodois,
 	resuldois, medidadois, perdadois, percedois, entratres, untres, maqtres, maqfontetres, maqconsumotres, fertres,
 	ferfontetres, ferconsumotres, data_aquitres, custotres, residualtres, anostres, depreciacaotres, diatres, utiltres, vdtres, obratres, horatres, trabalhotres, pagotres, resultres,medidatres, perdatres, percetres,data_arm, armazum, medum, formaum, entraquatro, unquatro,maqquatro, maqfontequatro, maqconsumoquatro, ferquatro,ferfontequatro, ferconsumoquatro, data_aquiquatro, custoquatro, residualquatro, anosquatro, depreciacaoquatro, diaquatro, utilquatro, vdquatro, obraquatro, horaquatro, trabalhoquatro, pagoquatro, resulquatro, medidaquatro,perdaquatro, percequatro, entracinco, uncinco, maqcinco, maqfontecinco, maqconsumocinco, fercinco, ferfontecinco,ferconsumocinco, data_aquicinco, custocinco, residualcinco, anoscinco, depreciacaocinco, diacinco, utilcinco,vdcinco, obracinco, horacinco, trabalhocinco, pagocinco, resulcinco, medidacinco, perdacinco, percecinco,produtoum, insumoum, medidauma, data_emum, produtodois, insumodois, medidasegun, data_emdois,  entraseis, unseis,maqseis, maqfonteseis, maqconsumoseis, ferseis, ferfonteseis, ferconsumoseis, data_aquiseis, custoseis, residualseis, anosseis, depreciacaosei, diaseis, utilseis, vdseis, obraseis, horaseis, trabalhoseis, pagoseis,resulseis, medidaseis, perdaseis, perceseis, produtotres, armaztres, medidatres, data_emtres, armazquatro,medidaquart, formaquatro, entrasete, unsete, maqsete, maqfontesete, maqconsumosete, fersete, ferfontesete, ferconsumosete, data_aquisete, custosete, residualsete, anossete, depreciacaosete, diasete, utilsete, vdsete, obrasete, horasete, trabalhosete, pagosete, resulsete, medidasete, perdasete, percesete, np, qua, umed, totalmateria, totaldepre, totalrend, totalobra , totalproducao, totalcusto, totalcustodois){
 
-
+$('#data_entrada_mostrar').text(data_entrada);
 $('#materia_mostrar').text(materia);
 $('#produtor_mostrar').text(produtor);
 $('#local_mostrar').text(local);
 $('#quantidade_mostrar').text(quantidade);
 $('#medida_mostrar').text(medida);
 $('#totalll_mostrar').text(totalll);
-$('#data_entrada_mostrar').text(data_entrada);
 $('#fonte_mostrar').text(fonte);
 $('#consumo_mostrar').text(consumo);
 $('#data_aquisicao_mostrar').text(data_aquisicao);
@@ -647,7 +625,7 @@ $('#residualcinco_mostrar').text(residualcinco);
 $('#anoscinco_mostrar').text(anoscinco);
 $('#depreciacaocinco_mostrar').text(depreciacaocinco);
 $('#diacinco_mostrar').text(diacinco);
-$('#diacinco_mostrar').text(diacinco);
+//$('#diacinco_mostrar').text(diacinco);
 $('#utilcinco_mostrar').text(utilcinco);
 $('#vdcinco_mostrar').text(vdcinco);
 $('#obracinco_mostrar').text(obracinco);
@@ -678,7 +656,7 @@ $('#data_aquiseis_mostrar').text(data_aquiseis);
 $('#custoseis_mostrar').text(custoseis);
 $('#residualseis_mostrar').text(residualseis);
 $('#anosseis_mostrar').text(anosseis);
-$('#depreciacaosei_mostrar').text(depreciacaosei);
+$('#depreciacaoseis_mostrar').text(depreciacaosei);
 $('#diaseis_mostrar').text(diaseis);
 $('#utilseis_mostrar').text(utilseis);
 $('#vdseis_mostrar').text(vdseis);

@@ -30,7 +30,7 @@ $pag = 'locadores';
 					<div class="row">
 						<div class="col-md-4">						
 							<div class="form-group"> 
-								<label>Nome Completo</label> 
+								<label>Nome completo</label> 
 								<input type="text" class="form-control" name="nome" id="nome" required> 
 							</div>						
 						</div>
@@ -99,7 +99,7 @@ $pag = 'locadores';
 
 					<div class="col-md-4">						
 						<div class="form-group"> 
-							<label>Status Do Extrativista</label> 
+							<label>Status do extrativista</label> 
 							<select class="form-control" name="status" id="status" required>
 								<option value="Ativo">Associado</option>
 								<option value="Inativo">Não Associado</option>
@@ -139,7 +139,7 @@ $pag = 'locadores';
 
 						<div class="col-md-4">						
 							<div class="form-group"> 
-								<label>Data Nascimento</label> 
+								<label>Data de nascimento</label> 
 								<input type="date" class="form-control" name="data_nasc" id="data_nasc" value="<?php echo date('Y-m-d') ?>"> 
 							</div>						
 						</div>
@@ -148,7 +148,7 @@ $pag = 'locadores';
 
 						<div class="col-md-4">
 						<div class="form-group"> 
-							<label>Função Na Usina</small></label> 
+							<label>Função na usina</small></label> 
 							<select class="form-control sel2" name="corretor" id="corretor" required style="width:100%;"> 
 									<?php 
 									if($nivel_usu == 'Corretor'){
@@ -226,7 +226,7 @@ $pag = 'locadores';
 
 					<div class="col-md-2">
 						<div class="form-group"> 
-							<label>Numero</label> 
+							<label>Número</label> 
 							<input type="text" class="form-control" name="numero" id="numero" placeholder=""> 
 						</div>
 					</div>	
@@ -236,7 +236,7 @@ $pag = 'locadores';
 					<div class="row">
 						<div class="col-md-12">
 							<div class="form-group"> 
-								<label>OBS <small>(Max 500 Caracteres)</small></label> 
+								<label>Obs.: <small>(Max 500 Caracteres)</small></label> 
 								<textarea maxlength="500" type="text" class="form-control" name="obs" id="obs"> </textarea>
 							</div>
 						</div>	
@@ -275,7 +275,7 @@ $pag = 'locadores';
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h4 class="modal-title" id=""><span id="nome_mostrar"> </span> <small><span class="ml-4">(Pessoa: <span id="pessoa_mostrar"> </span>) </span> </small>-Prrodutor/Fornecedor</h4>
+				<h4 class="modal-title" id="">Produtor / Fornecedor - <span id="nome_mostrar"> </span> <small><span class="ml-4">(Pessoa: <span id="pessoa_mostrar"> </span>) </span> </small></h4>
 				<button id="btn-fechar-excluir" type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -20px">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -285,7 +285,7 @@ $pag = 'locadores';
 					
 				<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Apelido</b></span>
+							<span><b>Apelido:</b></span>
 							<span id="apelido_mostrar"></span>							
 						</div>
 
@@ -316,7 +316,7 @@ $pag = 'locadores';
 						
 
 						<div class="col-md-6">							
-							<span><b>Responsavel: </b></span>
+							<span><b>Responsável: </b></span>
 							<span id="corretor_mostrar"></span>
 						</div>
 					</div>
@@ -352,7 +352,7 @@ $pag = 'locadores';
 						</div>
 
 						<div class="col-md-4">							
-							<span><b>Numero: </b></span>
+							<span><b>Número: </b></span>
 							<span id="numero_mostrar"></span>							
 						</div>
 
@@ -380,11 +380,11 @@ $pag = 'locadores';
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Data de Nascimento: </b></span>
+							<span><b>Data de nascimento: </b></span>
 							<span id="data_nasc_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Data de Cadastro: </b></span>
+							<span><b>Data de cadastro: </b></span>
 							<span id="data_cad_mostrar"></span>
 						</div>
 					</div>	
@@ -394,7 +394,7 @@ $pag = 'locadores';
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-12">							
-							<span><b>OBS: </b></span>
+							<span><b>Obs.: </b></span>
 							<span id="obs_mostrar"></span>							
 						</div>
 					</div>
