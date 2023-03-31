@@ -136,8 +136,8 @@ $pag = 'bairros';
 
 							<div class="col-md-3">
 								<div class="form-group"> 
-									<label>Valor pago</label> 
-									<input type="text" class="form-control" name="totalll" id="totalll" placeholder="" > 
+									<label>Valor pago(R$)</label> 
+									<input type="text" class="form-control" name="totalll" id="totalll" placeholder="0.00" > 
 								</div>
 							</div>
 							
@@ -145,6 +145,7 @@ $pag = 'bairros';
 							</div>
 
 						</div>
+
 
 
 							
@@ -160,7 +161,7 @@ $pag = 'bairros';
 
 									<div class="col-md-3">
 										<div class="form-group"> 
-											<label>Tipo de máquina</label> 
+											<label>Tipo de maquina</label> 
 											<input type="text" class="form-control" name="maq" id="maq" placeholder="" > 
 										</div>
 									</div>
@@ -174,15 +175,15 @@ $pag = 'bairros';
 
 									<div class="col-md-3">
 										<div class="form-group">
-											<label>Valor custo</label>
-											<input type="text" class="form-control" name="custo" id="custo" placeholder="">
+											<label>Valor custo(R$)</label>
+											<input type="text" class="form-control" name="custo" id="custo" placeholder="0.00">
 										</div>
 									</div>
 
 									<div class="col-md-3">
 												<div class="form-group">
-													<label>Valor residual</label>
-													<input type="text" class="form-control" name="residual" id="residual" placeholder="">
+													<label>Valor residual(R$)</label>
+													<input type="text" class="form-control" name="residual" id="residual" placeholder="0.00">
 												</div>
 											</div>			
 											
@@ -220,8 +221,8 @@ $pag = 'bairros';
 											</div>
 											<div class="col-md-3">
 												<div class="form-group">
-													<label>Valor total da depreciação</label>
-													<input type="text" class="form-control" name="vd" id="vd" placeholder="" >
+													<label>Valor total da depreciação(R$)</label>
+													<input type="text" class="form-control" name="vd" id="vd" placeholder="0.00" >
 												</div>
 											</div>		
 
@@ -314,8 +315,8 @@ $pag = 'bairros';
 
 												<div class="col-md-3">
 													<div class="form-group">
-														<label>Custo de mão de obra</label>
-														<input type="text" class="form-control" name="obra" id="obra" placeholder="">
+														<label>Custo - mão de obra</label>
+														<input type="text" class="form-control" name="obra" id="obra" placeholder="0.00">
 													</div>
 												</div>
 
@@ -420,7 +421,7 @@ $pag = 'bairros';
 							
 									<div class="col-md-3">
 										<div class="form-group"> 
-											<label>Nome da máquina</label> 
+											<label>Nome da maquina</label> 
 											<input type="text" class="form-control" name="maqdois" id="maqdois" placeholder="" > 
 										</div>
 										</div>
@@ -429,8 +430,8 @@ $pag = 'bairros';
 										<div class="form-group"> 
 											<label>Fonte de energia</label> 
 											<select class="form-control" name="maqfontedois" id="maqfontedois" >
-											<option value="Motor Estacionário">Motor Estacionário</option>
-											<option value="Rede Elétrica">Rede Elétrica</option>
+											<option value="Motor estacionário">Motor estacionário</option>
+											<option value="Rede elétrica">Rede elétrica</option>
 												
 											</select> 
 										</div>						
@@ -526,8 +527,8 @@ $pag = 'bairros';
 
 									<div class="col-md-3">
 										<div class="form-group">
-											<label>Valor custo</label>
-											<input type="text" class="form-control" name="custodois" id="custodois" placeholder="">
+											<label>Valor custo(R$)</label>
+											<input type="text" class="form-control" name="custodois" id="custodois" placeholder="0.00">
 										</div>
 									</div>
 
@@ -537,8 +538,8 @@ $pag = 'bairros';
 
 								<div class="col-md-3">
 											<div class="form-group">
-												<label>Valor residual</label>
-												<input type="text" class="form-control" name="residualdois" id="residualdois" placeholder="">
+												<label>Valor residual(R$)</label>
+												<input type="text" class="form-control" name="residualdois" id="residualdois" placeholder="0.00">
 											</div>
 										</div>						
 
@@ -571,7 +572,7 @@ $pag = 'bairros';
 											<div class="col-md-3">
 												<div class="form-group">
 													<label>valor total da depreciação</label>
-													<input type="text" class="form-control" name="vddois" id="vddois" placeholder="" >
+													<input type="text" class="form-control" name="vddois" id="vddois" placeholder="0.00" >
 												</div>
 											</div>		
 
@@ -629,8 +630,8 @@ $pag = 'bairros';
 
 													<div class="col-md-3">
 														<div class="form-group">
-															<label>custo de mão de obra</label>
-															<input type="text" class="form-control" name="obradois" id="obradois" placeholder="">
+															<label>custo - mão de obra</label>
+															<input type="text" class="form-control" name="obradois" id="obradois" placeholder="0.00">
 														</div>
 													</div>
 
@@ -695,7 +696,7 @@ $pag = 'bairros';
 										<div class="col-md-3">
 														<div class="form-group">
 															<label>Quantidade higienizada</label>
-															<input type="text" class="form-control" name="resuldois" id="resuldois" placeholder="">
+															<input type="text" class="form-control" name="resuldois" id="resuldois" placeholder="0.00">
 														</div>
 													</div>
 										
@@ -829,7 +830,7 @@ $pag = 'bairros';
 
 									<div class="col-md-3">						
 										<div class="form-group"> 
-											<label>Consumo De energia</label> 
+											<label>Consumo de energia</label> 
 											<select class="form-control" name="maqconsumotres" id="maqconsumotres" >
 												<option value="Diesel">Diesel</option>
 												<option value="Gasolina">Gasolina</option>
@@ -905,7 +906,7 @@ $pag = 'bairros';
 									<div class="col-md-3">						
 											<div class="form-group"> 
 												<label>Data de aquisição</label> 
-												<input type="date" class="form-control" name="data_aquitres" id="data_aquitres" value="<?php echo date('Y-m-d') ?>"> 
+												<input type="date" class="form-control" name="data_aquitres" id="data_aquitres" > 
 											</div>						
 										</div>	
 
@@ -2921,9 +2922,10 @@ $pag = 'bairros';
 													<div class="col-md-3">
 														<div class="form-group">
 															<label>custo materia prima</label>
-															<input type="text" class="form-control" name="totalmateria" id="totalmateria" placeholder="">
+															<input type="text" class="form-control" name="totalmateria" id="totalmateria" placeholder="0.00">
 														</div>
 													</div>
+												
 
 
 													<script>
@@ -2946,7 +2948,7 @@ $pag = 'bairros';
 											<div class="col-md-3">
 												<div class="form-group">
 													<label>Depreciação total</label>
-													<input type="text" class="form-control" name="totaldepre" id="totaldepre" placeholder="">
+													<input type="text" class="form-control" name="totaldepre" id="totaldepre" placeholder="0.00">
 												</div>
 											</div>
 											<script>
@@ -2983,7 +2985,7 @@ $pag = 'bairros';
 											<div class="col-md-3">
 												<div class="form-group">
 													<label>Redimento produtivo</label>
-													<input type="text" class="form-control" name="totalrend" id="totalrend" placeholder="">
+													<input type="text" class="form-control" name="totalrend" id="totalrend" placeholder="00%">
 												</div>
 											</div>
 
@@ -3032,8 +3034,8 @@ quaInput.addEventListener("change", calcularPorcentagem);
 									<div class="row">
 										<div class="col-md-3">
 												<div class="form-group">
-													<label>Custo total de mão de obra</label>
-													<input type="text" class="form-control" name="totalobra" id="totalobra" placeholder="">
+													<label>Custo - mão de obra</label>
+													<input type="text" class="form-control" name="totalobra" id="totalobra" placeholder="0.00">
 												</div>
 											</div>
 
@@ -3069,7 +3071,7 @@ quaInput.addEventListener("change", calcularPorcentagem);
 											<div class="col-md-3">
 												<div class="form-group">
 													<label>Resultado da produção</label>
-													<input type="text" class="form-control" name="totalproducao" id="totalproducao" placeholder="">
+													<input type="text" class="form-control" name="totalproducao" id="totalproducao" placeholder="0.00">
 												</div>
 											</div>
 
@@ -3093,7 +3095,7 @@ quaInput.addEventListener("change", calcularPorcentagem);
 											<div class="col-md-3">
 												<div class="form-group">
 													<label>Custo total</label>
-													<input type="text" class="form-control" name="totalcusto" id="totalcusto" placeholder="">
+													<input type="text" class="form-control" name="totalcusto" id="totalcusto" placeholder="0.00">
 												</div>
 											</div>
 
@@ -3132,8 +3134,8 @@ document.addEventListener('change', function () {
 
 											<div class="col-md-3">
 												<div class="form-group">
-													<label>custo unitário</label>
-													<input type="text" class="form-control" name="totalcustodois" id="totalcustodois" placeholder="">
+													<label>Custo unitário</label>
+													<input type="text" class="form-control" name="totalcustodois" id="totalcustodois" placeholder="0.00">
 												</div>
 											</div>
 
@@ -3215,7 +3217,7 @@ document.addEventListener('change', function () {
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h4 class="modal-title" id=""><span id=""> </span> <small><span class="ml-4">(processo Óleo: <span id="materia_mostrar"> </span>) </span> </small></h4>
+				<h4 class="modal-title" id=""><span id=""> </span> <small><span class="ml-4">(processo óleo: <span id="materia_mostrar"> </span>) </span> </small></h4>
 				<button id="btn-fechar-excluir" type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -20px">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -3223,13 +3225,78 @@ document.addEventListener('change', function () {
 			
 				<div class="modal-body">			
 					
+				<!--produto final-->
+				<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>Produto final </b></span><br>
+						<div class="col-md-4">							
+							<span><b>Nome produto: </b></span>
+							<span id="np_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>Quantidade: </b></span>
+							<span id="qua_mostrar"></span>
+						</div>
+						
+						<div class="col-md-4">							
+							<span><b>Unidade de medida: </b></span>
+							<span id="umed_mostrar"></span>							
+						</div>
+						
+					</div><br>
+
+					<!--resultados-->
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<span><b>resultados </b></span><br>
+						<div class="col-md-4">							
+							<span><b>custo materia prima: </b></span>
+							<span id="totalmateria_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>depreciação total: </b></span>
+							<span id="totaldepre_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>redimento produtivo: </b></span>
+							<span id="totalrend_mostrar"></span>							
+						</div>
+						
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+		
+						<div class="col-md-4">							
+							<span><b>custo - mão de obra: </b></span>
+							<span id="totalobra_mostrar"></span>							
+						</div>
+						<div class="col-md-4">							
+							<span><b>Resultado da produção: </b></span>
+							<span id="totalproducao_mostrar"></span>
+						</div>
+						<div class="col-md-4">							
+							<span><b>custo total: </b></span>
+							<span id="totalcusto_mostrar"></span>							
+						</div>
+						
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+		
+						<div class="col-md-4">							
+							<span><b>Custo unitario: </b></span>
+							<span id="totalcustodois_mostrar"></span>							
+						</div>
+					</div><br>
+
+					
+		
+					
 				<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Recepção </b></span><br></div>
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Matéria-prima </b></span><br>
 						<div class="col-md-6">							
-							<span><b>Data da Entrada: </b></span>
+							<span><b>Data da entrada: </b></span>
 							<span id="data_entrada_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -3245,37 +3312,42 @@ document.addEventListener('change', function () {
 							<span id="produtor_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Local de Coleta: </b></span>
+							<span><b>Local de coleta: </b></span>
 							<span id="local_mostrar"></span>
 						</div>
 					</div>
 
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
-						<div class="col-md-4">							
+						<div class="col-md-6">							
 							<span><b>Quantidade: </b></span>
 							<span id="quantidade_mostrar"></span>							
 						</div>
-						<div class="col-md-4">							
-							<span><b>Unidade de Medida: </b></span>
+						<div class="col-md-6">							
+							<span><b>Unidade de medida: </b></span>
 							<span id="medida_mostrar"></span>
 						</div>
-						<div class="col-md-4">							
-							<span><b>Valor pago: </b></span>
+						
+					</div>
+
+					<div class="row" style="border-bottom: 1px solid #cac7c7;">
+					<div class="col-md-6">							
+							<span><b>Valor pago (R$): </b></span>
 							<span id="totalll_mostrar"></span>
 						</div>
+
 					</div>
 
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Maquinário/depreciação </b></span><br>
 						<div class="col-md-6">							
-							<span><b>Tipo de Máquina: </b></span>
+							<span><b>Tipo de maquina: </b></span>
 							<span id="maq_mostrar"></span>							
 						</div>
 
 						<div class="col-md-6">							
-							<span><b>Data de Aquisição: </b></span>
+							<span><b>Data de aquisição: </b></span>
 							<span id="data_aquisicao_mostrar"></span>
 						</div>
 		
@@ -3285,11 +3357,11 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					
 						<div class="col-md-6">							
-							<span><b>Valor de custo ($:) </b></span>
+							<span><b>Valor de custo (R$:) </b></span>
 							<span id="custo_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Valor residual ($): </b></span>
+							<span><b>Valor residual (R$): </b></span>
 							<span id="residual_mostrar"></span>							
 						</div>
 					</div>
@@ -3303,7 +3375,7 @@ document.addEventListener('change', function () {
 						</div>
 
 						<div class="col-md-6">							
-							<span><b>Depreciação Anual ($): </b></span>
+							<span><b>Depreciação anual (R$): </b></span>
 							<span id="depreciacao_mostrar"></span>							
 						</div>	
 
@@ -3346,7 +3418,7 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Mão de obra </b></span><br>
 						<div class="col-md-6">							
-							<span><b>Custo de Mão de Obra: </b></span>
+							<span><b>Custo - mão de obra: </b></span>
 							<span id="obra_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -3358,7 +3430,7 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Horas Trabalhadas: </b></span>
+							<span><b>Horas trabalhadas: </b></span>
 							<span id="trabalho_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -3379,23 +3451,23 @@ document.addEventListener('change', function () {
 							<span id="entradois_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Unidade de Medida: </b></span>
+							<span><b>Unidade de medida: </b></span>
 							<span id="undois_mostrar"></span>
 						</div>
 					</div>
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
-					<span><b>Máquina </b></span><br>
+					<span><b>maquina </b></span><br>
 						<div class="col-md-4">							
-							<span><b>Nome da Máquina: </b></span>
+							<span><b>Nome da maquina: </b></span>
 							<span id="maqdois_mostrar"></span>							
 						</div>
 						<div class="col-md-4">							
-							<span><b>Fonte de Energia: </b></span>
+							<span><b>Fonte de energia: </b></span>
 							<span id="maqfontedois_mostrar"></span>
 						</div>
 						<div class="col-md-4">							
-							<span><b>Consumo De Enérgia: </b></span>
+							<span><b>Consumo De energia: </b></span>
 							<span id="maqconsumodois_mostrar"></span>
 						</div>
 					</div>
@@ -3403,15 +3475,15 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Ferramenta </b></span><br>
 						<div class="col-md-4">							
-							<span><b>Nome de Ferramenta: </b></span>
+							<span><b>Nome de ferramenta: </b></span>
 							<span id="ferdois_mostrar"></span>							
 						</div>
 						<div class="col-md-4">							
-							<span><b>Fonte de Energia: </b></span>
+							<span><b>Fonte de energia: </b></span>
 							<span id="ferfontedois_mostrar"></span>
 						</div>
 						<div class="col-md-4">							
-							<span><b>Consumo De Enérgia: </b></span>
+							<span><b>Consumo De energia: </b></span>
 							<span id="ferconsumodois_mostrar"></span>
 						</div>
 					</div>
@@ -3420,7 +3492,7 @@ document.addEventListener('change', function () {
 					<span><b>Maquinário/depreciação </b></span><br>
 
 						<div class="col-md-6">							
-							<span><b>Data de Aquisição: </b></span>
+							<span><b>Data de aquisição: </b></span>
 							<span id="data_aquidois_mostrar"></span>
 						</div>
 		
@@ -3430,11 +3502,11 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					
 						<div class="col-md-6">							
-							<span><b>Valor de custo ($:) </b></span>
+							<span><b>Valor de custo (R$:) </b></span>
 							<span id="custodois_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Valor residual ($): </b></span>
+							<span><b>Valor residual (R$): </b></span>
 							<span id="residualdois_mostrar"></span>							
 						</div>
 					</div>
@@ -3448,7 +3520,7 @@ document.addEventListener('change', function () {
 						</div>
 
 						<div class="col-md-6">							
-							<span><b>Depreciação Anual ($): </b></span>
+							<span><b>Depreciação Anual (R$): </b></span>
 							<span id="depreciacaodois_mostrar"></span>							
 						</div>	
 
@@ -3470,7 +3542,7 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">	
 					<div class="col-md-6">							
-							<span><b>Valor total da depreciação: </b></span>
+							<span><b>Valor total da depreciação(R$): </b></span>
 							<span id="vddois_mostrar"></span>
 						</div>
 						</div>
@@ -3478,7 +3550,7 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Mão de obra </b></span><br>
 						<div class="col-md-6">							
-							<span><b>Custo de Mão de Obra: </b></span>
+							<span><b>Custo - mão de obra: </b></span>
 							<span id="obradois_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -3490,7 +3562,7 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Horas Trabalhadas: </b></span>
+							<span><b>Horas trabalhadas: </b></span>
 							<span id="trabalho_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -3501,11 +3573,11 @@ document.addEventListener('change', function () {
 						<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Resultado </b></span><br>
 						<div class="col-md-6">							
-							<span><b>Quantidade Higienizada: </b></span>
+							<span><b>Quantidade higienizada: </b></span>
 							<span id="resuldois_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Unidade de Medida: </b></span>
+							<span><b>Unidade de medida: </b></span>
 							<span id="medidadois_mostrar"></span>
 						</div>
 					</div>
@@ -3513,7 +3585,7 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Perda Na Higienização: </b></span>
+							<span><b>Perda Na higienização: </b></span>
 							<span id="perdadois_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -3542,15 +3614,15 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Máquina </b></span><br>
 						<div class="col-md-4">							
-							<span><b>Nome da Máquina: </b></span>
+							<span><b>Nome da maquina: </b></span>
 							<span id="maqtres_mostrar"></span>							
 						</div>
 						<div class="col-md-4">							
-							<span><b>Fonte de Energia: </b></span>
+							<span><b>Fonte de energia: </b></span>
 							<span id="maqfontetres_mostrar"></span>
 						</div>
 						<div class="col-md-4">							
-							<span><b>Consumo De Enérgia: </b></span>
+							<span><b>Consumo De energia: </b></span>
 							<span id="maqconsumotres_mostrar"></span>
 						</div>
 					</div>
@@ -3558,15 +3630,15 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Ferramenta </b></span><br>
 						<div class="col-md-4">							
-							<span><b>Nome de Ferramenta: </b></span>
+							<span><b>Nome de ferramenta: </b></span>
 							<span id="fertres_mostrar"></span>							
 						</div>
 						<div class="col-md-4">							
-							<span><b>Fonte de Energia: </b></span>
+							<span><b>Fonte de energia: </b></span>
 							<span id="ferfontetres_mostrar"></span>
 						</div>
 						<div class="col-md-4">							
-							<span><b>Consumo De Enérgia: </b></span>
+							<span><b>Consumo De energia: </b></span>
 							<span id="ferconsumotres_mostrar"></span>
 						</div>
 					</div>
@@ -3575,7 +3647,7 @@ document.addEventListener('change', function () {
 					<span><b>Maquinário/depreciação </b></span><br>
 
 						<div class="col-md-6">							
-							<span><b>Data de Aquisição: </b></span>
+							<span><b>Data de aquisição: </b></span>
 							<span id="data_aquitres_mostrar"></span>
 						</div>
 		
@@ -3585,11 +3657,11 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					
 						<div class="col-md-6">							
-							<span><b>Valor de custo ($:) </b></span>
+							<span><b>Valor de custo (R$:) </b></span>
 							<span id="custotres_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Valor residual ($): </b></span>
+							<span><b>Valor residual (R$): </b></span>
 							<span id="residualtres_mostrar"></span>							
 						</div>
 					</div>
@@ -3603,7 +3675,7 @@ document.addEventListener('change', function () {
 						</div>
 
 						<div class="col-md-6">							
-							<span><b>Depreciação Anual ($): </b></span>
+							<span><b>Depreciação anual (R$): </b></span>
 							<span id="depreciacaotres_mostrar"></span>							
 						</div>	
 
@@ -3625,7 +3697,7 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">	
 					<div class="col-md-6">							
-							<span><b>Valor total da depreciação: </b></span>
+							<span><b>Valor total da depreciação (R$): </b></span>
 							<span id="vdtres_mostrar"></span>
 						</div>
 						</div>
@@ -3633,7 +3705,7 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Mão de obra </b></span><br>
 						<div class="col-md-6">							
-							<span><b>Custo de Mão de Obra: </b></span>
+							<span><b>Custo - mão de obra: </b></span>
 							<span id="obratres_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -3645,7 +3717,7 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Horas Trabalhadas: </b></span>
+							<span><b>Horas trabalhadas: </b></span>
 							<span id="trabalhotres_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -3656,11 +3728,11 @@ document.addEventListener('change', function () {
 						<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Resultado </b></span><br>
 						<div class="col-md-6">							
-							<span><b>Quantidade Higienizada: </b></span>
+							<span><b>Quantidade da secagem: </b></span>
 							<span id="resultres_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Unidade de Medida: </b></span>
+							<span><b>Unidade de medida: </b></span>
 							<span id="medidatres_mostrar"></span>
 						</div>
 					</div>
@@ -3668,7 +3740,7 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Perda Na Higienização: </b></span>
+							<span><b>Perda Na secagem: </b></span>
 							<span id="perdatres_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -3692,11 +3764,11 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Unidade de Medida: </b></span>
+							<span><b>Unidade de medida: </b></span>
 							<span id="medum_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Forma Armazenamento: </b></span>
+							<span><b>Forma armazenamento: </b></span>
 							<span id="formaum_mostrar"></span>
 						</div>
 
@@ -3712,15 +3784,15 @@ document.addEventListener('change', function () {
 							<span id="entraquatro_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Unidade de Medida: </b></span>
+							<span><b>Unidade de medida: </b></span>
 							<span id="unquatro_mostrar"></span>
 						</div>
 					</div>
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
-					<span><b>Máquina </b></span><br>
+					<span><b>Maquina </b></span><br>
 						<div class="col-md-4">							
-							<span><b>Nome da Máquina: </b></span>
+							<span><b>Nome da maquina: </b></span>
 							<span id="maqquatro_mostrar"></span>							
 						</div>
 						<div class="col-md-4">							
@@ -3736,15 +3808,15 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Ferramenta </b></span><br>
 						<div class="col-md-4">							
-							<span><b>Nome de Ferramenta: </b></span>
+							<span><b>Nome de ferramenta: </b></span>
 							<span id="ferquatro_mostrar"></span>							
 						</div>
 						<div class="col-md-4">							
-							<span><b>Fonte de Energia: </b></span>
+							<span><b>Fonte de energia: </b></span>
 							<span id="ferfontequatro_mostrar"></span>
 						</div>
 						<div class="col-md-4">							
-							<span><b>Consumo De Enérgia: </b></span>
+							<span><b>Consumo De energia: </b></span>
 							<span id="ferconsumoquatro_mostrar"></span>
 						</div>
 					</div>
@@ -3753,7 +3825,7 @@ document.addEventListener('change', function () {
 					<span><b>Maquinário/depreciação </b></span><br>
 
 						<div class="col-md-6">							
-							<span><b>Data de Aquisição: </b></span>
+							<span><b>Data de aquisição: </b></span>
 							<span id="data_aquiquatro_mostrar"></span>
 						</div>
 		
@@ -3763,11 +3835,11 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					
 						<div class="col-md-6">							
-							<span><b>Valor de custo ($:) </b></span>
+							<span><b>Valor de custo (R$): </b></span>
 							<span id="custoquatro_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Valor residual ($): </b></span>
+							<span><b>Valor residual (r$): </b></span>
 							<span id="residualquatro_mostrar"></span>							
 						</div>
 					</div>
@@ -3781,7 +3853,7 @@ document.addEventListener('change', function () {
 						</div>
 
 						<div class="col-md-6">							
-							<span><b>Depreciação Anual ($): </b></span>
+							<span><b>Depreciação Anual (R$): </b></span>
 							<span id="depreciacaoquatro_mostrar"></span>							
 						</div>	
 
@@ -3823,7 +3895,7 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Horas Trabalhadas: </b></span>
+							<span><b>Horas trabalhadas: </b></span>
 							<span id="trabalhoquatro_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -3834,11 +3906,11 @@ document.addEventListener('change', function () {
 						<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Resultado </b></span><br>
 						<div class="col-md-6">							
-							<span><b>Quantidade Higienizada: </b></span>
+							<span><b>Quantidade da despolpa: </b></span>
 							<span id="resulquatro_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Unidade de Medida: </b></span>
+							<span><b>Unidade de medida: </b></span>
 							<span id="medidaquatro_mostrar"></span>
 						</div>
 					</div>
@@ -3846,7 +3918,7 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Perda Na Higienização: </b></span>
+							<span><b>Perda Na despolpa: </b></span>
 							<span id="perdaquatro_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -3867,7 +3939,7 @@ document.addEventListener('change', function () {
 							<span id="entracinco_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Unidade de Medida: </b></span>
+							<span><b>Unidade de medida: </b></span>
 							<span id="uncinco_mostrar"></span>
 						</div>
 					</div>
@@ -3875,15 +3947,15 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Máquina </b></span><br>
 						<div class="col-md-4">							
-							<span><b>Nome da Máquina: </b></span>
+							<span><b>Nome da maquina: </b></span>
 							<span id="maqcinco_mostrar"></span>							
 						</div>
 						<div class="col-md-4">							
-							<span><b>Fonte de Energia: </b></span>
+							<span><b>Fonte de energia: </b></span>
 							<span id="maqfontecinco_mostrar"></span>
 						</div>
 						<div class="col-md-4">							
-							<span><b>Consumo De Enérgia: </b></span>
+							<span><b>Consumo De energia: </b></span>
 							<span id="maqconsumocinco_mostrar"></span>
 						</div>
 					</div>
@@ -3891,15 +3963,15 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Ferramenta </b></span><br>
 						<div class="col-md-4">							
-							<span><b>Nome de Ferramenta: </b></span>
+							<span><b>Nome de ferramenta: </b></span>
 							<span id="ferquatro_mostrar"></span>							
 						</div>
 						<div class="col-md-4">							
-							<span><b>Fonte de Energia: </b></span>
+							<span><b>Fonte de energia: </b></span>
 							<span id="fercinco_mostrar"></span>
 						</div>
 						<div class="col-md-4">							
-							<span><b>Consumo De Enérgia: </b></span>
+							<span><b>Consumo De energia: </b></span>
 							<span id="ferconsumocinco_mostrar"></span>
 						</div>
 					</div>
@@ -3908,7 +3980,7 @@ document.addEventListener('change', function () {
 					<span><b>Maquinário/depreciação </b></span><br>
 
 						<div class="col-md-6">							
-							<span><b>Data de Aquisição: </b></span>
+							<span><b>Data de aquisição: </b></span>
 							<span id="data_aquicinco_mostrar"></span>
 						</div>
 		
@@ -3918,11 +3990,11 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					
 						<div class="col-md-6">							
-							<span><b>Valor de custo ($:) </b></span>
+							<span><b>Valor de custo (R$) </b></span>
 							<span id="custocinco_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Valor residual ($): </b></span>
+							<span><b>Valor residual (R$): </b></span>
 							<span id="residualcinco_mostrar"></span>							
 						</div>
 					</div>
@@ -3936,7 +4008,7 @@ document.addEventListener('change', function () {
 						</div>
 
 						<div class="col-md-6">							
-							<span><b>Depreciação Anual ($): </b></span>
+							<span><b>Depreciação Anual (R$): </b></span>
 							<span id="depreciacaocinco_mostrar"></span>							
 						</div>	
 
@@ -3989,11 +4061,11 @@ document.addEventListener('change', function () {
 						<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Resultado </b></span><br>
 						<div class="col-md-6">							
-							<span><b>Quantidade Higienizada: </b></span>
+							<span><b>Quantidade da prensagem: </b></span>
 							<span id="resulcinco_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Unidade de Medida: </b></span>
+							<span><b>Unidade de medida: </b></span>
 							<span id="medidacinco_mostrar"></span>
 						</div>
 					</div>
@@ -4001,7 +4073,7 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Perda Na Higienização: </b></span>
+							<span><b>Perda na prensagem: </b></span>
 							<span id="perdacinco_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -4025,11 +4097,11 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Unidade de Medida: </b></span>
+							<span><b>Unidade de medida: </b></span>
 							<span id="medidauma_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Data Da Embalagem: </b></span>
+							<span><b>Data Da embalagem: </b></span>
 							<span id="data_emum_mostrar"></span>
 						</div>
 					</div>
@@ -4048,11 +4120,11 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Unidade de Medida: </b></span>
+							<span><b>Unidade de medida: </b></span>
 							<span id="medidasegun_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Data Da Embalagem: </b></span>
+							<span><b>Data Da embalagem: </b></span>
 							<span id="data_emdois_mostrar"></span>
 						</div>
 					</div><br>
@@ -4071,7 +4143,7 @@ document.addEventListener('change', function () {
 							<span id="entraseis_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Unidade de Medida: </b></span>
+							<span><b>Unidade de medida: </b></span>
 							<span id="unseis_mostrar"></span>
 						</div>
 					</div>
@@ -4079,15 +4151,15 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Máquina </b></span><br>
 						<div class="col-md-4">							
-							<span><b>Nome da Máquina: </b></span>
+							<span><b>Nome da maquina: </b></span>
 							<span id="maqseis_mostrar"></span>							
 						</div>
 						<div class="col-md-4">							
-							<span><b>Fonte de Energia: </b></span>
+							<span><b>Fonte de energia: </b></span>
 							<span id="maqfonteseis_mostrar"></span>
 						</div>
 						<div class="col-md-4">							
-							<span><b>Consumo De Enérgia: </b></span>
+							<span><b>Consumo De energia: </b></span>
 							<span id="maqconsumoseis_mostrar"></span>
 						</div>
 					</div>
@@ -4095,15 +4167,15 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Ferramenta </b></span><br>
 						<div class="col-md-4">							
-							<span><b>Nome de Ferramenta: </b></span>
+							<span><b>Nome de ferramenta: </b></span>
 							<span id="ferseis_mostrar"></span>							
 						</div>
 						<div class="col-md-4">							
-							<span><b>Fonte de Energia: </b></span>
+							<span><b>Fonte de energia: </b></span>
 							<span id="ferfonteseis_mostrar"></span>
 						</div>
 						<div class="col-md-4">							
-							<span><b>Consumo De Enérgia: </b></span>
+							<span><b>Consumo De energia: </b></span>
 							<span id="ferconsumoseis_mostrar"></span>
 						</div>
 					</div>
@@ -4112,7 +4184,7 @@ document.addEventListener('change', function () {
 					<span><b>Maquinário/depreciação </b></span><br>
 
 						<div class="col-md-6">							
-							<span><b>Data de Aquisição: </b></span>
+							<span><b>Data de aquisição: </b></span>
 							<span id="data_aquiseis_mostrar"></span>
 						</div>
 		
@@ -4122,11 +4194,11 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					
 						<div class="col-md-6">							
-							<span><b>Valor de custo ($:) </b></span>
+							<span><b>Valor de custo (R$): </b></span>
 							<span id="custoseis_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Valor residual ($): </b></span>
+							<span><b>Valor residual (R$): </b></span>
 							<span id="residualseis_mostrar"></span>							
 						</div>
 					</div>
@@ -4140,7 +4212,7 @@ document.addEventListener('change', function () {
 						</div>
 
 						<div class="col-md-6">							
-							<span><b>Depreciação Anual ($): </b></span>
+							<span><b>Depreciação Anual (R$): </b></span>
 							<span id="depreciacaoseis_mostrar"></span>							
 						</div>	
 
@@ -4170,7 +4242,7 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Mão de obra </b></span><br>
 						<div class="col-md-6">							
-							<span><b>Custo de Mão de Obra: </b></span>
+							<span><b>Custo - mão de obra: </b></span>
 							<span id="obraseis_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -4182,7 +4254,7 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Horas Trabalhadas: </b></span>
+							<span><b>Horas trabalhadas: </b></span>
 							<span id="trabalhoseis_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -4193,7 +4265,7 @@ document.addEventListener('change', function () {
 						<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Resultado </b></span><br>
 						<div class="col-md-6">							
-							<span><b>Quantidade Higienizada: </b></span>
+							<span><b>Quantidade da filtragem: </b></span>
 							<span id="resulseis_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -4205,7 +4277,7 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Perda Na Higienização: </b></span>
+							<span><b>Perda Na filtragem: </b></span>
 							<span id="perdaseis_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -4229,11 +4301,11 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Unidade de Medida: </b></span>
+							<span><b>Unidade de medida: </b></span>
 							<span id="medidatres_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Data da Embalagem: </b></span>
+							<span><b>Data da embalagem: </b></span>
 							<span id="data_emtres_mostrar"></span>
 						</div>
 					</div>
@@ -4242,7 +4314,7 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Armazenamento </b></span><br>
 						<div class="col-md-6">							
-							<span><b>Quantidade Armazenada: </b></span>
+							<span><b>Quantidade armazenada: </b></span>
 							<span id="armazquatro_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -4251,7 +4323,7 @@ document.addEventListener('change', function () {
 						</div>
 
 						<div class="col-md-6">							
-							<span><b>Forma Armazenamento: </b></span>
+							<span><b>Forma armazenamento: </b></span>
 							<span id="formaquatro_mostrar"></span>
 						</div>
 					</div><br>
@@ -4269,7 +4341,7 @@ document.addEventListener('change', function () {
 							<span id="entrasete_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Unidade de Medida: </b></span>
+							<span><b>Unidade de medida: </b></span>
 							<span id="unsete_mostrar"></span>
 						</div>
 					</div>
@@ -4277,15 +4349,15 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Máquina </b></span><br>
 						<div class="col-md-4">							
-							<span><b>Nome da Máquina: </b></span>
+							<span><b>Nome da maquina: </b></span>
 							<span id="maqsete_mostrar"></span>							
 						</div>
 						<div class="col-md-4">							
-							<span><b>Fonte de Energia: </b></span>
+							<span><b>Fonte de energia: </b></span>
 							<span id="maqfontesete_mostrar"></span>
 						</div>
 						<div class="col-md-4">							
-							<span><b>Consumo De Enérgia: </b></span>
+							<span><b>Consumo De energia: </b></span>
 							<span id="maqconsumosete_mostrar"></span>
 						</div>
 					</div>
@@ -4293,15 +4365,15 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Ferramenta </b></span><br>
 						<div class="col-md-4">							
-							<span><b>Nome de Ferramenta: </b></span>
+							<span><b>Nome de ferramenta: </b></span>
 							<span id="fersete_mostrar"></span>							
 						</div>
 						<div class="col-md-4">							
-							<span><b>Fonte de Energia: </b></span>
+							<span><b>Fonte de energia: </b></span>
 							<span id="ferfontesete_mostrar"></span>
 						</div>
 						<div class="col-md-4">							
-							<span><b>Consumo De Enérgia: </b></span>
+							<span><b>Consumo De energia: </b></span>
 							<span id="ferconsumosete_mostrar"></span>
 						</div>
 					</div>
@@ -4310,7 +4382,7 @@ document.addEventListener('change', function () {
 					<span><b>Maquinário/depreciação </b></span><br>
 
 						<div class="col-md-6">							
-							<span><b>Data de Aquisição: </b></span>
+							<span><b>Data de aquisição: </b></span>
 							<span id="data_aquisete_mostrar"></span>
 						</div>
 		
@@ -4320,11 +4392,11 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					
 						<div class="col-md-6">							
-							<span><b>Valor de custo ($:) </b></span>
+							<span><b>Valor de custo (R$): </b></span>
 							<span id="custosete_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Valor residual ($): </b></span>
+							<span><b>Valor residual (R$): </b></span>
 							<span id="residualsete_mostrar"></span>							
 						</div>
 					</div>
@@ -4338,7 +4410,7 @@ document.addEventListener('change', function () {
 						</div>
 
 						<div class="col-md-6">							
-							<span><b>Depreciação Anual ($): </b></span>
+							<span><b>Depreciação Anual (R$): </b></span>
 							<span id="depreciacaosete_mostrar"></span>							
 						</div>	
 
@@ -4368,7 +4440,7 @@ document.addEventListener('change', function () {
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Mão de obra </b></span><br>
 						<div class="col-md-6">							
-							<span><b>Custo de Mão de Obra: </b></span>
+							<span><b>Custo -Mão de obra: </b></span>
 							<span id="obrasete_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -4380,7 +4452,7 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Horas Trabalhadas: </b></span>
+							<span><b>Horas trabalhadas: </b></span>
 							<span id="trabalhosete_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -4391,11 +4463,11 @@ document.addEventListener('change', function () {
 						<div class="row" style="border-bottom: 1px solid #cac7c7;">
 					<span><b>Resultado </b></span><br>
 						<div class="col-md-6">							
-							<span><b>Quantidade Higienizada: </b></span>
+							<span><b>Quantidade da destilação: </b></span>
 							<span id="resulsete_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
-							<span><b>Unidade de Medida: </b></span>
+							<span><b>Unidade de medida: </b></span>
 							<span id="medidasete_mostrar"></span>
 						</div>
 					</div>
@@ -4403,7 +4475,7 @@ document.addEventListener('change', function () {
 
 					<div class="row" style="border-bottom: 1px solid #cac7c7;">
 						<div class="col-md-6">							
-							<span><b>Perda Na Higienização: </b></span>
+							<span><b>Perda na destilação: </b></span>
 							<span id="perdasete_mostrar"></span>							
 						</div>
 						<div class="col-md-6">							
@@ -4411,67 +4483,6 @@ document.addEventListener('change', function () {
 							<span id="percesete_mostrar"></span>
 						</div>
 					</div><br>
-
-  						<!--produto final-->
-					<div class="row" style="border-bottom: 1px solid #cac7c7;">
-					<span><b>Produto final </b></span><br>
-						<div class="col-md-4">							
-							<span><b>Nome produto: </b></span>
-							<span id="np_mostrar"></span>							
-						</div>
-						<div class="col-md-4">							
-							<span><b>Quantidade: </b></span>
-							<span id="qua_mostrar"></span>
-						</div>
-						<div class="col-md-4">							
-							<span><b>Unidade de Medida: </b></span>
-							<span id="umed_mostrar"></span>							
-						</div>
-						
-					</div>
-
-					<!--resultados-->
-					<div class="row" style="border-bottom: 1px solid #cac7c7;">
-					<span><b>resultados </b></span><br>
-						<div class="col-md-4">							
-							<span><b>custo materia prima: </b></span>
-							<span id="totalmateria_mostrar"></span>							
-						</div>
-						<div class="col-md-4">							
-							<span><b>depreciação total: </b></span>
-							<span id="totaldepre_mostrar"></span>
-						</div>
-						<div class="col-md-4">							
-							<span><b>redimento produtivo: </b></span>
-							<span id="totalrend_mostrar"></span>							
-						</div>
-						
-					</div>
-
-					<div class="row" style="border-bottom: 1px solid #cac7c7;">
-		
-						<div class="col-md-4">							
-							<span><b>custo total de mão de obra: </b></span>
-							<span id="totalobra_mostrar"></span>							
-						</div>
-						<div class="col-md-4">							
-							<span><b>Resultado da produção: </b></span>
-							<span id="totalproducao_mostrar"></span>
-						</div>
-						<div class="col-md-4">							
-							<span><b>custo total: </b></span>
-							<span id="totalcusto_mostrar"></span>							
-						</div>
-						
-					</div>
-
-					<div class="row" style="border-bottom: 1px solid #cac7c7;">
-		
-						<div class="col-md-4">							
-							<span><b>custo unitario: </b></span>
-							<span id="totalcustodois_mostrar"></span>							
-						</div>
-					</div>
 
 					
 		

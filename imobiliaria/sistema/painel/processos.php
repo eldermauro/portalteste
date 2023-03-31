@@ -160,8 +160,8 @@ $pag = 'imoveis';
 
 							<div class="col-md-3">
 								<div class="form-group"> 
-									<label>Valor pago</label> 
-									<input type="text" class="form-control" name="totalll" id="totalll" placeholder="" > 
+									<label>Valor pago(R$)</label> 
+									<input type="text" class="form-control" name="totalll" id="totalll" placeholder="0.00" > 
 								</div>
 							</div>
 							

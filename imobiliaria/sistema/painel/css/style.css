@@ -8522,3 +8522,16 @@ h4.asd label {
     margin-left:5px;
   }
 }
+
+.verde{
+  color:#079934;
+}
+
+.fundo-verde{
+background: #079934;
+}
+
+
+.esconder{
+  display:none; 
+}

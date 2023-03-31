@@ -10,12 +10,33 @@ $total_locatarios = 0;
 $totalTarefasHoje = 0;
 $totalTarefasConcluidasHoje = 0;
 $porcentagemTarefas = 0;
+
+$saldoDia = 0;
+$saldoCaixaDia = 0;
+$saldoDiaF = 0;
+$saldoCaixaDiaF = 0;
+$classe_saldo_caixa_dia = 'fundo-verde';
+
+$contasReceberVencidas = 0;
+$contasPagarVencidas = 0;
+$contasReceberHoje = 0;
+$contasPagarHoje = 0;
+$contasReceberPendentes = 0;
+$totalContasPagasHoje = 0;
+$totalContasRecebidasHoje = 0;
+$porcentagemReceber = 0;
+$porcentagemPagar = 0;
+$totalContasPgHoje = 0;
+$totalContasRbHoje = 0;
+
 $total_extrativistas = 0;
 $total_lote = 0;
 $total_coleta = 0;
 $total_locais = 0;
 $total_produtos = 0;
 $total_usuarios = 0;
+$total_bairros = 0;
+$total_manteiga = 0;
 
 $query = $pdo->query("SELECT * FROM usuarios WHERE nivel = 'Extrativista' and ativo = 'Sim'");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -60,6 +81,14 @@ $query = $pdo->query("SELECT * FROM locatarios");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
 $total_locatarios = @count($res);
 
+$query = $pdo->query("SELECT * FROM bairros");
+$res = $query->fetchAll(PDO::FETCH_ASSOC);
+$total_bairros = @count($res);
+
+$query = $pdo->query("SELECT * FROM manteiga");
+$res = $query->fetchAll(PDO::FETCH_ASSOC);
+$total_manteiga = @count($res);
+
 
 $query = $pdo->query("SELECT * FROM tarefas where data = curDate() and usuario = '$id_usu'");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -77,6 +106,11 @@ if($totalTarefasConcluidasHoje > 0 and $totalTarefasHoje > 0){
 
 
 
+
+
+
+
+
  ?>
 
 
@@ -89,7 +123,7 @@ if($totalTarefasConcluidasHoje > 0 and $totalTarefasHoje > 0){
                     <i class="pull-left fa fa-users user2 icon-rounded"></i>
                     <div class="stats">
 					<h5><strong><?php echo $total_usuarios ?></strong></h5>
-                      <span>Gestores da Plataforma</span>
+                      <span>Gestores Pla.</span>
                     </div>
                 </div>
         	</div>
@@ -146,7 +180,7 @@ if($totalTarefasConcluidasHoje > 0 and $totalTarefasHoje > 0){
                    <i class="pull-left fa fa-tint dollar2 icon-rounded"></i>
                     <div class="stats">
 					<h5><strong><?php echo $total_coleta ?></strong></h5>
-                      <span>Coletas Recebidas</span>
+                      <span>Coletas Rec.</span>
                     </div>
                 </div>
         	</div>
@@ -158,7 +192,7 @@ if($totalTarefasConcluidasHoje > 0 and $totalTarefasHoje > 0){
                    <i class="pull-left fa fa-leaf dollar2  icon-rounded"></i>
                     <div class="stats">
 					<h5><strong><?php echo $total_locais ?></strong></h5>
-                      <span>Locais de Coletas</span>
+                      <span>Locais de Col.</span>
                     </div>
                 </div>
         	</div>
@@ -209,60 +243,58 @@ if($totalTarefasConcluidasHoje > 0 and $totalTarefasHoje > 0){
 
 
 
-
-
-
-
-
-
-		
-
-
-		
-<!--
-
-ll
-
--->
-
-
-
-
-
-
-
-
-
-<!--
-		<div class="row-one widgettable">
+	<div class="row-one widgettable">
 			<div class="col-md-8 content-top-2 card">
+
+
 				<div class="agileinfo-cdr">
 					<div class="card-header">
-                        <h3>Dados Futuros</h3>
+					<div>
+					<h3>Dados Futuros</h3>
+					<canvas id="myChart"></canvas>
+					</div>
+
+
+                        
                     </div>
 					
-						<div id="Linegraph" style="width: 98%; height: 350px">
+						<div id="Linegraph" style="width: 98%; height: 0px">
 						</div>
 						
 				</div>
 			</div>
-					//grafico
-
+			
 
 			<div class="col-md-4 stat">
 
-				<a href="index.php?pagina=agenda">
+				<a href="index.php?pagina=bairros">
 				<div class="content-top-1">
 					<div class="col-md-6 top-content">
-						<h5>Tarefas Concluídas</h5>
-						<label><?php echo $totalTarefasConcluidasHoje ?> de <?php echo $totalTarefasHoje ?></label>
+						<h5>Processo oléos</h5>
+						<label><?php echo $total_bairros ?></label>
 					</div>
 					<div class="col-md-6 top-content1">	   
 						<div id="demo-pie-1" class="pie-title-center" data-percent="<?php echo $porcentagemTarefas ?>"> <span class="pie-value"></span> </div>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
-			</a>-->
+			</a>
+
+			<a href="index.php?pagina=bairros">
+				<div class="content-top-1">
+					<div class="col-md-6 top-content">
+						<h5>Processo manteiga</h5>
+						<label><?php echo $total_manteiga ?></label>
+					</div>
+					<div class="col-md-6 top-content1">	   
+						<div id="demo-pie-1" class="pie-title-center" data-percent="<?php echo $porcentagemTarefas ?>"> <span class="pie-value"></span> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</a>
+
+
+			
 
 				<!--
 				<div class="content-top-1">
@@ -333,6 +365,35 @@ ll
 	<!-- for amcharts js -->
 
     <script  src="js/index1.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+      datasets: [{
+        label: '# Processos',
+        data: [12, 19, 3, 0, 0, 0],
+
+        borderWidth: 2
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
 
 	<!--
 		<div class="charts">		

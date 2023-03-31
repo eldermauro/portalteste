@@ -13,7 +13,6 @@ if($total_reg > 0){
 	<thead> 
 	<tr> 
 	<th>Insumos</th>
-	<th>Nome Cientifíco</th>
 	<th>Unidade de Medida</th>
 	<th>Valor($)</th>
 	<th class="esc">Foto</th> 	
@@ -52,7 +51,6 @@ if($total_reg > 0){
 		
 		{$nome}
 		</td> 
-		<td class="esc">{$cientifico}</td>
 		<td class="esc">{$medida}</td>
 		<td class="esc">{$valor}</td>
 		<td class="esc"><img src="images/tipos/{$foto}" width="50px" class="mr-2"></td>

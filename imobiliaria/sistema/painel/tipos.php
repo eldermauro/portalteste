@@ -52,8 +52,8 @@ $pag = 'tipos';
 							<div class="form-group"> 
 								<label>Unidade de Medida</label> 
 								<select class="form-control" name="medida" id="medida" required>
-									<option value="Quilo">Quilo</option>
-									<option value="Litro">Litro</option>
+									<option value="kg">kg</option>
+									<option value="Litro">L</option>
 								</select> 
 							</div>						
 						</div>
@@ -61,7 +61,7 @@ $pag = 'tipos';
 						<div class="col-md-4">			
 							<div class="form-group"> 
 								<label>Valor</label> 
-								<input type="text" class="form-control" name="valor" id="valor" required> 
+								<input type="text" class="form-control" name="valor" id="valor" required placeholder="R$: 0.00"> 
 						</div>
 						</div>		
 

@@ -28,10 +28,10 @@ $pag = 'produtos';
 
 					<div class="row">
 
-							<div class="col-md-4">			
+							<div class="col-md-6">			
 							<div class="form-group"> 
 								<label>Produto</label> 
-								<input type="text" class="form-control" name="nome" id="nome" required> 
+								<input type="text" class="form-control" name="nome" id="nome" required placeholder="oléo de buriti - 10ml"> 
 							</div>
 						</div>
 
@@ -65,28 +65,28 @@ cumaru seco
 
 
 
-						<div class="col-md-4">			
+						<!--<div class="col-md-4">			
 							<div class="form-group"> 
 								<label>Mililitro</label> 
 								<input type="text" class="form-control" name="cientifico" id="cientifico" placeholder="1ml, 10ml" required> 
 						</div>
-						</div>	
+						</div>	-->
 							
 						<div class="col-md-4">						
 							<div class="form-group"> 
 								<label>Unidade de Medida</label> 
 								<select class="form-control" name="medida" id="medida" required>
-									<option value="Quilo">Quilo</option>
-									<option value="Litro">Litro</option>
-									<option value="Unidade">Unidade</option>
+									<option value="Quilo">kg</option>
+									<option value="Litro">L</option>
+									<option value="Unidade">Un</option>
 								</select> 
 							</div>						
 						</div>
 
 						<div class="col-md-4">			
 							<div class="form-group"> 
-								<label>Valor</label> 
-								<input type="text" class="form-control" name="valor" id="valor" required> 
+								<label>Valor (R$)</label> 
+								<input type="text" class="form-control" name="valor" id="valor" required placeholder="R$: 0.00"> 
 						</div>
 						</div>		
 

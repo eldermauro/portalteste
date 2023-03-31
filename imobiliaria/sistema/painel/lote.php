@@ -1206,6 +1206,15 @@ $pag = 'lote';
 							<img  width="200px" id="target_mostrar">	
 						</div>
 					</div>
+
+
+					<div class="modal-footer">
+					
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+						<button id="btnExportarPDF" type="button" class="btn btn-primary">Exportar PDF</button>
+						<button id="btn-gerar-qrcode" type="button" class="btn btn-primary" onclick="gerarQRCode()">Gerar QR Code</button>
+
+					</div>	
 					
 								
 
@@ -1218,7 +1227,180 @@ $pag = 'lote';
 
 
 
+<script>
 
+document.getElementById("btnExportarPDF").addEventListener("click", function () {
+    var doc = new jsPDF();
+
+    var data_cadastro_mostrar = document.getElementById("data_cadastro_mostrar").textContent;
+    var placa_mostrar = document.getElementById("placa_mostrar").textContent;
+    var empressa_mostrar = document.getElementById("empressa_mostrar").textContent;
+    var origem_mostrar = document.getElementById("origem_mostrar").textContent;
+    var destino_mostrar = document.getElementById("destino_mostrar").textContent;
+    var numero_mostrar = document.getElementById("numero_mostrar").textContent;
+    var nota_mostrar = document.getElementById("nota_mostrar").textContent;
+	var dono_mostrar = document.getElementById("dono_mostrar").textContent;
+	var fisica_mostrar = document.getElementById("fisica_mostrar").textContent;
+	var juridica_mostrar = document.getElementById("juridica_mostrar").textContent;
+
+	var produtor_mostrar = document.getElementById("produtor_mostrar").textContent;
+	var produto_mostrar = document.getElementById("produto_mostrar").textContent;
+	var emb_mostrar = document.getElementById("emb_mostrar").textContent;
+	var bruto_mostrar = document.getElementById("bruto_mostrar").textContent;
+	var liq_mostrar = document.getElementById("liq_mostrar").textContent;
+	var valor_mostrar = document.getElementById("valor_mostrar").textContent;
+
+	var produtordois_mostrar = document.getElementById("produtordois_mostrar").textContent;
+	var produtodois_mostrar = document.getElementById("produtodois_mostrar").textContent;
+	var embdois_mostrar = document.getElementById("embdois_mostrar").textContent;
+	var brutodois_mostrar = document.getElementById("brutodois_mostrar").textContent;
+	var liqdois_mostrar = document.getElementById("liqdois_mostrar").textContent;
+	var valordois_mostrar = document.getElementById("valordois_mostrar").textContent;
+
+	var produtortres_mostrar = document.getElementById("produtortres_mostrar").textContent;
+	var produtotres_mostrar = document.getElementById("produtotres_mostrar").textContent;
+	var embtres_mostrar = document.getElementById("embtres_mostrar").textContent;
+	var brutotres_mostrar = document.getElementById("brutotres_mostrar").textContent;
+	var liqtres_mostrar = document.getElementById("liqtres_mostrar").textContent;
+	var valortres_mostrar = document.getElementById("valortres_mostrar").textContent;
+
+	var produtorqua_mostrar = document.getElementById("produtorqua_mostrar").textContent;
+	var produtoqua_mostrar = document.getElementById("produtoqua_mostrar").textContent;
+	var embqua_mostrar = document.getElementById("embqua_mostrar").textContent;
+	var brutoqua_mostrar = document.getElementById("brutoqua_mostrar").textContent;
+	var liqqua_mostrar = document.getElementById("liqqua_mostrar").textContent;
+	var valorqua_mostrar = document.getElementById("valorqua_mostrar").textContent;
+
+	var produtorcinco_mostrar = document.getElementById("produtorcinco_mostrar").textContent;
+	var produtocinco_mostrar = document.getElementById("produtocinco_mostrar").textContent;
+	var embcinco_mostrar = document.getElementById("embcinco_mostrar").textContent;
+	var brutocinco_mostrar = document.getElementById("brutocinco_mostrar").textContent;
+	var liqcinco_mostrar = document.getElementById("liqcinco_mostrar").textContent;
+	var valorcinco_mostrar = document.getElementById("valorcinco_mostrar").textContent;
+
+	var produtorseis_mostrar = document.getElementById("produtorseis_mostrar").textContent;
+	var produtoseis_mostrar = document.getElementById("produtoseis_mostrar").textContent;
+	var embseis_mostrar = document.getElementById("embseis_mostrar").textContent;
+	var brutoseis_mostrar = document.getElementById("brutoseis_mostrar").textContent;
+	var liqseis_mostrar = document.getElementById("liqseis_mostrar").textContent;
+	var valorseis_mostrar = document.getElementById("valorseis_mostrar").textContent;
+
+	var produtorsete_mostrar = document.getElementById("produtorsete_mostrar").textContent;
+	var produtosete_mostrar = document.getElementById("produtosete_mostrar").textContent;
+	var embsete_mostrar = document.getElementById("embsete_mostrar").textContent;
+	var brutosete_mostrar = document.getElementById("brutosete_mostrar").textContent;
+	var liqsete_mostrar = document.getElementById("liqsete_mostrar").textContent;
+	var valorsete_mostrar = document.getElementById("valorsete_mostrar").textContent;
+
+	var total_mostrar = document.getElementById("total_mostrar").textContent;
+
+
+    doc.text("data_cadastro_mostrar: " + data_cadastro_mostrar, 10, 10);
+    doc.text("placa_mostrar: " + placa_mostrar, 10, 20);
+    doc.text("empressa_mostrar: " + empressa_mostrar, 10, 30);
+    doc.text("origem_mostrar: " + origem_mostrar, 10, 40);
+    doc.text("destino_mostrar: " + destino_mostrar, 10, 50);
+    doc.text("numero_mostrar: " + numero_mostrar, 10, 60);
+    doc.text("nota_mostrar: " + nota_mostrar, 10, 70);
+	doc.text("dono_mostrar: " + dono_mostrar, 10, 80);
+	doc.text("fisica_mostrar: " + fisica_mostrar, 10, 90);
+	doc.text("juridica_mostrar: " + juridica_mostrar, 10, 100);
+
+	doc.text("produtor: " + produtor_mostrar, 10, 110);
+	doc.text("produto: " + produto_mostrar, 10, 120);
+	doc.text("emb: " + emb_mostrar, 10, 130);
+	doc.text("bruto: " + bruto_mostrar, 10, 140);
+	doc.text("liq: " + liq_mostrar, 10, 150);
+	doc.text("valor: " + valor_mostrar, 10, 160);
+
+	doc.text("produtor: " + produtordois_mostrar, 10, 170);
+	doc.text("produto: " + produtodois_mostrar, 10, 180);
+	doc.text("emb: " + embdois_mostrar, 10, 190);
+	doc.text("bruto: " + brutodois_mostrar, 10, 200);
+	doc.text("liq: " + liqdois_mostrar, 10, 210);
+	doc.text("valor: " + valordois_mostrar, 10, 220);
+
+	doc.addPage()
+
+	doc.text("produtor: " + produtortres_mostrar, 10, 10);
+	doc.text("produto: " + produtotres_mostrar, 10, 20);
+	doc.text("emb: " + embtres_mostrar, 10, 30);
+	doc.text("bruto: " + brutotres_mostrar, 10, 40);
+	doc.text("liq: " + liqtres_mostrar, 10, 50);
+	doc.text("valor: " + valortres_mostrar, 10, 60);
+
+	doc.text("produtor: " + produtorqua_mostrar, 10, 70);
+	doc.text("produto: " + produtoqua_mostrar, 10, 80);
+	doc.text("emb: " + embqua_mostrar, 10, 90);
+	doc.text("bruto: " + brutoqua_mostrar, 10, 100);
+	doc.text("liq: " + liqqua_mostrar, 10, 110);
+	doc.text("valor: " + valorqua_mostrar, 10, 120);
+
+	doc.text("produtor: " + produtorcinco_mostrar, 10, 130);
+	doc.text("produto: " + produtocinco_mostrar, 10, 140);
+	doc.text("emb: " + embcinco_mostrar, 10, 370);
+	doc.text("bruto: " + brutocinco_mostrar, 10, 150);
+	doc.text("liq: " + liqcinco_mostrar, 10, 160);
+	doc.text("valor: " + valorcinco_mostrar, 10, 170);
+
+	doc.addPage()
+
+	doc.text("produtor: " + produtorseis_mostrar, 10, 10);
+	doc.text("produto: " + produtoseis_mostrar, 10, 20);
+	doc.text("emb: " + embseis_mostrar, 10, 30);
+	doc.text("bruto: " + brutoseis_mostrar, 10, 40);
+	doc.text("liq: " + liqseis_mostrar, 10, 50);
+	doc.text("valor: " + valorseis_mostrar, 10, 60);
+
+	doc.text("produtor: " + produtorsete_mostrar, 10, 70);
+	doc.text("produto: " + produtosete_mostrar, 10, 80);
+	doc.text("emb: " + embsete_mostrar, 10, 90);
+	doc.text("bruto: " + brutosete_mostrar, 10, 100);
+	doc.text("liq: " + liqsete_mostrar, 10, 110);
+	doc.text("valor: " + valorsete_mostrar, 10, 120);
+
+    doc.save("resultados.pdf");
+  });
+
+</script>
+
+<script>
+
+</script>
+
+
+<script src="qrcode.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+<script>
+  function gerarQRCode() {
+	var produto = document.getElementById("produto_mostrar").textContent;
+	var produtor = document.getElementById("produtor_mostrar").textContent;
+	var avaliacao = document.getElementById("avaliacao_mostrar").textContent;
+	var local = document.getElementById("local_mostrar").textContent;
+	var bruto = document.getElementById("bruto_mostrar").textContent;
+	var liquido = document.getElementById("liquido_mostrar").textContent;
+	var reprovado = document.getElementById("reprovado_mostrar").textContent;
+	var valor = document.getElementById("valor_mostrar").textContent;
+
+	var textoQRCode = "Produto: " + produto + " Produtor: " + produtor + " Avaliação da Coleta: " + avaliacao + " Locais de Coleta: " + local + " Peso bruto (kg): " + bruto + " Peso Liquido (kg): " + liquido + " Reprovado (kg): " + reprovado + " Valor por kg (R$): " + valor;
+
+	var qrcode = new QRCode("qrcode", {
+		text: textoQRCode,
+		width: 200,
+		height: 200,
+		colorDark : "#000000",
+		colorLight : "#ffffff",
+		correctLevel : QRCode.CorrectLevel.H
+	});
+
+	var canvas = document.getElementById("qrcode").getElementsByTagName("canvas")[0];
+
+	var pdf = new jsPDF('p', 'mm', 'a4');
+	pdf.addImage(canvas.toDataURL("image/png"), "PNG", 10, 10);
+	pdf.save("qrcode.pdf");
+}
+</script>
 
 	<!-- Modal Arquivos -->
 	<div class="modal fade" id="modalArquivos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

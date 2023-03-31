@@ -13,9 +13,8 @@ if($total_reg > 0){
 	<thead> 
 	<tr> 
 	<th>Produto</th>
-	<th>Nome Cientifíco</th>
 	<th>Unidade de Medida</th>
-	<th>Valor($)</th>
+	<th>Valor (R$)</th>
 	<th class="esc">Foto</th> 	
 	<th>Ações</th>
 	</tr> 
@@ -27,7 +26,7 @@ if($total_reg > 0){
 			$id = $res[$i]['id'];
 		$nome = $res[$i]['nome'];		
 		$foto = $res[$i]['foto'];
-		$cientifico = $res[$i]['cientifico'];
+		//$cientifico = $res[$i]['cientifico'];
 		$medida = $res[$i]['medida'];
 		$valor = $res[$i]['valor'];
 		$ativo = $res[$i]['ativo'];
@@ -52,16 +51,15 @@ if($total_reg > 0){
 		
 		{$nome}
 		</td> 
-		<td class="esc">{$cientifico}</td>
 		<td class="esc">{$medida}</td>
 		<td class="esc">{$valor}</td>
 		<td class="esc"><img src="images/tipos/{$foto}" width="50px" class="mr-2"></td>
 		
 		<td>
 
-		<big><a href="#" onclick="editar('{$id}', '{$nome}', '{$cientifico}', '{$medida}', '{$valor}', '{$foto}')" title="Editar Dados"><i class="fa fa-edit text-primary"></i></a></big>
+		<big><a href="#" onclick="editar('{$id}', '{$nome}', '{$medida}', '{$valor}', '{$foto}')" title="Editar Dados"><i class="fa fa-edit text-primary"></i></a></big>
 
-		<big><a href="#" onclick="mostrar('{$nome}', '{$cientifico}', '{$medida}', '{$valor}', '{$foto}')" title="Ver Dados"><i class="fa fa-info-circle text-secondary"></i></a></big>
+		<big><a href="#" onclick="mostrar('{$nome}', '{$medida}', '{$valor}', '{$foto}')" title="Ver Dados"><i class="fa fa-info-circle text-secondary"></i></a></big>
 
 
 		<li class="dropdown head-dpdn2" style="display: inline-block;">
@@ -112,12 +110,12 @@ if($total_reg > 0){
 
 
 
-	function editar(id, nome, cientifico, medida, valor, foto){
+	function editar(id, nome, medida, valor, foto){
 
 		
 		$('#id').val(id);
 		$('#nome').val(nome);
-		$('#cientifico').val(cientifico);
+		//$('#cientifico').val(cientifico);
 		$('#medida').val(medida);
 		$('#valor').val(valor);
 		
@@ -130,11 +128,11 @@ if($total_reg > 0){
 	}
 
 
-	function mostrar(nome, cientifico, medida, valor, foto){
+	function mostrar(nome, medida, valor, foto){
 
 
 $('#nome_mostrar').text(nome);
-$('#cientifico_mostrar').text(cientifico);
+//$('#cientifico_mostrar').text(cientifico);
 $('#medida_mostrar').text(medida);
 $('#valor_mostrar').text(valor);
 $('#target_mostrar').attr('src','images/tipos/' + foto);
@@ -149,7 +147,7 @@ $('#modalMostrar').modal('show');
 	function limparCampos(){
 		$('#id').val('');
 		$('#nome').val('');	
-		$('#cientifico').val('');	
+		//$('#cientifico').val('');	
 		$('#medida').val('');
 		$('#valor').val('');			
 		$('#target').attr('src','images/tipos/sem-foto.png');

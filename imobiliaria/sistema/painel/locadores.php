@@ -92,8 +92,8 @@ $pag = 'locadores';
 
 					<div class="col-md-4">						
 						<div class="form-group"> 
-							<label>Valor R$</label> 
-							<input type="text" class="form-control" name="valor" id="valor" required> 
+							<label>Valor (R$)</label> 
+							<input type="text" class="form-control" name="valor" id="valor" required placeholder="R$: 0.00"> 
 						</div>						
 					</div>
 
@@ -102,7 +102,7 @@ $pag = 'locadores';
 							<label>Status do extrativista</label> 
 							<select class="form-control" name="status" id="status" required>
 								<option value="Ativo">Associado</option>
-								<option value="Inativo">Não Associado</option>
+								<option value="Inativo">Não associado</option>
 							
 							</select> 
 						</div>						
@@ -148,8 +148,8 @@ $pag = 'locadores';
 
 						<div class="col-md-4">
 						<div class="form-group"> 
-							<label>Função na usina</small></label> 
-							<select class="form-control sel2" name="corretor" id="corretor" required style="width:100%;"> 
+							<label>Responsável</small></label> 
+							<select class="form-control sel2" name="corretor" id="corretor" style="width:100%;"> 
 									<?php 
 									if($nivel_usu == 'Corretor'){
 										$query = $pdo->query("SELECT * FROM usuarios where id = '$id_usuario' order by id asc");

@@ -3,7 +3,7 @@ $tabela = 'produtos';
 require_once("../../conexao.php");
 
 $nome = $_POST['nome'];
-$cientifico = $_POST['cientifico'];
+//$cientifico = $_POST['cientifico'];
 $medida = $_POST['medida'];
 $valor = $_POST['valor'];
 $id = $_POST['id'];
@@ -58,14 +58,14 @@ if(@$_FILES['foto']['name'] != ""){
 
 
 if($id == ""){
-	$query = $pdo->prepare("INSERT INTO $tabela SET nome = :nome, cientifico = :cientifico, medida = :medida, valor = :valor, foto = '$foto', ativo = 'Sim'");
+	$query = $pdo->prepare("INSERT INTO $tabela SET nome = :nome, medida = :medida, valor = :valor, foto = '$foto', ativo = 'Sim'");
 	
 }else{
-	$query = $pdo->prepare("UPDATE $tabela SET nome = :nome, cientifico = :cientifico, medida = :medida, valor = :valor, foto = '$foto' WHERE id = '$id'");
+	$query = $pdo->prepare("UPDATE $tabela SET nome = :nome, medida = :medida, valor = :valor, foto = '$foto' WHERE id = '$id'");
 
 }
 $query->bindValue(":nome", "$nome");
-$query->bindValue(":cientifico", "$cientifico");
+//$query->bindValue(":cientifico", "$cientifico");
 $query->bindValue(":medida", "$medida");
 $query->bindValue(":valor", "$valor");
 $query->execute();

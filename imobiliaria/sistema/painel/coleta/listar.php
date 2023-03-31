@@ -69,7 +69,7 @@ if($total_reg > 0){
 
 		<big><a href="#" onclick="editar('{$id}', '{$produto}', '{$produtor}', '{$avaliacao}', '{$local}', '{$bruto}', '{$liquido}', '{$reprovado}', '{$valor}', '{$pagar}', '{$corretor}')" title="Editar Dados"><i class="fa fa-edit text-primary"></i></a></big>
 
-		<big><a href="#" onclick="mostrar('{$produto}', '{$produtor}', '{$avaliacao}', '{$local}', '{$bruto}', '{$liquido}', '{$valor}', '{$pagar}', '{$data_cadF}','{$nome_corretor}')" title="Ver Dados"><i class="fa fa-info-circle text-secondary"></i></a></big>
+		<big><a href="#" onclick="mostrar('{$produto}', '{$produtor}', '{$avaliacao}', '{$local}', '{$nome_corretor}','{$bruto}', '{$liquido}', '{$valor}', '{$pagar}', '{$data_cadF}')" title="Ver Dados"><i class="fa fa-info-circle text-secondary"></i></a></big>
 
 		<li class="dropdown head-dpdn2" style="display: inline-block;">
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><big><i class="fa fa-trash-o text-danger"></i></big></a>
@@ -147,7 +147,7 @@ if($total_reg > 0){
 
 
 
-	function mostrar(produto, produtor, avaliacao, local, bruto, liquido, reprovado, valor, pagar, data_cad, corretor){
+	function mostrar(produto, produtor, avaliacao, local, corretor, bruto, liquido, reprovado, valor, pagar, data_cad){
 
 		//for (let letra of obs){  				
 				//	if (letra === '+'){
@@ -159,14 +159,14 @@ if($total_reg > 0){
 		$('#produtor_mostrar').text(produtor);
 		$('#avaliacao_mostrar').text(avaliacao);
 		$('#local_mostrar').text(local);
+		$('#corretor_mostrar').text(corretor);		
 		$('#bruto_mostrar').text(bruto);
 		$('#liquido_mostrar').text(liquido);
 		$('#reprovado_mostrar').text(reprovado);
 		$('#valor_mostrar').text(valor);
 		$('#pagar_mostrar').text(pagar);				
 		$('#data_cad_mostrar').text(data_cad);				
-		$('#corretor_mostrar').text(corretor);		
-			
+	
 
 		$('#modalMostrar').modal('show');		
 	}

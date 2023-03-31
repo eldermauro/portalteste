@@ -31,7 +31,7 @@ $pag = 'insumos';
 							<div class="col-md-4">			
 							<div class="form-group"> 
 								<label>Insumos</label> 
-								<input type="text" class="form-control" name="nome" id="nome" required> 
+								<input type="text" class="form-control" name="nome" id="nome" required placeholder="saco,balde.."> 
 							</div>
 						</div>
 
@@ -41,9 +41,9 @@ $pag = 'insumos';
 							<div class="form-group"> 
 								<label>Unidade</label> 
 								<select class="form-control" name="medida" id="medida" required>
-									<option value="Quilo">Quilo</option>
-									<option value="Litro">Litro</option>
-									<option value="Unidade">Unidade</option>
+									<option value="Quilo">kg</option>
+									<option value="Litro">L</option>
+									<option value="Unidade">Un</option>
 								</select> 
 							</div>						
 						</div>
@@ -111,7 +111,7 @@ $pag = 'insumos';
 						<div class="col-md-4">			
 							<div class="form-group"> 
 								<label>Valor</label> 
-								<input type="text" class="form-control" name="valor" id="valor" required> 
+								<input type="text" class="form-control" name="valor" id="valor" required placeholder="Rs: 0.00"> 
 						</div>
 						</div>		
 

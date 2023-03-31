@@ -33,7 +33,7 @@ $pag = 'ferramentas';
 							<div class="form-group"> 
 								<label>Tipo</label> 
 								<select class="form-control" name="produto" id="produto" required>
-									<option value="Máquina">Máquina</option>			
+									<option value="Maquina">Maquina</option>			
 									<option value="Ferramenta">Ferramenta</option>
 								</select> 
 							</div>						
@@ -43,7 +43,7 @@ $pag = 'ferramentas';
 
 						<div class="col-md-3">						
 						<div class="form-group"> 
-							<label>Tipo de máquina</label> 
+							<label>Tipo de maquina</label> 
 							<input type="text" class="form-control"name="produtor"   id="produtor" required> 
 						</div>						
 					</div>
@@ -161,8 +161,8 @@ $pag = 'ferramentas';
 
 						<div class="col-md-3">                        
 							<div class="form-group">
-								<label>Valor de custo ($)</label>
-								<input type="text" class="form-control" name="reprovado" id="reprovado" required>
+								<label>Valor de custo (R$)</label>
+								<input type="text" class="form-control" name="reprovado" id="reprovado" required placeholder="Rs: 0.00">
 							</div>                      
 						</div>  
 
@@ -172,7 +172,7 @@ $pag = 'ferramentas';
 
 						<div class="col-md-3">                      
     						<div class="form-group">
-       							 <label>Valor residual ($)</label>
+       							 <label>Valor residual (R$)</label>
        							 <i class="fa fa-question-circle"  data-toggle="tooltip" title="Valor residual é o valor que ainda resta no ativo depois de sua vida útil ter sido completada.
 									
 									Por exemplo, se você comprou uma máquina por $10.000 e ela tem uma vida útil de 5 anos,
@@ -180,7 +180,7 @@ $pag = 'ferramentas';
 									então o valor residual seria de $2.000.
 									Esse valor é importante porque ele afeta o cálculo da depreciação anual.
 									Quanto maior o valor residual, menor será a depreciação anual, pois há menos valor a ser depreciado ao longo da vida útil do ativo."></i>
-       							 <input type="text" class="form-control" name="valor" id="valor" required>
+       							 <input type="text" class="form-control" name="valor" id="valor" required placeholder="Rs: 0.00">
    							 </div>                      
 						</div>
 

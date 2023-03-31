@@ -306,7 +306,7 @@ if($nivel_usu != "Administrador"){
 
 								<li class="treeview">
 									<a href="#">
-										<i class="fa fa-tint"></i>
+										<i class="fa fa-bar-chart"></i>
 										 <span>Produção</span>
 										<i class="fa fa-angle-left pull-right"></i>
 									</a>
@@ -333,7 +333,8 @@ if($nivel_usu != "Administrador"){
 								
 									<!--<li class=""><a href="index.php?pagina=processos"><i class="fa fa-angle-right"></i>Processos Óleos</a></li> Lote-->
 									<!--<li class=""><a href="index.php?pagina=imoveis"><i class="fa fa-angle-right"></i>teste</a></li> Lote-->
-									<li class=""><a href="index.php?pagina=bairros"><i class="fa fa-angle-right"></i>Processos Óleos</a></li> <!--Lote-->
+									<li class=""><a href="index.php?pagina=bairros"><i class="fa fa-angle-right"></i>Processos óleos</a></li> <!--Lote-->
+									<li class=""><a href="index.php?pagina=manteiga"><i class="fa fa-angle-right"></i>Processos manteigas</a></li> <!--Lote-->
 
 										
 										
@@ -349,8 +350,12 @@ if($nivel_usu != "Administrador"){
 										<i class="fa fa-angle-left pull-right"></i>
 									</a>
 									<ul class="treeview-menu">
-									<li class=""><a href="index.php?pagina=contas_banco"><i class="fa fa-angle-right"></i>Contas a Pagar</a></li>
-									<li class=""><a href="index.php?pagina=pagar"><i class="fa fa-angle-right"></i>Contas a Receber</a></li>
+									<li class=""><a href="index.php?pagina=contas_banco"><i class="fa fa-angle-right"></i>Contas</a></li>
+									<li class=""><a href="index.php?pagina=pagar"><i class="fa fa-angle-right"></i>Contas a pagar</a></li>
+									<li class=""><a href="index.php?pagina=receber"><i class="fa fa-angle-right"></i>Contas a receber</a></li>
+									<li class=""><a href="index.php?pagina=frequencias"><i class="fa fa-angle-right"></i>Frequencias</a></li>
+									<li class=""><a href="index.php?pagina=movimentacoes"><i class="fa fa-angle-right"></i>Movimentações</a></li>
+
 									<!--<li class=""><a href="index.php?pagina=buscar_local"><i class="fa fa-angle-right"></i>Extrato Caixa</a></li>
 									<li class=""><a href="index.php?pagina=buscar_local"><i class="fa fa-angle-right"></i>Comissões</a></li>
 									<li class=""><a href="index.php?pagina=buscar_local"><i class="fa fa-angle-right"></i>Relatorio de Movimentações</a></li>Criar Lote-->
@@ -721,9 +726,9 @@ if($nivel_usu != "Administrador"){
     <!-- //side nav js -->
 
     <!-- for index page weekly sales java script -->
-    <script src="js/SimpleChart.js"></script>
+<script src="js/SimpleChart.js"></script>
     <script>
-    	var graphdata1 = {
+    	/*var graphdata1 = {
     		linecolor: "#CCA300",
     		title: "Monday",
     		values: [
@@ -972,7 +977,7 @@ if($nivel_usu != "Administrador"){
     			title: 'Weekly Profit',
     			yaxislabel: 'Profit in $'
     		});
-    	});
+    	});*/
 
     </script>
     <!-- //for index page weekly sales java script -->

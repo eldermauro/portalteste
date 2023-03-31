@@ -50,7 +50,7 @@ if($total_reg == 0){
           <div class="row g-0">
             <div class="col-md-6 col-lg-5 d-none d-md-block">
 
-              <img src="imagens/login-1.png"
+              <img src="imagens/apui.jpg"
                 alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem; height:100%;" />
             </div>
             
@@ -87,7 +87,7 @@ if($total_reg == 0){
                     <button class="btn btn-outline-success btn-lg btn-block" type="submit" >Login</button>
                   </div>
 
-                  <a class="small text-muted" href="#!" data-bs-toggle="modal" data-bs-target="#modalRecuperar">Esqueceu a senha?</a> <br>
+                  <a class="small " href="#!" data-bs-toggle="modal" data-bs-target="#modalRecuperar" style=" color: #3A2212; font-family: 'Archivo', sans-serif; font-size: 1.1em; text-decoration: none;">Esqueceu a senha?</a> <br>
 
 
                   <!-- criação de conta 
@@ -96,9 +96,9 @@ if($total_reg == 0){
                       style="color: #393f81;">Criar conta</a></p>
 
                   -->
-                  
-                  <a href="#!" class="small text-muted" style=" color: #3A2212;">© 2023 INATU.</a>
-                
+                  <br><br><br><br>
+                  <a href="#!" class="small text-muted" style=" color: #3A2212; text-decoration: none;  font-size: 0.9em;">V. 1.0  ©2023 Inatú Amazônia </a>
+
                 </form>
 
               </div>
