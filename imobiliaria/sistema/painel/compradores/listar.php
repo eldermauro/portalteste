@@ -1,17 +1,17 @@
 <?php 
-@session_start();
-$id_usuario = $_SESSION['id_usuario'];
-$nivel_usuario = $_SESSION['nivel_usuario'];           //clientes
+//@session_start();
+//$id_usuario = $_SESSION['id_usuario'];
+//$nivel_usuario = $_SESSION['nivel_usuario'];           //clientes
 require_once("../../conexao.php");
 $data_atual = date('Y-m-d');
 echo <<<HTML
 <small>
 HTML;
-if($nivel_usuario == 'Corretor'){
-	$query = $pdo->query("SELECT * FROM compradores where corretor = '$id_usuario' ORDER BY id desc");
-}else{
+//if($nivel_usuario == 'Corretor'){
+	//$query = $pdo->query("SELECT * FROM compradores where corretor = '$id_usuario' ORDER BY id desc");
+//}else{
 	$query = $pdo->query("SELECT * FROM compradores ORDER BY id desc");
-}
+//}
 
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
 $total_reg = @count($res);
@@ -24,8 +24,7 @@ if($total_reg > 0){
 	<th class="esc">Nome</th>
 	<th class="esc">Telefone</th> 
 	<th class="esc">CPF / CNPJ</th> 
-	<th class="esc">Email</th>
-	<th class="esc">Corretor</th>	
+	<th class="esc">Email</th>	
 	<th>Ações</th>
 	</tr> 
 	</thead> 
@@ -48,7 +47,7 @@ if($total_reg > 0){
 		$ufj = $res[$i]['ufj'];
 		$cidadej = $res[$i]['cidadej'];
 		$numeroj = $res[$i]['numeroj'];
-		$corretor = $res[$i]['corretor'];
+		//$corretor = $res[$i]['corretor'];
 		//$data_nasc = $res[$i]['data_nasc'];
 		$data_cad = $res[$i]['data_cadastro'];
 		$obs = $res[$i]['obs'];
@@ -60,13 +59,13 @@ if($total_reg > 0){
 		//$data_nascF = implode('/', array_reverse(explode('-', $data_nasc)));
 		$data_cadF = implode('/', array_reverse(explode('-', $data_cad)));
 
-		$query2 = $pdo->query("SELECT * FROM usuarios where id = '$corretor'");
-		$res2 = $query2->fetchAll(PDO::FETCH_ASSOC);
-		if(@count($res2) > 0){
-			$nome_corretor = $res2[0]['nome'];
-		}else{
-			$nome_corretor = 'Sem Registro';
-		}
+		//$query2 = $pdo->query("SELECT * FROM usuarios where id = '$corretor'");
+		//$res2 = $query2->fetchAll(PDO::FETCH_ASSOC);
+		//if(@count($res2) > 0){
+		//	$nome_corretor = $res2[0]['nome'];
+		//}else{
+		//	$nome_corretor = 'Sem Registro';
+		//}
 
 
 		echo <<<HTML
@@ -76,12 +75,12 @@ if($total_reg > 0){
 		<td class="esc">{$telefone}</td>
 		<td class="esc">{$doc}</td>
 		<td class="esc">{$email}</td>
-		<td class="esc">{$nome_corretor}</td>
+		
 		<td>
 
-		<big><a href="#" onclick="editar('{$id}', '{$nome}', '{$telefone}', '{$doc}', '{$email}', '{$logradouro}', '{$cep}', '{$uf}', '{$cidade}', '{$numero}', '{$logradouroj}', '{$cepj}', '{$ufj}', '{$cidadej}', '{$numeroj}','{$inscricao}', '{$corretor}',  '{$obs}', '{$pessoa}')" title="Editar Dados"><i class="fa fa-edit text-primary"></i></a></big>
+		<big><a href="#" onclick="editar('{$id}', '{$nome}', '{$telefone}', '{$doc}', '{$email}', '{$logradouro}', '{$cep}', '{$uf}', '{$cidade}', '{$numero}', '{$logradouroj}', '{$cepj}', '{$ufj}', '{$cidadej}', '{$numeroj}','{$inscricao}',  '{$obs}', '{$pessoa}')" title="Editar Dados"><i class="fa fa-edit text-primary"></i></a></big>
 
-		<big><a href="#" onclick="mostrar('{$nome}', '{$telefone}', '{$doc}', '{$email}', '{$logradouro}', '{$cep}', '{$uf}', '{$cidade}', '{$numero}', '{$logradouroj}', '{$cepj}', '{$ufj}', '{$cidadej}', '{$numeroj}',  '{$inscricao}', '{$nome_corretor}',  '{$data_cadF}', '{$obs}', '{$pessoa}')" title="Ver Dados"><i class="fa fa-info-circle text-secondary"></i></a></big>
+		<big><a href="#" onclick="mostrar('{$nome}', '{$telefone}', '{$doc}', '{$email}', '{$logradouro}', '{$cep}', '{$uf}', '{$cidade}', '{$numero}', '{$logradouroj}', '{$cepj}', '{$ufj}', '{$cidadej}', '{$numeroj}',  '{$inscricao}',  '{$data_cadF}', '{$obs}', '{$pessoa}')" title="Ver Dados"><i class="fa fa-info-circle text-secondary"></i></a></big>
 
 		<li class="dropdown head-dpdn2" style="display: inline-block;">
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><big><i class="fa fa-trash-o text-danger"></i></big></a>
@@ -159,7 +158,7 @@ if($total_reg > 0){
 		$('#obs').val(obs);
 		$('#inscricao').val(inscricao);
 		$('#pessoa').val(pessoa).change();
-		$('#corretor').val(corretor).change();	
+		//$('#corretor').val(corretor).change();	
 		
 		$('#tituloModal').text('Editar Registro');
 		$('#modalForm').modal('show');
@@ -190,7 +189,7 @@ if($total_reg > 0){
 		$('#ufj_mostrar').text(ufj);
 		$('#cidadej_mostrar').text(cidadej);
 		$('#numeroj_mostrar').text(numeroj);		
-		$('#corretor_mostrar').text(corretor);		
+		//$('#corretor_mostrar').text(corretor);		
 		//$('#data_nasc_mostrar').text(data_nasc);
 		$('#data_cad_mostrar').text(data_cad);				
 		$('#obs_mostrar').text(obs);		

@@ -1,17 +1,17 @@
 <?php 
-@session_start();
-$id_usuario = $_SESSION['id_usuario'];
-$nivel_usuario = $_SESSION['nivel_usuario'];
+//@session_start();
+//$id_usuario = $_SESSION['id_usuario'];
+//$nivel_usuario = $_SESSION['nivel_usuario'];
 require_once("../../conexao.php");
 $data_atual = date('Y-m-d');
 echo <<<HTML
 <small>
 HTML;
-if($nivel_usuario == 'Corretor'){
-	$query = $pdo->query("SELECT * FROM ferramentas where corretor = '$id_usuario' ORDER BY id desc");
-}else{
+//if($nivel_usuario == 'Corretor'){
+	//$query = $pdo->query("SELECT * FROM ferramentas where corretor = '$id_usuario' ORDER BY id desc");
+//}else{
 	$query = $pdo->query("SELECT * FROM ferramentas ORDER BY id desc");
-}
+//}
 
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
 $total_reg = @count($res);
@@ -44,20 +44,20 @@ if($total_reg > 0){
 		$dia = $res[$i]['dia'];
 		$data_cad = $res[$i]['data_cadastro'];
 		$data_nasc = $res[$i]['data_nasc'];
-		$corretor = $res[$i]['corretor'];
+		//$corretor = $res[$i]['corretor'];
 		
 //retirar quebra de texto do obs
 		//$obs = str_replace(array("\n", "\r"), ' + ', $obs);
 		$data_nascF = implode('/', array_reverse(explode('-', $data_nasc)));
 		$data_cadF = implode('/', array_reverse(explode('-', $data_cad)));
 
-		$query2 = $pdo->query("SELECT * FROM usuarios where id = '$corretor'");
-		$res2 = $query2->fetchAll(PDO::FETCH_ASSOC);
-		if(@count($res2) > 0){
-			$nome_corretor = $res2[0]['nome'];
-		}else{
-			$nome_corretor = 'Sem Registro';
-		}
+		//$query2 = $pdo->query("SELECT * FROM usuarios where id = '$corretor'");
+		//$res2 = $query2->fetchAll(PDO::FETCH_ASSOC);
+		//if(@count($res2) > 0){
+		//	$nome_corretor = $res2[0]['nome'];
+		//}else{
+		//	$nome_corretor = 'Sem Registro';
+		//}
 
 
 		echo <<<HTML
@@ -69,9 +69,9 @@ if($total_reg > 0){
 		
 		<td>
 
-		<big><a href="#" onclick="editar('{$id}', '{$produto}', '{$produtor}', '{$avaliacao}', '{$local}', '{$bruto}', '{$liquido}', '{$reprovado}', '{$valor}', '{$pagar}', '{$dia}','{$data_nasc}', '{$corretor}')" title="Editar Dados"><i class="fa fa-edit text-primary"></i></a></big>
+		<big><a href="#" onclick="editar('{$id}', '{$produto}', '{$produtor}', '{$avaliacao}', '{$local}', '{$bruto}', '{$liquido}', '{$reprovado}', '{$valor}', '{$pagar}', '{$dia}','{$data_nasc}')" title="Editar Dados"><i class="fa fa-edit text-primary"></i></a></big>
 
-		<big><a href="#" onclick="mostrar('{$produto}', '{$produtor}', '{$avaliacao}', '{$local}', '{$bruto}', '{$liquido}', '{$valor}', '{$pagar}', '{$dia}', '{$data_nascF}', '{$data_cadF}','{$nome_corretor}')" title="Ver Dados"><i class="fa fa-info-circle text-secondary"></i></a></big>
+		<big><a href="#" onclick="mostrar('{$produto}', '{$produtor}', '{$avaliacao}', '{$local}', '{$bruto}', '{$liquido}', '{$valor}', '{$pagar}', '{$dia}', '{$data_nascF}', '{$data_cadF}')" title="Ver Dados"><i class="fa fa-info-circle text-secondary"></i></a></big>
 
 		<li class="dropdown head-dpdn2" style="display: inline-block;">
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><big><i class="fa fa-trash-o text-danger"></i></big></a>
@@ -142,7 +142,7 @@ if($total_reg > 0){
 		$('#pagar').val(pagar).change();
 		$('#dia').val(dia).change();
 		$('#data_nasc').val(data_nasc);
-		$('#corretor').val(corretor).change();	
+		//$('#corretor').val(corretor).change();	
 		
 		$('#tituloModal').text('Editar Registro');
 		$('#modalForm').modal('show');
@@ -171,7 +171,7 @@ if($total_reg > 0){
 		$('#dia_mostrar').text(dia);				
 		$('#data_cad_mostrar').text(data_cad);
 		$('#data_nasc_mostrar').text(data_nasc);				
-		$('#corretor_mostrar').text(corretor);		
+		//$('#corretor_mostrar').text(corretor);		
 			
 
 		$('#modalMostrar').modal('show');		

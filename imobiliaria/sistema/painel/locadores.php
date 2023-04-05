@@ -31,7 +31,7 @@ $pag = 'locadores';
 						<div class="col-md-4">						
 							<div class="form-group"> 
 								<label>Nome completo</label> 
-								<input type="text" class="form-control" name="nome" id="nome" required> 
+								<input type="text" class="form-control" name="nome" id="nome"> 
 							</div>						
 						</div>
 
@@ -39,7 +39,7 @@ $pag = 'locadores';
 						<div class="col-md-3">						
 							<div class="form-group"> 
 								<label>Apelido</label> 
-								<input type="text" class="form-control" name="apelido" id="apelido" required> 
+								<input type="text" class="form-control" name="apelido" id="apelido" > 
 							</div>						
 						</div>
 
@@ -49,7 +49,7 @@ $pag = 'locadores';
 						<div class="col-md-2">						
 							<div class="form-group"> 
 								<label>Física / Jurídica</label> 
-								<select class="form-control" name="pessoa" id="pessoa" required>
+								<select class="form-control" name="pessoa" id="pessoa" >
 									<option value="Física">Física</option>
 									<option value="Jurídica">Jurídica</option>
 								</select> 
@@ -82,7 +82,7 @@ $pag = 'locadores';
 					<div class="col-md-4">						
 						<div class="form-group"> 
 							<label>Periodicidade de pagamento</label> 
-							<select class="form-control" name="pg" id="pg" required>
+							<select class="form-control" name="pg" id="pg">
 								<option value="Diário">Diário</option>
 								<option value="Mensal">Mensal</option>
 								<option value="Produção">Produção</option>
@@ -93,14 +93,14 @@ $pag = 'locadores';
 					<div class="col-md-4">						
 						<div class="form-group"> 
 							<label>Valor (R$)</label> 
-							<input type="text" class="form-control" name="valor" id="valor" required placeholder="R$: 0.00"> 
+							<input type="text" class="form-control" name="valor" id="valor"  placeholder="R$: 0.00"> 
 						</div>						
 					</div>
 
 					<div class="col-md-4">						
 						<div class="form-group"> 
 							<label>Status do extrativista</label> 
-							<select class="form-control" name="status" id="status" required>
+							<select class="form-control" name="status" id="status">
 								<option value="Ativo">Associado</option>
 								<option value="Inativo">Não associado</option>
 							
@@ -123,7 +123,7 @@ $pag = 'locadores';
 					<div class="col-md-4">						
 							<div class="form-group"> 
 								<label>Telefone</label> 
-								<input type="text" class="form-control" name="telefone" id="telefone" required> 
+								<input type="text" class="form-control" name="telefone" id="telefone"> 
 							</div>						
 						</div>
 
@@ -146,11 +146,11 @@ $pag = 'locadores';
 
 						
 
-						<div class="col-md-4">
+						<!--<div class="col-md-4">
 						<div class="form-group"> 
 							<label>Responsável</small></label> 
 							<select class="form-control sel2" name="corretor" id="corretor" style="width:100%;"> 
-									<?php 
+									<//?php 
 									if($nivel_usu == 'Corretor'){
 										$query = $pdo->query("SELECT * FROM usuarios where id = '$id_usuario' order by id asc");
 									}else{
@@ -162,13 +162,13 @@ $pag = 'locadores';
 										foreach ($res[$i] as $key => $value){}
 
 											?>	
-										<option value="<?php echo $res[$i]['id'] ?>"><?php echo $res[$i]['nome'] ?></option>
+										<option value="<//?php echo $res[$i]['id'] ?>"><//?php echo $res[$i]['nome'] ?></option>
 
-									<?php } ?>
+									<//?php } ?>
 
 								</select>
 						</div>
-					</div>	
+					</div>	-->
 
 
 						

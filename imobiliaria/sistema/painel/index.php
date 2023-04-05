@@ -312,7 +312,7 @@ if($nivel_usu != "Administrador"){
 									</a>
 									<ul class="treeview-menu">
 									<li class=""><a href="index.php?pagina=lote"><i class="fa fa-angle-right"></i> Criar Lote</a></li> <!--Criar Lote-->
-									<li class=""><a href="index.php?pagina=lotepronto"><i class="fa fa-angle-right"></i>Lote</a></li> <!--Lote-->
+									<!--<li class=""><a href="index.php?pagina=lotepronto"><i class="fa fa-angle-right"></i>Lote</a></li> Lote-->
 									<!--<li class=""><a href="index.php?pagina=processos"><i class="fa fa-angle-right"></i>Meus Processos</a></li> 
 									<li class=""><a href="index.php?pagina=imoveis"><i class="fa fa-angle-right"></i>Meus Processos teste</a></li> -->
 

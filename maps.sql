@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27-Mar-2023 às 16:47
+-- Tempo de geração: 04-Abr-2023 às 20:12
 -- Versão do servidor: 10.4.25-MariaDB
 -- versão do PHP: 8.1.10
 
@@ -44,7 +44,8 @@ INSERT INTO `imovel` (`id`, `titulo`, `lat`, `lng`) VALUES
 (3, 'holiday', -3.163574, -59.866749),
 (4, 'cadastro1', -3.114012, -59.986629),
 (5, 'apui', -7.205374, -59.892906),
-(6, 'Nova equipe', -8.059053, -34.947124);
+(6, 'Nova equipe', -8.059053, -34.947124),
+(7, 'rio azul', -3.161235, -59.830368);
 
 --
 -- Índices para tabelas despejadas
@@ -64,7 +65,7 @@ ALTER TABLE `imovel`
 -- AUTO_INCREMENT de tabela `imovel`
 --
 ALTER TABLE `imovel`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

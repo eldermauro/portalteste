@@ -66,7 +66,7 @@ $pag = 'locais';
 						<div class="col-md-4">						
 							<div class="form-group"> 
 								<label>Nome do Local</label> 
-								<input type="text" class="form-control" name="local" id="local" required> 
+								<input type="text" class="form-control" name="local" id="local" > 
 							</div>						
 						</div>
 
@@ -74,7 +74,7 @@ $pag = 'locais';
 						<div class="col-md-4">						
 							<div class="form-group"> 
 								<label>Localização</label> 
-								<input type="text" class="form-control" name="comunidade" id="comunidade" required placeholder="comunidade/distrito/rio/igarapé"> 
+								<input type="text" class="form-control" name="comunidade" id="comunidade"  placeholder="comunidade/distrito/rio/igarapé"> 
 							</div>						
 						</div>
 
@@ -83,7 +83,7 @@ $pag = 'locais';
 						<div class="col-md-2">						
 							<div class="form-group"> 
 								<label>Municipio/UF</label> 
-								<select class="form-control" name="municipio" id="municipio" required>
+								<select class="form-control" name="municipio" id="municipio" >
 									<option value="Apui-AM">Apui-AM</option>
 									
 								</select> 
@@ -102,7 +102,7 @@ $pag = 'locais';
 					<div class="col-md-5">						
 							<div class="form-group"> 
 								<label>Latitude</label> 
-								<input type="text" class="form-control" name="lat" id="lat" required> 
+								<input type="text" class="form-control" name="lat" id="lat" > 
 							</div>						
 						</div>
 
@@ -110,7 +110,7 @@ $pag = 'locais';
 						<div class="col-md-5">						
 							<div class="form-group"> 
 								<label>Longitude</label> 
-								<input type="text" class="form-control" name="lon" id="lon" required> 
+								<input type="text" class="form-control" name="lon" id="lon" > 
 							</div>						
 						</div>
 

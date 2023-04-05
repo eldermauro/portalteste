@@ -31,10 +31,10 @@ $pag = 'coleta';
 
 					
 
-						<div class="col-md-3">						
+					<!--	<div class="col-md-3">						
 							<div class="form-group"> 
 								<label>Materia-Prima</label> 
-								<select class="form-control" name="produto" id="produto" required>
+								<select class="form-control" name="produto" id="produto" >
 									<option value="Resina de Breu">Resina de Breu</option>
 									<option value="óleo resina de copaíba">óleo resina de copaíba</option>
 									<option value="óleo resina de sangue de dragão">óleo resina de sangue de dragão</option>
@@ -50,7 +50,36 @@ $pag = 'coleta';
 									<option value="Cumarú">Cumarú</option>
 								</select> 
 							</div>						
-						</div>
+						</div>-->
+
+														<div class="col-md-4">						
+														<div class="form-group"> 
+														<label>Matéria-prima</label>  
+															<select class="form-control" name="produto" id="produto" placeholder="">
+																<option value="AÇAÍ (fruto)">AÇAÍ (fruto)</option>
+																<option value="ANDIROBA (semente)">ANDIROBA (semente)</option>
+																<option value="BREU (resina)">BREU (resina)</option>
+																<option value="BURITI (fruto)">BURITI (fruto)</option>
+																<option value="CACAU (semente)">CACAU (semente)</option>
+																<option value="CAFÉ VERDE (semente)">CAFÉ VERDE (semente)</option>
+																<option value="CASTANHA (amêndoa)">CASTANHA (amêndoa)</option>
+																<option value="COPAÍBA (óleo resina)">COPAÍBA (óleo resina)</option>
+																<option value="CUMARU (semente)">CUMARU (semente)</option>
+																<option value="CUPUAÇU (semente)">CUPUAÇU (semente)</option>
+																<option value="LÁTEX (resina)">LÁTEX (resina)</option>
+																<option value="MURUMURU (semente)">MURUMURU (semente)</option>
+																<option value="PATAUÁ (fruto)">PATAUÁ (fruto)</option>
+																<option value="PAU ROSA (galhos e folhas)">PAU ROSA (galhos e folhas)</option>
+																<option value="PIMENTA DE MACACO (folhas)">PIMENTA DE MACACO (folhas)</option>
+																<option value="PITANGA (galhos e folhas)">PITANGA (galhos e folhas)</option>
+																<option value="PRIPRIOCA (rizoma) ">PRIPRIOCA (rizoma) </option>
+																<option value="SANGUE DE DRAGÃO (resina)">SANGUE DE DRAGÃO (resina)</option>
+																<option value="TUCUMÃ (amêndoa)">TUCUMÃ (amêndoa)</option>
+																<option value="TUCUMÃ (semente)">TUCUMÃ (semente)</option>
+																<option value="UCUUBA (amêndoa)">UCUUBA (amêndoa)</option>
+															</select> 
+														</div>						
+														</div>
 
 						<!--
 						<div class="col-md-3">						
@@ -100,11 +129,11 @@ $pag = 'coleta';
 
 
 
-					<div class="col-md-3">
+					<!--<div class="col-md-3">
 						<div class="form-group"> 
 							<label>Responsavel</small></label> 
 							<select class="form-control sel2" name="corretor" id="corretor" required style="width:100%;"> 
-									<?php 
+									<//?php 
 									if($nivel_usu == 'Corretor'){
 										$query = $pdo->query("SELECT * FROM usuarios where id = '$id_usuario' order by id asc");
 									}else{
@@ -116,13 +145,13 @@ $pag = 'coleta';
 										foreach ($res[$i] as $key => $value){}
 
 											?>	
-										<option value="<?php echo $res[$i]['id'] ?>"><?php echo $res[$i]['nome'] ?></option>
+										<option value="<//?php echo $res[$i]['id'] ?>"><//?php echo $res[$i]['nome'] ?></option>
 
-									<?php } ?>
+									<//?php } ?>
 
 								</select>
 						</div>
-					</div>	
+					</div>	-->
 						
 
 
@@ -134,7 +163,7 @@ $pag = 'coleta';
 					<div class="col-md-3">						
 							<div class="form-group"> 
 								<label>Avaliação da Coleta</label> 
-								<select class="form-control" name="avaliacao" id="avaliacao" required>
+								<select class="form-control" name="avaliacao" id="avaliacao" >
 									<option value="Sim">Sim</option>
 									<option value="Não">Não</option>
 								</select> 
@@ -158,7 +187,7 @@ $pag = 'coleta';
 						<div class="col-md-3">						
 							<div class="form-group"> 
 								<label>Locais de Coleta</label> 
-								<select class="form-control sel2" name="local" id="local" required style="width:100%;"> 
+								<select class="form-control sel2" name="local" id="local"  style="width:100%;"> 
 									<?php 
 									$query = $pdo->query("SELECT * FROM locais order by local asc");
 									$res = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -179,7 +208,7 @@ $pag = 'coleta';
 					<div class="col-md-3">						
 							<div class="form-group"> 
 								<label>Peso Bruto (kg)</label> 
-								<input type="text" class="form-control" name="bruto" id="bruto" required> 
+								<input type="text" class="form-control" name="bruto" id="bruto" > 
 							</div>						
 						</div>
 
@@ -187,7 +216,7 @@ $pag = 'coleta';
 						<div class="col-md-3">						
 							<div class="form-group"> 
 								<label>Peso Liquido (kg)</label> 
-								<input type="text" class="form-control" name="liquido" id="liquido" required placeholder="0.00"> 
+								<input type="text" class="form-control" name="liquido" id="liquido"  placeholder="0.00"> 
 							</div>						
 						</div>
 
@@ -207,7 +236,7 @@ $pag = 'coleta';
 					<div class="col-md-3">						
 							<div class="form-group"> 
 								<label>Reprovado (kg)</label> 
-								<select class="form-control" name="reprovado" id="reprovado" required>
+								<select class="form-control" name="reprovado" id="reprovado" >
 									<option value="Não">Não</option>
 									<option value="Impureza">Impureza</option>
 									<option value="Mofo">Mofo</option>
@@ -220,7 +249,7 @@ $pag = 'coleta';
 					<div class="col-md-3">						
 							<div class="form-group"> 
 								<label>Valor por kg (R$)</label> 
-								<input type="text" class="form-control" name="valor" id="valor" required placeholder="0.00"> 
+								<input type="text" class="form-control" name="valor" id="valor"  placeholder="0.00"> 
 							</div>						
 						</div>
 
@@ -231,7 +260,7 @@ $pag = 'coleta';
 					<div class="col-md-3">
 						<div class="form-group"> 
 							<label>Valor a Pagar (R$)</label> 
-							<input type="text" class="form-control" name="pagar" id="pagar" placeholder="0.00" required readonly> 
+							<input type="text" class="form-control" name="pagar" id="pagar" placeholder="0.00"  readonly> 
 						</div>
 					</div>	
 

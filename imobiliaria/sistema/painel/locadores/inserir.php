@@ -21,7 +21,7 @@ $cidade = $_POST['cidade'];
 $numero = $_POST['numero'];
 $obs = $_POST['obs'];
 $pessoa = $_POST['pessoa'];
-$corretor = $_POST['corretor'];
+//$corretor = $_POST['corretor'];
 $id = $_POST['id'];
 
 //validar cpf
@@ -44,10 +44,10 @@ if($total_reg > 0 and $res[0]['id'] != $id){
 
 
 if($id == ""){
-	$query = $pdo->prepare("INSERT INTO $tabela SET nome = :nome, apelido = :apelido,  pessoa = '$pessoa', telefone = :telefone, doc = :doc,  valor = :valor, pg = :pg, status = :status, data_nasc = '$data_nasc',  logradouro = :logradouro, cep = :cep, uf = :uf, cidade = :cidade, numero = :numero,   corretor = '$corretor', data_cadastro = curDate(), obs = :obs");
+	$query = $pdo->prepare("INSERT INTO $tabela SET nome = :nome, apelido = :apelido,  pessoa = '$pessoa', telefone = :telefone, doc = :doc,  valor = :valor, pg = :pg, status = :status, data_nasc = '$data_nasc',  logradouro = :logradouro, cep = :cep, uf = :uf, cidade = :cidade, numero = :numero, data_cadastro = curDate(), obs = :obs");
 
 }else{
-	$query = $pdo->prepare("UPDATE $tabela SET nome = :nome, apelido = :apelido, pessoa = '$pessoa', telefone = :telefone, doc = :doc, valor = :valor, pg = :pg, status = :status, data_nasc = '$data_nasc', logradouro = :logradouro, cep = :cep, uf = :uf, cidade = :cidade, numero = :numero,  corretor = '$corretor', data_cadastro = curDate(), obs = :obs WHERE id = '$id'");
+	$query = $pdo->prepare("UPDATE $tabela SET nome = :nome, apelido = :apelido, pessoa = '$pessoa', telefone = :telefone, doc = :doc, valor = :valor, pg = :pg, status = :status, data_nasc = '$data_nasc', logradouro = :logradouro, cep = :cep, uf = :uf, cidade = :cidade, numero = :numero, data_cadastro = curDate(), obs = :obs WHERE id = '$id'");
 
 }
 

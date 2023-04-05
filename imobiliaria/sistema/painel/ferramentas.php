@@ -32,7 +32,7 @@ $pag = 'ferramentas';
 					<div class="col-md-3">						
 							<div class="form-group"> 
 								<label>Tipo</label> 
-								<select class="form-control" name="produto" id="produto" required>
+								<select class="form-control" name="produto" id="produto" >
 									<option value="Maquina">Maquina</option>			
 									<option value="Ferramenta">Ferramenta</option>
 								</select> 
@@ -44,7 +44,7 @@ $pag = 'ferramentas';
 						<div class="col-md-3">						
 						<div class="form-group"> 
 							<label>Tipo de maquina</label> 
-							<input type="text" class="form-control"name="produtor"   id="produtor" required> 
+							<input type="text" class="form-control"name="produtor"   id="produtor" > 
 						</div>						
 					</div>
 
@@ -52,18 +52,18 @@ $pag = 'ferramentas';
 					<div class="col-md-3">						
 						<div class="form-group"> 
 							<label>Tipo de ferramenta</label> 
-							<input type="text" class="form-control" name="avaliacao" id="avaliacao" required> 
+							<input type="text" class="form-control" name="avaliacao" id="avaliacao" > 
 						</div>						
 					</div>
 
 
 
 
-					<div class="col-md-3">
+					<!--<div class="col-md-3">
 						<div class="form-group"> 
 							<label>Responsável</small></label> 
 							<select class="form-control sel2" name="corretor" id="corretor" required style="width:100%;"> 
-									<?php 
+									<//?php 
 									if($nivel_usu == 'Corretor'){
 										$query = $pdo->query("SELECT * FROM usuarios where id = '$id_usuario' order by id asc");
 									}else{
@@ -75,13 +75,13 @@ $pag = 'ferramentas';
 										foreach ($res[$i] as $key => $value){}
 
 											?>	
-										<option value="<?php echo $res[$i]['id'] ?>"><?php echo $res[$i]['nome'] ?></option>
+										<option value="<//?php echo $res[$i]['id'] ?>"><//?php echo $res[$i]['nome'] ?></option>
 
-									<?php } ?>
+									<//?php } ?>
 
 								</select>
 						</div>
-					</div>	
+					</div>-->
 						
 
 
@@ -109,7 +109,7 @@ $pag = 'ferramentas';
 						<div class="col-md-4">						
 						<div class="form-group"> 
 							<label>Fonte de energia</label> 
-							<select class="form-control" name="local" id="local" required>
+							<select class="form-control" name="local" id="local" >
 							<option value="Motor Estacionário">Motor estacionário</option>
 							<option value="Rede Elétrica">Rede elétrica</option>
 								
@@ -122,7 +122,7 @@ $pag = 'ferramentas';
 					<div class="col-md-4">						
 						<div class="form-group"> 
 							<label>Consumo de energia</label> 
-							<select class="form-control" name="bruto" id="bruto" required>
+							<select class="form-control" name="bruto" id="bruto" >
 								<option value="Diesel">Diesel</option>
 								<option value="Gasolina">Gasolina</option>
 								<option value="Energia Solar">Energia solar</option>
@@ -162,7 +162,7 @@ $pag = 'ferramentas';
 						<div class="col-md-3">                        
 							<div class="form-group">
 								<label>Valor de custo (R$)</label>
-								<input type="text" class="form-control" name="reprovado" id="reprovado" required placeholder="Rs: 0.00">
+								<input type="text" class="form-control" name="reprovado" id="reprovado"  placeholder="Rs: 0.00">
 							</div>                      
 						</div>  
 
@@ -180,7 +180,7 @@ $pag = 'ferramentas';
 									então o valor residual seria de $2.000.
 									Esse valor é importante porque ele afeta o cálculo da depreciação anual.
 									Quanto maior o valor residual, menor será a depreciação anual, pois há menos valor a ser depreciado ao longo da vida útil do ativo."></i>
-       							 <input type="text" class="form-control" name="valor" id="valor" required placeholder="Rs: 0.00">
+       							 <input type="text" class="form-control" name="valor" id="valor"  placeholder="Rs: 0.00">
    							 </div>                      
 						</div>
 
@@ -189,7 +189,7 @@ $pag = 'ferramentas';
 								<div class="form-group">
 									
 									<label>Vida útil (em anos)</label>
-									<input type="text" class="form-control" name="pagar" id="pagar" required>
+									<input type="text" class="form-control" name="pagar" id="pagar" >
 								</div>                      
 							</div>   			
 
@@ -211,7 +211,7 @@ $pag = 'ferramentas';
 									como máquinas, equipamentos, veículos e prédios,
 									ao longo do tempo, de forma a refletir o seu valor real no balanço contábil."></i>
 
-									<input type="text" class="form-control" name="liquido" id="liquido" required readonly>
+									<input type="text" class="form-control" name="liquido" id="liquido"  readonly>
 								</div>                      
 							</div>
 
@@ -226,7 +226,7 @@ $pag = 'ferramentas';
 									Esse valor diário pode ser usado para calcular o valor de um ativo em um determinado dia,
 									ou para projetar o valor futuro do ativo."></i>
 
-									<input type="text" class="form-control" name="dia" id="dia" required readonly>
+									<input type="text" class="form-control" name="dia" id="dia"  readonly>
 								</div>                      
 							</div>
 

@@ -65,10 +65,10 @@ $pag = 'bairros';
 
 <div class="tab-content" id="myTabContent"><!--fim nav-->
 
-		<div class="tab-pane fade" id="recepcion" role="tabpanel" aria-labelledby="recepcion-tab">
-		<br>
+				<div class="tab-pane fade" id="recepcion" role="tabpanel" aria-labelledby="recepcion-tab">
+					<br>
 							 <h4>Recepção</h4>
-							<div class="row">
+						<div class="row">
 
 							<hr>
 								<h4>Matéria-prima</h4>
@@ -82,69 +82,157 @@ $pag = 'bairros';
 							</div>
 
 
-									<div class="col-md-3">
-										<div class="form-group"> 
-											<label>Matéria-prima</label> 
-											<input type="text" class="form-control" name="materia" id="materia" placeholder="" > 
-										</div>
-									</div>
-									<div class="col-md-3">
+									
+
+									
+
+
+									<!--
+									AÇAÍ (fruto)
+									ANDIROBA (semente)
+									BREU (resina)
+									BURITI (fruto)
+									CACAU (semente)
+									CAFÉ VERDE (semente)
+									CASTANHA (amêndoa)
+									CASTANHA (semente)
+									COPAÍBA (óleo resina)
+									CUMARU (semente)
+									CUPUAÇU (semente)
+									LÁTEX (resina)
+									MURUMURU (semente)
+									PATAUÁ (fruto)
+									PAU ROSA (galhos e folhas)
+									PIMENTA DE MACACO (folhas)
+									PITANGA (galhos e folhas)
+									PRIPRIOCA (rizoma) 
+									SANGUE DE DRAGÃO (resina)
+									TUCUMÃ (amêndoa)
+									TUCUMÃ (semente)
+									UCUUBA (amêndoa)
+									-->
+
+
+
+
+
+
+								
+
+									<div class="col-md-5">						
 										<div class="form-group"> 
 											<label>Produtor/Extrativista</label> 
-											<input type="text" class="form-control" name="produtor" id="produtor" placeholder="" > 
-										</div>
+											<select class="form-control sel2" name="produtor" id="produtor"  style="width:100%;"> 
+											<?php 
+												$query = $pdo->query("SELECT * FROM locadores order by nome desc");
+												$res = $query->fetchAll(PDO::FETCH_ASSOC);
+												for($i=0; $i < @count($res); $i++){
+													foreach ($res[$i] as $key => $value){}
+
+														?>	
+													<option value="<?php echo $res[$i]['nome'] ?>"><?php echo $res[$i]['nome'] ?></option>
+
+												<?php } ?>
+
+											</select>
+										</div>						
 									</div>
-									<div class="col-md-3">
-										<div class="form-group"> 
-											<label>Local de coleta</label> 
-											<input type="text" class="form-control" name="local" id="local" placeholder="" > 
-										</div>
-									</div>
 
 
+									
 
+							<div class="col-md-4">						
+							<div class="form-group"> 
+								<label>Local de coleta</label> 
+								<select class="form-control sel2" name="local" id="local"  style="width:100%;"> 
+									<?php 
+									$query = $pdo->query("SELECT * FROM locais order by local asc");
+									$res = $query->fetchAll(PDO::FETCH_ASSOC);
+									for($i=0; $i < @count($res); $i++){
+										foreach ($res[$i] as $key => $value){}
+
+											?>	
+										<option value="<?php echo $res[$i]['local'] ?>"><?php echo $res[$i]['local'] ?></option>
+
+									<?php } ?>
+
+								</select>
+							</div>						
+						</div>				
+
+
+									
+
+
+														
 
 
 									
 
 							<div class="row">
 
-															
-							<div class="col-md-3">
-								<div class="form-group"> 
-									<label>Quantidade</label> 
-									<input type="text" class="form-control" name="quantidade" id="quantidade" placeholder="" > 
-								</div>
-							</div>
-										<div class="col-md-3">						
-										<div class="form-group"> 
-											<label>Unidade de medida</label> 
-											<select class="form-control" name="medida" id="medida">
-												<option value="Quilo">Kg</option>
-												<option value="Litro">L</option>
-											</select> 
-										</div>						
-										</div>
+														<div class="col-md-4">						
+														<div class="form-group"> 
+														<label>Matéria-prima</label>  
+															<select class="form-control" name="materia" id="materia" placeholder="">
+																<option value="AÇAÍ (fruto)">AÇAÍ (fruto)</option>
+																<option value="ANDIROBA (semente)">ANDIROBA (semente)</option>
+																<option value="BREU (resina)">BREU (resina)</option>
+																<option value="BURITI (fruto)">BURITI (fruto)</option>
+																<option value="CACAU (semente)">CACAU (semente)</option>
+																<option value="CAFÉ VERDE (semente)">CAFÉ VERDE (semente)</option>
+																<option value="CASTANHA (amêndoa)">CASTANHA (amêndoa)</option>
+																<option value="COPAÍBA (óleo resina)">COPAÍBA (óleo resina)</option>
+																<option value="CUMARU (semente)">CUMARU (semente)</option>
+																<option value="CUPUAÇU (semente)">CUPUAÇU (semente)</option>
+																<option value="LÁTEX (resina)">LÁTEX (resina)</option>
+																<option value="MURUMURU (semente)">MURUMURU (semente)</option>
+																<option value="PATAUÁ (fruto)">PATAUÁ (fruto)</option>
+																<option value="PAU ROSA (galhos e folhas)">PAU ROSA (galhos e folhas)</option>
+																<option value="PIMENTA DE MACACO (folhas)">PIMENTA DE MACACO (folhas)</option>
+																<option value="PITANGA (galhos e folhas)">PITANGA (galhos e folhas)</option>
+																<option value="PRIPRIOCA (rizoma) ">PRIPRIOCA (rizoma) </option>
+																<option value="SANGUE DE DRAGÃO (resina)">SANGUE DE DRAGÃO (resina)</option>
+																<option value="TUCUMÃ (amêndoa)">TUCUMÃ (amêndoa)</option>
+																<option value="TUCUMÃ (semente)">TUCUMÃ (semente)</option>
+																<option value="UCUUBA (amêndoa)">UCUUBA (amêndoa)</option>
+															</select> 
+														</div>						
+														</div>
 
-						<!--<div class="col-md-3">
-								<div class="form-group"> 
-									<label>Quantidade</label> 
-									<input type="text" class="form-control" name="totall" id="totall" placeholder="" > 
-								</div>
-							</div>-->	
+											
+
+																						
+														<div class="col-md-2">
+															<div class="form-group"> 
+																<label>Quantidade</label> 
+																<input type="text" class="form-control" name="quantidade" id="quantidade" placeholder="" > 
+															</div>
+														</div>
 
 
-							<div class="col-md-3">
-								<div class="form-group"> 
-									<label>Valor pago(R$)</label> 
-									<input type="text" class="form-control" name="totalll" id="totalll" placeholder="0.00" > 
-								</div>
-							</div>
+														<div class="col-md-3">						
+														<div class="form-group"> 
+															<label>Unidade de medida</label> 
+															<select class="form-control" name="medida" id="medida">
+																<option value="Quilo">Kg</option>
+																<option value="Litro">L</option>
+															</select> 
+														</div>						
+														</div>
+
+
+														<div class="col-md-2">
+															<div class="form-group"> 
+																<label>Valor pago(R$)</label> 
+																<input type="text" class="form-control" name="totalll" id="totalll" placeholder="0.00" > 
+															</div>
+														</div>
 							
 
 							</div>
 
-						</div>
+				</div>
 
 
 
@@ -2875,12 +2963,130 @@ $pag = 'bairros';
 									<br>
 											<h4>Produto final</h4>
 										<div class="row">
-											<div class="col-md-3">
-												<div class="form-group">
-													<label>Nome produto</label>
-													<input type="text" class="form-control" name="np" id="np" placeholder="">
-												</div>
-											</div>
+											
+
+											<div class="col-md-4">						
+														<div class="form-group"> 
+														<label>Nome produto</label>  
+<!---
+AÇAÍ (fruto)
+AÇAÍ (óleo vegetal)
+AÇAÍ (torta)
+ANDIROBA (óleo vegetal)
+
+ANDIROBA (torta)
+
+
+BREU (hidrolato)
+BREU (óleo essencial)
+BREU (resina)
+BREU (sobra de destilaçao)
+
+BURITI (óleo vegetal)
+BURITI (torta)
+
+CACAU (manteiga)
+CACAU (torta)
+
+CAFÉ VERDE (óleo vegetal)
+CAFÉ VERDE (torta)
+
+
+CASTANHA (amêndoa)
+CASTANHA (óleo)
+CASTANHA (torta)
+
+
+COPAÍBA (óleo essencial)
+COPAÍBA (óleo resina)
+
+
+CUMARU (óleo vegetal)
+CUMARU (semente)
+CUMARU (torta)
+
+
+CUPUAÇU (manteiga)
+CUPUAÇU (semente)
+
+
+LÁTEX (vulcanizada)
+
+MURUMURU (manteiga)
+MURUMURU (torta)
+
+PATAUÁ (óleo)
+PATAUÁ (torta)
+
+
+PAU ROSA (hidrolato)
+PAU ROSA (óleo essencial)
+PAU ROSA (sobra de destilação)
+
+
+PIMENTA DE MACACO (óleo essencial)
+
+PRIPRIOCA (óleo essencial) 
+PRIPRIOCA (torta) 
+
+SANGUE DE DRAGÃO (resina)
+
+TUCUMÃ (manteiga)
+TUCUMÃ (torta)
+
+UCUUBA (manteiga)
+UCUUBA (torta)-->												<select class="form-control" name="np" id="np" placeholder="">
+																<option value="AÇAÍ (fruto)">AÇAÍ (fruto)</option>
+																<option value="AÇAÍ (óleo vegetal)">AÇAÍ (óleo vegetal)</option>
+																<option value="AÇAÍ (torta)">AÇAÍ (torta)</option>
+																<option value="ANDIROBA (óleo vegetal)">ANDIROBA (óleo vegetal)</option>
+																<option value="ANDIROBA (torta)">ANDIROBA (torta)</option>
+																<option value="BREU (hidrolato)">BREU (hidrolato)</option>
+																<option value="BREU (óleo essencial)">BREU (óleo essencial)</option>
+																<option value="BREU (sobra de destilaçao)">BREU (sobra de destilaçao)</option>
+																<option value="BREU (resina)">BREU (resina)</option>
+																<option value="BURITI (óleo vegetal)">BURITI (óleo vegetal)</option>
+																<option value="BURITI (torta)">BURITI (torta)</option>
+																<option value="CACAU (manteiga)">CACAU (manteiga)</option>
+																<option value="CACAU (torta)">CACAU (torta)</option>
+																<option value="CAFÉ VERDE (óleo vegetal)">CAFÉ VERDE (óleo vegetal)</option>
+																<option value="CAFÉ VERDE (torta)">CAFÉ VERDE (torta)</option>
+																<option value="CASTANHA (amêndoa)">CASTANHA (amêndoa)</option>
+																<option value="CASTANHA (óleo)">CASTANHA (óleo)</option>
+																<option value="CASTANHA (torta)">CASTANHA (torta)</option>
+																<option value="COPAÍBA (óleo essencial">COPAÍBA (óleo essencial)</option>
+																<option value="COPAÍBA (óleo resina)">COPAÍBA (óleo resina)</option>
+																<option value="CUMARU (óleo vegetal)">CUMARU (óleo vegetal)</option>
+																<option value="CUMARU (semente)">CUMARU (semente)</option>
+																<option value="CUMARU (torta)">CUMARU (torta)</option>
+																<option value="CUPUAÇU (manteiga)">CUPUAÇU (manteiga)</option>
+																<option value="CUPUAÇU (semente)">CUPUAÇU (semente)</option>
+																<option value="LÁTEX (vulcanizada)">LÁTEX (vulcanizada)</option>
+																<option value="MURUMURU (manteiga)">MURUMURU (manteiga)</option>
+																<option value="MURUMURU (torta)">MURUMURU (torta)</option>
+																<option value="PATAUÁ (óleo)">PATAUÁ (óleo)</option>
+																<option value="PATAUÁ (torta)">PATAUÁ (torta)</option>
+																<option value="PAU ROSA (hidrolato)">PAU ROSA (hidrolato)</option>
+																<option value="PAU ROSA (óleo essencial)">PAU ROSA (óleo essencial)</option>
+																<option value="PAU ROSA (sobra de destilação)">PAU ROSA (sobra de destilação)</option>
+																<option value="PIMENTA DE MACACO (óleo essencial)">PIMENTA DE MACACO (óleo essencial)</option>
+																<option value="PRIPRIOCA (óleo essencial)">PRIPRIOCA (óleo essencial)</option>
+																<option value="PRIPRIOCA (torta)">PRIPRIOCA (torta)</option>
+																<option value="SANGUE DE DRAGÃO (resina)">SANGUE DE DRAGÃO (resina)</option>
+																<option value="TUCUMÃ (manteiga)">TUCUMÃ (manteiga)</option>
+																<option value="TUCUMÃ (torta)">TUCUMÃ (torta)</option>
+																<option value="UCUUBA (manteiga)">UCUUBA (manteiga)</option>
+																<option value="UCUUBA (torta)">UCUUBA (torta)</option>
+
+															</select> 
+														</div>						
+														</div>
+
+
+
+
+
+
 
 											<div class="col-md-3">
 												<div class="form-group">

@@ -19,7 +19,7 @@ $cidadej = $_POST['cidadej'];
 $numeroj = $_POST['numeroj'];
 $obs = $_POST['obs'];
 $pessoa = $_POST['pessoa'];
-$corretor = $_POST['corretor'];
+//$corretor = $_POST['corretor'];
 $id = $_POST['id'];
 $inscricao = $_POST['inscricao'];
 
@@ -43,10 +43,10 @@ if($total_reg > 0 and $res[0]['id'] != $id){
 
 
 if($id == ""){
-	$query = $pdo->prepare("INSERT INTO $tabela SET nome = :nome, pessoa = '$pessoa', telefone = :telefone, doc = :doc, inscricao = :inscricao,  email = :email,  logradouro = :logradouro, cep = :cep, uf = :uf, cidade = :cidade, numero = :numero, logradouroj = :logradouroj, cepj = :cepj, ufj = :ufj, cidadej = :cidadej, numeroj = :numeroj, corretor = '$corretor', data_cadastro = curDate(),  obs = :obs");
+	$query = $pdo->prepare("INSERT INTO $tabela SET nome = :nome, pessoa = '$pessoa', telefone = :telefone, doc = :doc, inscricao = :inscricao,  email = :email,  logradouro = :logradouro, cep = :cep, uf = :uf, cidade = :cidade, numero = :numero, logradouroj = :logradouroj, cepj = :cepj, ufj = :ufj, cidadej = :cidadej, numeroj = :numeroj,  data_cadastro = curDate(),  obs = :obs");
 
 }else{
-	$query = $pdo->prepare("UPDATE $tabela SET nome = :nome, pessoa = '$pessoa', telefone = :telefone, doc = :doc, inscricao = :inscricao,   email = :email,  logradouro = :logradouro, cep = :cep, uf = :uf, cidade = :cidade, numero = :numero, logradouroj = :logradouroj, cepj = :cepj, ufj = :ufj, cidadej = :cidadej, numeroj = :numeroj, corretor = '$corretor', data_cadastro = curDate(),  obs = :obs WHERE id = '$id'");
+	$query = $pdo->prepare("UPDATE $tabela SET nome = :nome, pessoa = '$pessoa', telefone = :telefone, doc = :doc, inscricao = :inscricao,   email = :email,  logradouro = :logradouro, cep = :cep, uf = :uf, cidade = :cidade, numero = :numero, logradouroj = :logradouroj, cepj = :cepj, ufj = :ufj, cidadej = :cidadej, numeroj = :numeroj,  data_cadastro = curDate(),  obs = :obs WHERE id = '$id'");
 
 }
 

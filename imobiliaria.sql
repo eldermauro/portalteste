@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27-Mar-2023 às 16:45
+-- Tempo de geração: 04-Abr-2023 às 19:31
 -- Versão do servidor: 10.4.25-MariaDB
 -- versão do PHP: 8.1.10
 
@@ -56,7 +56,11 @@ INSERT INTO `arquivos` (`id`, `nome`, `descricao`, `arquivo`, `data_cad`, `regis
 (17, 'teste', '', '12-12-2022-22-10-11-aluguel.jpeg', '2022-12-12', 'Associados', 2, 3),
 (18, 'teste', '', '14-12-2022-10-19-38-tabela2.png', '2022-12-14', 'Vendedores', 6, 3),
 (19, 'pgn', '', '02-01-2023-16-36-40-tabela.png', '2023-01-02', 'Locadores', 5, 3),
-(20, 'teste', '', '04-01-2023-12-48-36-passagem2.jpeg', '2023-01-04', 'Coleta', 1, 3);
+(20, 'teste', '', '04-01-2023-12-48-36-passagem2.jpeg', '2023-01-04', 'Coleta', 1, 3),
+(21, 'nota', NULL, '28-03-2023-11-22-38-WhatsApp-Image-2023-03-27-at-13.45.51.jpeg', '2023-03-28', 'Conta Ã  Pagar', 6, 3),
+(22, 'nota', NULL, '28-03-2023-11-22-38-WhatsApp-Image-2023-03-27-at-13.45.51.jpeg', '2023-03-28', 'Vendedores', 7, 3),
+(23, 'arquivo', NULL, '28-03-2023-12-20-18-WhatsApp-Image-2023-03-27-at-13.45.48.jpeg', '2023-03-28', 'Conta Ã  Pagar', 17, 3),
+(24, 'arquivo', NULL, '28-03-2023-12-20-18-WhatsApp-Image-2023-03-27-at-13.45.48.jpeg', '2023-03-28', 'Vendedores', 7, 3);
 
 -- --------------------------------------------------------
 
@@ -300,7 +304,7 @@ CREATE TABLE `bairros` (
 --
 
 INSERT INTO `bairros` (`id`, `materia`, `produtor`, `local`, `quantidade`, `medida`, `totall`, `totalll`, `data_entrada`, `fonte`, `consumo`, `data_aquisicao`, `maq`, `custo`, `residual`, `anos`, `depreciacao`, `dia`, `util`, `vd`, `obra`, `hora`, `trabalho`, `pago`, `entradois`, `undois`, `maqdois`, `maqfontedois`, `maqconsumodois`, `ferdois`, `ferfontedois`, `ferconsumodois`, `data_aquidois`, `custodois`, `residualdois`, `anosdois`, `depreciacaodois`, `diadois`, `utildois`, `vddois`, `obradois`, `horadois`, `trabalhadois`, `pagodois`, `resuldois`, `medidadois`, `perdadois`, `percedois`, `entratres`, `untres`, `maqtres`, `maqfontetres`, `maqconsumotres`, `fertres`, `ferfontetres`, `ferconsumotres`, `data_aquitres`, `custotres`, `residualtres`, `anostres`, `depreciacaotres`, `diatres`, `utiltres`, `vdtres`, `obratres`, `horatres`, `trabalhotres`, `pagotres`, `resultres`, `medidatres`, `perdatres`, `percetres`, `data_arm`, `armazum`, `medum`, `formaum`, `entraquatro`, `unquatro`, `maqquatro`, `maqfontequatro`, `maqconsumoquatro`, `ferquatro`, `ferfontequatro`, `ferconsumoquatro`, `data_aquiquatro`, `custoquatro`, `residualquatro`, `anosquatro`, `depreciacaoquatro`, `diaquatro`, `utilquatro`, `vdquatro`, `obraquatro`, `horaquatro`, `trabalhoquatro`, `pagoquatro`, `resulquatro`, `medidaquatro`, `perdaquatro`, `percequatro`, `entracinco`, `uncinco`, `maqcinco`, `maqfontecinco`, `maqconsumocinco`, `fercinco`, `ferfontecinco`, `ferconsumocinco`, `data_aquicinco`, `custocinco`, `residualcinco`, `anoscinco`, `depreciacaocinco`, `diacinco`, `utilcinco`, `vdcinco`, `obracinco`, `horacinco`, `trabalhocinco`, `pagocinco`, `resulcinco`, `medidacinco`, `perdacinco`, `percecinco`, `produtoum`, `insumoum`, `medidauma`, `data_emum`, `produtodois`, `insumodois`, `medidasegun`, `data_emdois`, `entraseis`, `unseis`, `maqseis`, `maqfonteseis`, `maqconsumoseis`, `ferseis`, `ferfonteseis`, `ferconsumoseis`, `data_aquiseis`, `custoseis`, `residualseis`, `anosseis`, `depreciacaoseis`, `diaseis`, `utilseis`, `vdseis`, `obraseis`, `horaseis`, `trabalhoseis`, `pagoseis`, `resulseis`, `medidaseis`, `perdaseis`, `perceseis`, `insumtres`, `produtotres`, `armaztres`, `medidaterc`, `data_emtres`, `armazquatro`, `medidaquart`, `formaquatro`, `entrasete`, `unsete`, `maqsete`, `maqfontesete`, `maqconsumosete`, `fersete`, `ferfontesete`, `ferconsumosete`, `data_aquisete`, `custosete`, `residualsete`, `anossete`, `depreciacaosete`, `diasete`, `utilsete`, `vdsete`, `obrasete`, `horasete`, `trabalhosete`, `pagosete`, `resulsete`, `medidasete`, `perdasete`, `percesete`, `np`, `qua`, `umed`, `totalmateria`, `totaldepre`, `totalrend`, `totalhora`, `totalobra`, `totalproducao`, `totalcusto`, `totalcustodois`, `data_final`) VALUES
-(4, 'breu', 'marcus', 'USINA APUI', '500', 'Quilo', '', '500', '2023-03-20', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-27', '', '5000', '2000', '50', '60', '0.16', '5', '0.8', '100', '12.50', '4', '50.00', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '2023-03-24', '', 'Quilo', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', '', 'Quilo', '0000-00-00', '', '', 'Quilo', '0000-00-00', '500', '', '50.00', '', '', '50.00', '', '', '0000-00-00', '50.00', '50.00', '50.00', '3', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '', '50.00', '50.00', '', '50.00', '50.00', '', '0000-00-00', '50.00', '', '50.00', '50.00', '', '50.00', '', '', '50.00', '', '', '0000-00-00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '', '50.00', '50.00', '50.00', '50.00', '', '500.00', '100.80', '50.00', '', '150.00', '50.00', '750.80', '15.02', NULL),
+(4, 'breu', 'marcus', 'USINA APUI', '500', 'Quilo', '', '500', '2023-03-20', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-27', '', '5000', '2000', '50', '60', '0.16', '5', '0.8', '100', '12.50', '4', '50.00', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '2023-03-24', '', 'Quilo', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', '', 'Quilo', '0000-00-00', '', '', 'Quilo', '0000-00-00', '500', '', '50.00', '', '', '50.00', '', '', '0000-00-00', '50.00', '50.00', '50.00', '', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '', '50.00', '50.00', '', '50.00', '50.00', '', '0000-00-00', '50.00', '', '50.00', '50.00', '', '50.00', '', '', '50.00', '', '', '0000-00-00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '', '50.00', '50.00', '50.00', '50.00', 'Quilo', '500.00', '100.80', '50.00', '', '150.00', '50.00', '750.80', '15.02', NULL),
 (3, 'teste', 'polpadeira', 'USINA APUI', '500', 'Quilo', '', '7000', '0000-00-00', 'Motor EstacionÃ¡rio', 'Diesel', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '2023-03-24', '', 'Quilo', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-24', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', '', 'Quilo', '0000-00-00', '', '', 'Quilo', '0000-00-00', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '7000.00', '0.00', '', '', '0.00', '0.00', '7000.00', 'Infinity', NULL);
 
 -- --------------------------------------------------------
@@ -325,7 +329,8 @@ INSERT INTO `cargos` (`id`, `nome`) VALUES
 (4, 'Limpeza'),
 (5, 'Secretária'),
 (6, 'Gerente'),
-(7, 'Extrativista');
+(7, 'Extrativista'),
+(8, 'porteiro');
 
 -- --------------------------------------------------------
 
@@ -382,7 +387,9 @@ INSERT INTO `coleta` (`id`, `produto`, `produtor`, `avaliacao`, `local`, `bruto`
 (3, 'CafÃ© Verde', 'sila m auro', 'NÃ£o', 'usina1', '52', '200', 'Impureza', '52', '10400', '2023-02-01', 3),
 (4, 'Ã³leo resina de copaÃ­ba', 'pedro silva silva si', 'Sim', 'usina1', '52', '77', 'NÃ£o', 'R$Â 90,00', 'NaN', '2023-02-01', 3),
 (5, 'CopaÃ­ba', 'Silvio', 'Sim', 'apui', '50', '49.5', 'NÃ£o', '20', '990', '2023-02-14', 3),
-(6, 'Ã³leo resina de sangue de dragÃ£o', 'Silvio junior', 'Sim', 'apui', '55', '1545', 'NÃ£o', '50', '77250', '2023-03-06', 3);
+(6, 'Ã³leo resina de sangue de dragÃ£o', 'Silvio junior', 'Sim', 'apui', '55', '1545', 'NÃ£o', '50', '77250', '2023-03-06', 3),
+(7, 'Resina de Breu', 'Silvio junior', 'Sim', 'usina2', '80', '60', 'NÃ£o', '52.00', '3120', '2023-03-27', 3),
+(8, 'CopaÃ­ba', 'lima', 'Sim', 'usina1', '60', '50', 'NÃ£o', '60', '3000', '2023-03-27', 3);
 
 -- --------------------------------------------------------
 
@@ -446,7 +453,7 @@ CREATE TABLE `config` (
 --
 
 INSERT INTO `config` (`id`, `nome`, `telefone`, `email`, `endereco`, `relatorio`, `logo`, `favicon`, `logo_rel`) VALUES
-(0, 'USINA APUI', '(31)3220-2058', 'contato@hugocursos.com.br', 'Rua X Nï¿½mero 1100 Bairro Centro - CEP 30512-980 - Belo Horizonte', 'pdf', 'logo.png', 'favicon.ico', 'logo.jpg');
+(0, 'USINA APUI', '(92) 3347-7350', 'inatu@idesam.org', 'R. BarÃ£o de SolimÃµes, 12 - Flores, Manaus - AM, 69058-250', 'pdf', 'logo.png', 'favicon.ico', 'logo.jpg');
 
 -- --------------------------------------------------------
 
@@ -467,7 +474,7 @@ CREATE TABLE `contas_banco` (
 --
 
 INSERT INTO `contas_banco` (`id`, `nome`, `banco`, `conta`, `agencia`) VALUES
-(0, 'teste', 'brasil', '888-44', '1021');
+(1, 'pan', 'pan', '888-44', '1021');
 
 -- --------------------------------------------------------
 
@@ -554,7 +561,8 @@ CREATE TABLE `ferramentas` (
 INSERT INTO `ferramentas` (`id`, `produto`, `produtor`, `avaliacao`, `local`, `bruto`, `liquido`, `reprovado`, `valor`, `pagar`, `depre`, `dia`, `data_cadastro`, `data_nasc`, `corretor`) VALUES
 (2, 'Maquina', 'junior', 'Sim', 'Rede ElÃ©trica', 'Diesel', '29.5', '100', '41', '2', '', '0.08', '2023-01-26', '2023-01-19', 3),
 (3, 'Ferramenta', 'manivela', 'NÃ£o', 'Motor EstacionÃ¡rio', 'Gasolina', '200', 'NÃ£o', '90', '18000', '', '', '2023-01-31', '', 3),
-(4, 'Maquina', 'polpadeira', 'nÃ£o tem', 'Rede ElÃ©trica', 'Gasolina', '75', '200', '50', '2', '', '0.21', '2023-03-02', '2023-01-19', 3);
+(4, 'Maquina', 'polpadeira', 'nÃ£o tem', 'Rede ElÃ©trica', 'Gasolina', '75', '200', '50', '2', '', '0.21', '2023-03-02', '2023-01-19', 3),
+(5, 'Maquina', 'moto serra', 'nÃ£o tem', 'Motor EstacionÃ¡rio', 'Diesel', '300', '5000', '2000', '10', '', '0.82', '2023-03-30', '2023-03-30', 3);
 
 -- --------------------------------------------------------
 
@@ -567,6 +575,16 @@ CREATE TABLE `frequencias` (
   `frequencia` varchar(30) NOT NULL,
   `dias` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `frequencias`
+--
+
+INSERT INTO `frequencias` (`id`, `frequencia`, `dias`) VALUES
+(2, 'Mensal', 30),
+(3, 'Semanal', 7),
+(4, 'DiÃ¡ria', 1),
+(5, 'Uma vez', 0);
 
 -- --------------------------------------------------------
 
@@ -598,7 +616,7 @@ CREATE TABLE `funcionarios` (
 --
 
 INSERT INTO `funcionarios` (`id`, `nome`, `cpf`, `telefone`, `email`, `logradouro`, `data_admissao`, `cargo`, `cep`, `uf`, `cidade`, `numero`, `ativo`, `creci`, `foto`, `obs`) VALUES
-(2, 'Marcos Silva', '444.444.444-44', '(44) 44444-4444', 'marcos@hotmail.com', 'Rua X', '0000-00-00', '2', '', '', '', '', 'Sim', '', '08-02-2022-10-11-56-4.jpg', ' '),
+(2, 'Marcos Silva', '444.444.444-44', '(44) 44444-4444', 'marcos@hotmail.com', 'Rua X', '0000-00-00', '2', '', '', '', '', 'NÃ£o', '', '08-02-2022-10-11-56-4.jpg', ' '),
 (3, 'Marcela Tesoureira', '888.888.888-90', '(44) 45555-5555', 'tesoureiro@hotmail.com', 'Rua XXX', '2022-02-07', '1', '', '', '', '', 'Sim', '', '08-02-2022-11-16-25-a.png', 'fasfadsfdas\r\nfdafa\r\nfdsfsaf'),
 (5, 'Marta Silva', '565.656.565-6', '(65) 59656-5656', 'marta@hotmail.com', 'Rua X', '2022-02-08', '5', '', '', '', '', 'NÃ£o', '', '08-02-2022-10-58-53-img1.png', ''),
 (7, 'Corretor Teste', '844.444.444-44', '(44) 55555-5555', 'corretor@hotmail.com', 'Rua C', '2022-02-08', '3', '', '', '', '', 'Sim', 'MG04518', 'sem-perfil.jpg', ''),
@@ -641,7 +659,6 @@ CREATE TABLE `insumos` (
 --
 
 INSERT INTO `insumos` (`id`, `nome`, `cientifico`, `medida`, `valor`, `foto`, `ativo`) VALUES
-(4, 'copaiba ', 'DestilaÃ§Ã£o', 'Quilo', '77,77', '11-01-2023-16-17-57-Ingredients_Murumuru.jpg', 'Sim'),
 (5, 'Andiroba', 'PrÃ©-extraÃ§Ã£o', 'Litro', '34', '11-01-2023-17-20-37-andiroba-sementes.jpg', 'Sim'),
 (6, 'Breu branco 666', 'Filtragem', 'Litro', '52,00', '11-01-2023-17-22-26-R-(1).jfif', 'Sim');
 
@@ -682,7 +699,8 @@ INSERT INTO `locadores` (`id`, `nome`, `apelido`, `pessoa`, `doc`, `email`, `val
 (3, 'lima', 'mauro', 'FÃ­sica', '444.444.444-44', 'teste@gmail.com', '21', 'DiÃ¡rio', 'Ativo', 'Rua Inhame', '69015-265', 'AM', 'Manaus', '990', '(33) 33333-3333', 3, '2023-01-18', '2022-12-13', 'kkk'),
 (4, 'tulio', 'mauro', 'FÃ­sica', '552.222.222-22', 'teste7@gmail.com', '52,00', 'DiÃ¡rio', 'Ativo', 'Travessa Caburi', '69015-015', 'AM', 'Manaus', '55', '(44) 44444-4444', 3, '2023-01-18', '2022-12-14', 'vvv'),
 (5, 'Silvio junior', 'paulo', 'FÃ­sica', '885.555.555-55', 'test1@gmail.com', '90,00', 'Mensal', 'Ativo', 'Rua Inhame', '69015-265', 'AM', 'Manaus', '17', '(44) 44444-4444', 3, '2023-02-14', '2022-11-27', '8888'),
-(6, 'programador mauro lima', 'paulo', 'FÃ­sica', '222.222.222-2', NULL, '90,00', 'Mensal', 'Ativo', 'mamama', '69015-265', 'AM', 'manaus', '77', '(22) 22222-222', 3, '2023-02-14', '2023-02-14', 'www');
+(6, 'programador mauro lima', 'paulo', 'FÃ­sica', '222.222.222-2', NULL, '90,00', 'Mensal', 'Ativo', 'mamama', '69015-265', 'AM', 'manaus', '77', '(22) 22222-222', 3, '2023-02-14', '2023-02-14', 'www'),
+(7, 'apÃ³s nome', 'mauro', 'FÃ­sica', '878.778.788-77', NULL, '50', 'DiÃ¡rio', 'Ativo', 'Travessa Caburi', '69015-015', 'AM', 'Manaus', '51', '(88) 88888-8888', 3, '2023-03-27', '2023-03-27', '111');
 
 -- --------------------------------------------------------
 
@@ -709,7 +727,8 @@ CREATE TABLE `locais` (
 INSERT INTO `locais` (`id`, `local`, `comunidade`, `municipio`, `lat`, `lon`, `obs`, `data_cadastro`, `corretor`) VALUES
 (6, 'usina1', 'rio', 'Apui-AM', '-3.140856', '-60.039494', ' eee', '2023-01-20', 3),
 (7, 'usina2', 'uatuma', 'Apui-AM', '-3.062350', '-59.979408', ' teset', '2023-01-24', 3),
-(8, 'apui', 'yyyy', 'Apui-AM', '-7.205374', '-59.892906', ' ffff', '2023-02-14', 3);
+(8, 'apui', 'yyyy', 'Apui-AM', '-7.205374', '-59.892906', ' ffff', '2023-02-14', 3),
+(9, 'rio azul', 'argem', 'Apui-AM', '-3.161235', '-59.830368', ' srsr', '2023-03-30', 3);
 
 -- --------------------------------------------------------
 
@@ -817,6 +836,222 @@ INSERT INTO `lote` (`id`, `data_cadastro`, `empressa`, `placa`, `origem`, `desti
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `manteiga`
+--
+
+CREATE TABLE `manteiga` (
+  `id` int(11) NOT NULL,
+  `materia` varchar(50) NOT NULL,
+  `produtor` varchar(100) NOT NULL,
+  `local` varchar(100) NOT NULL,
+  `quantidade` varchar(50) NOT NULL,
+  `medida` varchar(10) NOT NULL,
+  `totall` varchar(30) NOT NULL,
+  `totalll` varchar(30) NOT NULL,
+  `data_entrada` date DEFAULT NULL,
+  `fonte` varchar(50) NOT NULL,
+  `consumo` varchar(50) NOT NULL,
+  `data_aquisicao` date DEFAULT NULL,
+  `maq` varchar(50) NOT NULL,
+  `custo` varchar(50) NOT NULL,
+  `residual` varchar(50) NOT NULL,
+  `anos` varchar(50) NOT NULL,
+  `depreciacao` varchar(50) NOT NULL,
+  `dia` varchar(50) NOT NULL,
+  `util` varchar(50) NOT NULL,
+  `vd` varchar(50) NOT NULL,
+  `obra` varchar(50) NOT NULL,
+  `hora` varchar(50) NOT NULL,
+  `trabalho` varchar(50) NOT NULL,
+  `pago` varchar(50) NOT NULL,
+  `entradois` varchar(50) NOT NULL,
+  `undois` varchar(50) NOT NULL,
+  `maqdois` varchar(50) NOT NULL,
+  `maqfontedois` varchar(50) NOT NULL,
+  `maqconsumodois` varchar(50) NOT NULL,
+  `ferdois` varchar(50) NOT NULL,
+  `ferfontedois` varchar(50) NOT NULL,
+  `ferconsumodois` varchar(50) NOT NULL,
+  `data_aquidois` date DEFAULT NULL,
+  `custodois` varchar(50) NOT NULL,
+  `residualdois` varchar(50) NOT NULL,
+  `anosdois` varchar(50) NOT NULL,
+  `depreciacaodois` varchar(50) NOT NULL,
+  `diadois` varchar(50) NOT NULL,
+  `utildois` varchar(50) NOT NULL,
+  `vddois` varchar(50) NOT NULL,
+  `obradois` varchar(50) NOT NULL,
+  `horadois` varchar(50) NOT NULL,
+  `trabalhadois` varchar(50) NOT NULL,
+  `pagodois` varchar(50) NOT NULL,
+  `resuldois` varchar(50) NOT NULL,
+  `medidadois` varchar(50) NOT NULL,
+  `perdadois` varchar(50) NOT NULL,
+  `percedois` varchar(50) NOT NULL,
+  `entratres` varchar(50) NOT NULL,
+  `untres` varchar(50) NOT NULL,
+  `maqtres` varchar(50) NOT NULL,
+  `maqfontetres` varchar(50) NOT NULL,
+  `maqconsumotres` varchar(50) NOT NULL,
+  `fertres` varchar(50) NOT NULL,
+  `ferfontetres` varchar(50) NOT NULL,
+  `ferconsumotres` varchar(50) NOT NULL,
+  `data_aquitres` date DEFAULT NULL,
+  `custotres` varchar(50) NOT NULL,
+  `residualtres` varchar(50) NOT NULL,
+  `anostres` varchar(50) NOT NULL,
+  `depreciacaotres` varchar(50) NOT NULL,
+  `diatres` varchar(50) NOT NULL,
+  `utiltres` varchar(50) NOT NULL,
+  `vdtres` varchar(50) NOT NULL,
+  `obratres` varchar(50) NOT NULL,
+  `horatres` varchar(50) NOT NULL,
+  `trabalhotres` varchar(50) NOT NULL,
+  `pagotres` varchar(50) NOT NULL,
+  `resultres` varchar(50) NOT NULL,
+  `medidatres` varchar(50) NOT NULL,
+  `perdatres` varchar(50) NOT NULL,
+  `percetres` varchar(50) NOT NULL,
+  `data_arm` date DEFAULT NULL,
+  `armazum` varchar(50) NOT NULL,
+  `medum` varchar(50) NOT NULL,
+  `formaum` varchar(50) NOT NULL,
+  `entraquatro` varchar(50) NOT NULL,
+  `unquatro` varchar(50) NOT NULL,
+  `maqquatro` varchar(50) NOT NULL,
+  `maqfontequatro` varchar(50) NOT NULL,
+  `maqconsumoquatro` varchar(50) NOT NULL,
+  `ferquatro` varchar(50) NOT NULL,
+  `ferfontequatro` varchar(50) NOT NULL,
+  `ferconsumoquatro` varchar(50) NOT NULL,
+  `data_aquiquatro` date DEFAULT NULL,
+  `custoquatro` varchar(50) NOT NULL,
+  `residualquatro` varchar(50) NOT NULL,
+  `anosquatro` varchar(50) NOT NULL,
+  `depreciacaoquatro` varchar(50) NOT NULL,
+  `diaquatro` varchar(50) NOT NULL,
+  `utilquatro` varchar(50) NOT NULL,
+  `vdquatro` varchar(50) NOT NULL,
+  `obraquatro` varchar(50) NOT NULL,
+  `horaquatro` varchar(50) NOT NULL,
+  `trabalhoquatro` varchar(50) NOT NULL,
+  `pagoquatro` varchar(50) NOT NULL,
+  `resulquatro` varchar(50) NOT NULL,
+  `medidaquatro` varchar(50) NOT NULL,
+  `perdaquatro` varchar(50) NOT NULL,
+  `percequatro` varchar(50) NOT NULL,
+  `entracinco` varchar(50) NOT NULL,
+  `uncinco` varchar(50) NOT NULL,
+  `maqcinco` varchar(50) NOT NULL,
+  `maqfontecinco` varchar(50) NOT NULL,
+  `maqconsumocinco` varchar(50) NOT NULL,
+  `fercinco` varchar(500) NOT NULL,
+  `ferfontecinco` varchar(50) NOT NULL,
+  `ferconsumocinco` varchar(50) NOT NULL,
+  `data_aquicinco` date DEFAULT NULL,
+  `custocinco` varchar(50) NOT NULL,
+  `residualcinco` varchar(50) NOT NULL,
+  `anoscinco` varchar(50) NOT NULL,
+  `depreciacaocinco` varchar(50) NOT NULL,
+  `diacinco` varchar(50) NOT NULL,
+  `utilcinco` varchar(50) NOT NULL,
+  `vdcinco` varchar(50) NOT NULL,
+  `obracinco` varchar(50) NOT NULL,
+  `horacinco` varchar(50) NOT NULL,
+  `trabalhocinco` varchar(50) NOT NULL,
+  `pagocinco` varchar(50) NOT NULL,
+  `resulcinco` varchar(50) NOT NULL,
+  `medidacinco` varchar(50) NOT NULL,
+  `perdacinco` varchar(50) NOT NULL,
+  `percecinco` varchar(50) NOT NULL,
+  `produtoum` varchar(50) NOT NULL,
+  `insumoum` varchar(50) NOT NULL,
+  `medidauma` varchar(50) NOT NULL,
+  `data_emum` date DEFAULT NULL,
+  `produtodois` varchar(50) NOT NULL,
+  `insumodois` varchar(50) NOT NULL,
+  `medidasegun` varchar(50) NOT NULL,
+  `data_emdois` date DEFAULT NULL,
+  `entraseis` varchar(50) NOT NULL,
+  `unseis` varchar(50) NOT NULL,
+  `maqseis` varchar(50) NOT NULL,
+  `maqfonteseis` varchar(50) NOT NULL,
+  `maqconsumoseis` varchar(50) NOT NULL,
+  `ferseis` varchar(50) NOT NULL,
+  `ferfonteseis` varchar(50) NOT NULL,
+  `ferconsumoseis` varchar(50) NOT NULL,
+  `data_aquiseis` date DEFAULT NULL,
+  `custoseis` varchar(50) NOT NULL,
+  `residualseis` varchar(50) NOT NULL,
+  `anosseis` varchar(50) NOT NULL,
+  `depreciacaoseis` varchar(50) NOT NULL,
+  `diaseis` varchar(50) NOT NULL,
+  `utilseis` varchar(50) NOT NULL,
+  `vdseis` varchar(50) NOT NULL,
+  `obraseis` varchar(50) NOT NULL,
+  `horaseis` varchar(50) NOT NULL,
+  `trabalhoseis` varchar(50) NOT NULL,
+  `pagoseis` varchar(50) NOT NULL,
+  `resulseis` varchar(50) NOT NULL,
+  `medidaseis` varchar(50) NOT NULL,
+  `perdaseis` varchar(50) NOT NULL,
+  `perceseis` varchar(50) NOT NULL,
+  `insumtres` varchar(50) NOT NULL,
+  `produtotres` varchar(50) NOT NULL,
+  `armaztres` varchar(50) NOT NULL,
+  `medidaterc` varchar(50) NOT NULL,
+  `data_emtres` date DEFAULT NULL,
+  `armazquatro` varchar(50) NOT NULL,
+  `medidaquart` varchar(50) NOT NULL,
+  `formaquatro` varchar(50) NOT NULL,
+  `entrasete` varchar(50) NOT NULL,
+  `unsete` varchar(50) NOT NULL,
+  `maqsete` varchar(50) NOT NULL,
+  `maqfontesete` varchar(50) NOT NULL,
+  `maqconsumosete` varchar(50) NOT NULL,
+  `fersete` varchar(50) NOT NULL,
+  `ferfontesete` varchar(50) NOT NULL,
+  `ferconsumosete` varchar(50) NOT NULL,
+  `data_aquisete` date DEFAULT NULL,
+  `custosete` varchar(50) NOT NULL,
+  `residualsete` varchar(100) NOT NULL,
+  `anossete` varchar(50) NOT NULL,
+  `depreciacaosete` varchar(50) NOT NULL,
+  `diasete` varchar(50) NOT NULL,
+  `utilsete` varchar(50) NOT NULL,
+  `vdsete` varchar(50) NOT NULL,
+  `obrasete` varchar(50) NOT NULL,
+  `horasete` varchar(50) NOT NULL,
+  `trabalhosete` varchar(50) NOT NULL,
+  `pagosete` varchar(50) NOT NULL,
+  `resulsete` varchar(50) NOT NULL,
+  `medidasete` varchar(50) NOT NULL,
+  `perdasete` varchar(50) NOT NULL,
+  `percesete` varchar(30) NOT NULL,
+  `np` varchar(50) NOT NULL,
+  `qua` varchar(50) NOT NULL,
+  `umed` varchar(50) NOT NULL,
+  `totalmateria` varchar(50) NOT NULL,
+  `totaldepre` varchar(50) NOT NULL,
+  `totalrend` varchar(50) NOT NULL,
+  `totalhora` varchar(50) NOT NULL,
+  `totalobra` varchar(50) NOT NULL,
+  `totalproducao` varchar(50) NOT NULL,
+  `totalcusto` varchar(50) NOT NULL,
+  `totalcustodois` varchar(20) NOT NULL,
+  `data_final` date DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=COMPRESSED;
+
+--
+-- Extraindo dados da tabela `manteiga`
+--
+
+INSERT INTO `manteiga` (`id`, `materia`, `produtor`, `local`, `quantidade`, `medida`, `totall`, `totalll`, `data_entrada`, `fonte`, `consumo`, `data_aquisicao`, `maq`, `custo`, `residual`, `anos`, `depreciacao`, `dia`, `util`, `vd`, `obra`, `hora`, `trabalho`, `pago`, `entradois`, `undois`, `maqdois`, `maqfontedois`, `maqconsumodois`, `ferdois`, `ferfontedois`, `ferconsumodois`, `data_aquidois`, `custodois`, `residualdois`, `anosdois`, `depreciacaodois`, `diadois`, `utildois`, `vddois`, `obradois`, `horadois`, `trabalhadois`, `pagodois`, `resuldois`, `medidadois`, `perdadois`, `percedois`, `entratres`, `untres`, `maqtres`, `maqfontetres`, `maqconsumotres`, `fertres`, `ferfontetres`, `ferconsumotres`, `data_aquitres`, `custotres`, `residualtres`, `anostres`, `depreciacaotres`, `diatres`, `utiltres`, `vdtres`, `obratres`, `horatres`, `trabalhotres`, `pagotres`, `resultres`, `medidatres`, `perdatres`, `percetres`, `data_arm`, `armazum`, `medum`, `formaum`, `entraquatro`, `unquatro`, `maqquatro`, `maqfontequatro`, `maqconsumoquatro`, `ferquatro`, `ferfontequatro`, `ferconsumoquatro`, `data_aquiquatro`, `custoquatro`, `residualquatro`, `anosquatro`, `depreciacaoquatro`, `diaquatro`, `utilquatro`, `vdquatro`, `obraquatro`, `horaquatro`, `trabalhoquatro`, `pagoquatro`, `resulquatro`, `medidaquatro`, `perdaquatro`, `percequatro`, `entracinco`, `uncinco`, `maqcinco`, `maqfontecinco`, `maqconsumocinco`, `fercinco`, `ferfontecinco`, `ferconsumocinco`, `data_aquicinco`, `custocinco`, `residualcinco`, `anoscinco`, `depreciacaocinco`, `diacinco`, `utilcinco`, `vdcinco`, `obracinco`, `horacinco`, `trabalhocinco`, `pagocinco`, `resulcinco`, `medidacinco`, `perdacinco`, `percecinco`, `produtoum`, `insumoum`, `medidauma`, `data_emum`, `produtodois`, `insumodois`, `medidasegun`, `data_emdois`, `entraseis`, `unseis`, `maqseis`, `maqfonteseis`, `maqconsumoseis`, `ferseis`, `ferfonteseis`, `ferconsumoseis`, `data_aquiseis`, `custoseis`, `residualseis`, `anosseis`, `depreciacaoseis`, `diaseis`, `utilseis`, `vdseis`, `obraseis`, `horaseis`, `trabalhoseis`, `pagoseis`, `resulseis`, `medidaseis`, `perdaseis`, `perceseis`, `insumtres`, `produtotres`, `armaztres`, `medidaterc`, `data_emtres`, `armazquatro`, `medidaquart`, `formaquatro`, `entrasete`, `unsete`, `maqsete`, `maqfontesete`, `maqconsumosete`, `fersete`, `ferfontesete`, `ferconsumosete`, `data_aquisete`, `custosete`, `residualsete`, `anossete`, `depreciacaosete`, `diasete`, `utilsete`, `vdsete`, `obrasete`, `horasete`, `trabalhosete`, `pagosete`, `resulsete`, `medidasete`, `perdasete`, `percesete`, `np`, `qua`, `umed`, `totalmateria`, `totaldepre`, `totalrend`, `totalhora`, `totalobra`, `totalproducao`, `totalcusto`, `totalcustodois`, `data_final`) VALUES
+(0, 'manteiga', '', '', '500', 'Quilo', '', '2000', '2023-03-29', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-28', '', '5000', '2000', '5', '600', '1.64', '5', '8.2', '100', '12.50', '4', '50.00', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-28', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-28', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '2023-03-28', '', 'Quilo', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-28', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', 'Quilo', '', 'Motor EstacionÃ¡rio', 'Diesel', '', 'Motor EstacionÃ¡rio', 'Diesel', '2023-03-28', '', '', '', '', '', '', '', '', '', '', '', '', 'Quilo', '', '', '', '', 'Quilo', '0000-00-00', '', '', 'Quilo', '0000-00-00', '', '', '50.00', '', '', '50.00', '', '', '0000-00-00', '50.00', '50.00', '50.00', '', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '', '50.00', '50.00', '', '50.00', '50.00', '', '0000-00-00', '50.00', '', '50.00', '50.00', '', '50.00', '', '', '50.00', '', '', '0000-00-00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '50.00', '', '50.00', '50.00', '50.00', '50.00', '', '2000.00', '108.20', '50.00', '', '150.00', '50.00', '2258.20', '45.16', NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `maq`
 --
 
@@ -835,6 +1070,36 @@ INSERT INTO `maq` (`id`, `nome`, `foto`, `ativo`) VALUES
 (1, 'NÃ£o tem', '11-01-2023-16-56-17-R.png', 'Sim'),
 (2, 'Furadeira', '11-01-2023-16-59-51-R.jfif', 'Sim'),
 (3, 'arma', 'sem-foto.png', 'Sim');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `movimentacoes`
+--
+
+CREATE TABLE `movimentacoes` (
+  `id` int(11) NOT NULL,
+  `tipo` varchar(20) NOT NULL,
+  `movimento` varchar(35) NOT NULL,
+  `descricao` varchar(50) NOT NULL,
+  `valor` decimal(10,2) NOT NULL,
+  `usuario` int(11) NOT NULL,
+  `data` date NOT NULL,
+  `lancamento` varchar(35) NOT NULL,
+  `id_mov` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `movimentacoes`
+--
+
+INSERT INTO `movimentacoes` (`id`, `tipo`, `movimento`, `descricao`, `valor`, `usuario`, `data`, `lancamento`, `id_mov`) VALUES
+(0, 'SaÃ­da', 'Conta Ã  Pagar', '(ResÃ­duo) tete', '20.00', 3, '2023-03-28', 'CartÃ£o de DÃ©bito', 4),
+(0, 'SaÃ­da', 'Conta Ã  Pagar', 'tete - Parcela 1', '6.00', 3, '2023-03-28', 'CartÃ£o de DÃ©bito', 5),
+(0, 'SaÃ­da', 'Conta Ã  Pagar', 'tete', '45.00', 3, '2023-03-28', 'Caixa', 8),
+(0, 'SaÃ­da', 'Conta Ã  Pagar', 'tete', '45.00', 3, '2023-03-28', 'CartÃ£o de DÃ©bito', 9),
+(0, 'SaÃ­da', 'Conta Ã  Pagar', 'tete - Parcela 1', '50.00', 3, '2023-03-28', 'Caixa', 11),
+(0, 'Entrada', 'Conta Ã  Receber', 'envio', '52.00', 3, '2023-03-28', 'CartÃ£o de DÃ©bito', 1);
 
 -- --------------------------------------------------------
 
@@ -858,6 +1123,20 @@ CREATE TABLE `pagar` (
   `pago` varchar(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Extraindo dados da tabela `pagar`
+--
+
+INSERT INTO `pagar` (`id`, `descricao`, `pessoa`, `valor`, `data_lanc`, `data_venc`, `data_pgto`, `usuario_lanc`, `usuario_pgto`, `frequencia`, `saida`, `arquivo`, `pago`) VALUES
+(5, 'tete - Parcela 1', 7, '6.00', '2023-03-28', '2023-03-28', '2023-03-28', 3, 3, 3, 'CartÃ£o de DÃ©bito', 'sem-foto.png', 'Sim'),
+(8, 'tete', 7, '45.00', '2023-03-28', '2023-03-28', '2023-03-28', 3, 3, 3, 'Caixa', 'sem-foto.png', 'Sim'),
+(9, 'tete', 7, '45.00', '2023-03-28', '2023-03-31', '2023-03-28', 0, 3, 3, 'CartÃ£o de DÃ©bito', 'sem-foto.png', 'Sim'),
+(11, 'tete - Parcela 1', 7, '50.00', '2023-03-28', '2023-03-28', '2023-03-28', 3, 3, 3, 'Caixa', 'sem-foto.png', 'Sim'),
+(12, 'tete - Parcela 2', 7, '50.00', '2023-03-28', '2023-03-31', '0000-00-00', 3, 0, 3, 'Caixa', 'sem-foto.png', 'NÃ£o'),
+(15, 'teste2 - Parcela 1', 7, '100.00', '2023-03-28', '2023-03-28', '0000-00-00', 3, 0, 30, 'CartÃ£o de CrÃ©dito', 'sem-foto.png', 'NÃ£o'),
+(16, 'teste2 - Parcela 2', 7, '100.00', '2023-03-28', '2023-04-28', '0000-00-00', 3, 0, 30, 'CartÃ£o de CrÃ©dito', 'sem-foto.png', 'NÃ£o'),
+(17, 'tete - Parcela 1', 7, '50.00', '2023-03-28', '2023-03-31', '0000-00-00', 0, 0, 3, 'Caixa', 'sem-foto.png', 'NÃ£o');
+
 -- --------------------------------------------------------
 
 --
@@ -879,9 +1158,38 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`id`, `nome`, `cientifico`, `medida`, `valor`, `foto`, `ativo`) VALUES
-(4, 'copaiba ', 'kkkk', 'Quilo', '77,77', '11-01-2023-16-17-57-Ingredients_Murumuru.jpg', 'Sim'),
-(5, 'Andiroba 444', 'tetse', 'Litro', '34', '11-01-2023-17-20-37-andiroba-sementes.jpg', 'Sim'),
-(6, 'Breu branco 666', 'teste', 'Litro', '52,00', '11-01-2023-17-22-26-R-(1).jfif', 'Sim');
+(9, 'oleo de mururu', '', 'Quilo', '20', '27-03-2023-17-29-45-Ingredients_Murumuru.jpg', 'Sim');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `receber`
+--
+
+CREATE TABLE `receber` (
+  `id` int(11) NOT NULL,
+  `descricao` varchar(50) DEFAULT NULL,
+  `comprador` int(11) NOT NULL,
+  `locatario` int(11) NOT NULL,
+  `valor` decimal(10,2) NOT NULL,
+  `data_lanc` date NOT NULL,
+  `data_venc` date NOT NULL,
+  `data_pgto` date NOT NULL,
+  `usuario_lanc` int(11) NOT NULL,
+  `usuario_pgto` int(11) NOT NULL,
+  `frequencia` int(11) NOT NULL,
+  `saida` varchar(50) NOT NULL,
+  `arquivo` varchar(255) DEFAULT NULL,
+  `pago` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `receber`
+--
+
+INSERT INTO `receber` (`id`, `descricao`, `comprador`, `locatario`, `valor`, `data_lanc`, `data_venc`, `data_pgto`, `usuario_lanc`, `usuario_pgto`, `frequencia`, `saida`, `arquivo`, `pago`) VALUES
+(1, 'envio', 1, 0, '52.00', '2023-03-28', '2023-03-28', '2023-03-28', 3, 3, 30, 'CartÃ£o de DÃ©bito', 'sem-foto.png', 'Sim'),
+(2, 'envio', 1, 0, '52.00', '2023-03-28', '2023-04-28', '0000-00-00', 0, 0, 30, 'CartÃ£o de DÃ©bito', 'sem-foto.png', 'NÃ£o');
 
 -- --------------------------------------------------------
 
@@ -941,7 +1249,8 @@ CREATE TABLE `tarefas` (
 INSERT INTO `tarefas` (`id`, `titulo`, `descricao`, `hora`, `data`, `usuario`, `status`, `obs`) VALUES
 (1, 'Nova equipe', 'tete', '11:04:00', '2023-01-12', 3, 'Agendada', 'rrr'),
 (2, 'Nova equipe', 'tete', '16:21:00', '2023-03-07', 3, 'Agendada', ''),
-(3, 'rio', 'tttt', '18:21:00', '2023-03-07', 3, 'Agendada', '');
+(3, 'rio', 'tttt', '18:21:00', '2023-03-07', 3, 'Agendada', ''),
+(4, 'Nova equipe', 'tete', '14:22:00', '2023-03-29', 3, 'ConcluÃ­da', 'ggg');
 
 -- --------------------------------------------------------
 
@@ -966,7 +1275,8 @@ CREATE TABLE `tipos` (
 INSERT INTO `tipos` (`id`, `nome`, `cientifico`, `medida`, `valor`, `foto`, `ativo`) VALUES
 (4, 'copaiba ', 'kkkk', 'Quilo', '77,77', '11-01-2023-16-17-57-Ingredients_Murumuru.jpg', 'Sim'),
 (5, 'Andiroba', 'tetse', 'Quilo', '34', '11-01-2023-17-20-37-andiroba-sementes.jpg', 'Sim'),
-(6, 'Breu branco', 'teste', 'Litro', '52,00', '11-01-2023-17-22-26-R-(1).jfif', 'Sim');
+(6, 'Breu branco', 'teste', 'Litro', '52,00', '11-01-2023-17-22-26-R-(1).jfif', 'Sim'),
+(7, 'breu', 'breu', 'kg', '52', 'sem-foto.png', 'Sim');
 
 -- --------------------------------------------------------
 
@@ -992,13 +1302,36 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `cpf`, `email`, `senha_crip`, `senha`, `nivel`, `foto`, `id_func`, `ativo`) VALUES
-(3, 'Usina ApuÃ­', '958.412.882-53', 'devmauro.professortec@gmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Administrador', '12-12-2022-11-54-42-WhatsApp-Image-2022-11-11-at-11.37.24.jpeg', 0, 'Sim'),
-(5, 'Marcos Silva', '444.444.444-44', 'marcos@hotmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Recepcionista', '08-02-2022-10-11-56-4.jpg', 2, 'Sim'),
+(3, 'Usina apuÃ­', '958.412.882-53', 'devmauro.professortec@gmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Administrador', '12-12-2022-11-54-42-WhatsApp-Image-2022-11-11-at-11.37.24.jpeg', 0, 'Sim'),
+(5, 'Marcos Silva', '444.444.444-44', 'marcos@hotmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Recepcionista', '08-02-2022-10-11-56-4.jpg', 2, 'NÃ£o'),
 (6, 'Marcela Tesoureira', '888.888.888-90', 'tesoureiro@hotmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Tesoureiro', '08-02-2022-11-16-25-a.png', 3, 'Sim'),
 (9, 'Corretor Teste', '844.444.444-44', 'corretor@hotmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Corretor', 'sem-perfil.jpg', 7, 'Sim'),
 (11, 'julio cesar', '111.111.111-11', 'cesar@gmail', '202cb962ac59075b964b07152d234b70', '123', 'Extrativista', '06-01-2023-17-02-42-passagem2.jpeg', 12, 'Sim'),
 (12, 'lucas', '666.777.777-77', 'lucas@gmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Extrativista', 'sem-perfil.jpg', 13, 'Sim'),
 (13, 'marcus pedroso', '555.555.555-55', 'marcus@gmail.com', '202cb962ac59075b964b07152d234b70', '123', 'Extrativista', 'sem-perfil.jpg', 14, 'Sim');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `valor_parcial`
+--
+
+CREATE TABLE `valor_parcial` (
+  `id` int(11) NOT NULL,
+  `id_conta` int(11) NOT NULL,
+  `tipo` varchar(20) NOT NULL,
+  `valor` decimal(10,2) NOT NULL,
+  `data` date NOT NULL,
+  `usuario` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `valor_parcial`
+--
+
+INSERT INTO `valor_parcial` (`id`, `id_conta`, `tipo`, `valor`, `data`, `usuario`) VALUES
+(0, 4, 'Pagar', '20.00', '2023-03-28', 3),
+(0, 4, 'Pagar', '20.00', '2023-03-28', 3);
 
 -- --------------------------------------------------------
 
@@ -1084,6 +1417,12 @@ ALTER TABLE `compradores`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices para tabela `contas_banco`
+--
+ALTER TABLE `contas_banco`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Índices para tabela `fer`
 --
 ALTER TABLE `fer`
@@ -1093,6 +1432,12 @@ ALTER TABLE `fer`
 -- Índices para tabela `ferramentas`
 --
 ALTER TABLE `ferramentas`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `frequencias`
+--
+ALTER TABLE `frequencias`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1144,9 +1489,21 @@ ALTER TABLE `maq`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices para tabela `pagar`
+--
+ALTER TABLE `pagar`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Índices para tabela `produtos`
 --
 ALTER TABLE `produtos`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `receber`
+--
+ALTER TABLE `receber`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1181,7 +1538,7 @@ ALTER TABLE `vendedores`
 -- AUTO_INCREMENT de tabela `arquivos`
 --
 ALTER TABLE `arquivos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT de tabela `associados`
@@ -1199,7 +1556,7 @@ ALTER TABLE `bairros`
 -- AUTO_INCREMENT de tabela `cargos`
 --
 ALTER TABLE `cargos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de tabela `cidades`
@@ -1211,13 +1568,19 @@ ALTER TABLE `cidades`
 -- AUTO_INCREMENT de tabela `coleta`
 --
 ALTER TABLE `coleta`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de tabela `compradores`
 --
 ALTER TABLE `compradores`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT de tabela `contas_banco`
+--
+ALTER TABLE `contas_banco`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `fer`
@@ -1229,7 +1592,13 @@ ALTER TABLE `fer`
 -- AUTO_INCREMENT de tabela `ferramentas`
 --
 ALTER TABLE `ferramentas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT de tabela `frequencias`
+--
+ALTER TABLE `frequencias`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de tabela `funcionarios`
@@ -1253,13 +1622,13 @@ ALTER TABLE `insumos`
 -- AUTO_INCREMENT de tabela `locadores`
 --
 ALTER TABLE `locadores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de tabela `locais`
 --
 ALTER TABLE `locais`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de tabela `locatarios`
@@ -1280,22 +1649,34 @@ ALTER TABLE `maq`
   MODIFY `id` int(40) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT de tabela `pagar`
+--
+ALTER TABLE `pagar`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT de tabela `receber`
+--
+ALTER TABLE `receber`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `tarefas`
 --
 ALTER TABLE `tarefas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `tipos`
 --
 ALTER TABLE `tipos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`

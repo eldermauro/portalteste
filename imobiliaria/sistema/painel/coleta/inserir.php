@@ -11,7 +11,7 @@ $liquido = $_POST['liquido'];
 $reprovado = $_POST['reprovado'];
 $valor = $_POST['valor'];
 $pagar = $_POST['pagar'];
-$corretor = $_POST['corretor'];
+//$corretor = $_POST['corretor'];
 $id = $_POST['id'];
 
 //validar cpf
@@ -34,10 +34,10 @@ $id = $_POST['id'];
 
 
 if($id == ""){
-	$query = $pdo->prepare("INSERT INTO $tabela SET produto = :produto, produtor = :produtor, avaliacao = :avaliacao, local = :local, bruto = :bruto, liquido = :liquido, reprovado = :reprovado, valor = :valor, pagar = :pagar, corretor = '$corretor', data_cadastro = curDate()");
+	$query = $pdo->prepare("INSERT INTO $tabela SET produto = :produto, produtor = :produtor, avaliacao = :avaliacao, local = :local, bruto = :bruto, liquido = :liquido, reprovado = :reprovado, valor = :valor, pagar = :pagar,  data_cadastro = curDate()");
 
 }else{
-	$query = $pdo->prepare("UPDATE $tabela SET produto = :produto, produtor = :produtor, avaliacao = :avaliacao, local = :local, bruto = :bruto, liquido = :liquido, reprovado = :reprovado, valor = :valor, pagar = :pagar, corretor = '$corretor', data_cadastro = curDate() WHERE id = '$id'");
+	$query = $pdo->prepare("UPDATE $tabela SET produto = :produto, produtor = :produtor, avaliacao = :avaliacao, local = :local, bruto = :bruto, liquido = :liquido, reprovado = :reprovado, valor = :valor, pagar = :pagar,  data_cadastro = curDate() WHERE id = '$id'");
 
 }
 

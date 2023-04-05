@@ -12,7 +12,7 @@ $reprovado = $_POST['reprovado'];
 $valor = $_POST['valor'];
 $pagar = $_POST['pagar'];
 $dia = $_POST['dia'];
-$corretor = $_POST['corretor'];
+//$corretor = $_POST['corretor'];
 $data_nasc = $_POST['data_nasc'];
 $id = $_POST['id'];
 
@@ -36,10 +36,10 @@ $id = $_POST['id'];
 
 
 if($id == ""){
-	$query = $pdo->prepare("INSERT INTO $tabela SET produto = :produto, produtor = :produtor, avaliacao = :avaliacao, local = :local, bruto = :bruto, liquido = :liquido, reprovado = :reprovado, valor = :valor, pagar = :pagar, dia = :dia, corretor = '$corretor', data_nasc = '$data_nasc', data_cadastro = curDate()");
+	$query = $pdo->prepare("INSERT INTO $tabela SET produto = :produto, produtor = :produtor, avaliacao = :avaliacao, local = :local, bruto = :bruto, liquido = :liquido, reprovado = :reprovado, valor = :valor, pagar = :pagar, dia = :dia, data_nasc = '$data_nasc', data_cadastro = curDate()");
 
 }else{
-	$query = $pdo->prepare("UPDATE $tabela SET produto = :produto, produtor = :produtor, avaliacao = :avaliacao, local = :local, bruto = :bruto, liquido = :liquido, reprovado = :reprovado, valor = :valor, pagar = :pagar, dia = :dia,  corretor = '$corretor', data_nasc = '$data_nasc', data_cadastro = curDate() WHERE id = '$id'");
+	$query = $pdo->prepare("UPDATE $tabela SET produto = :produto, produtor = :produtor, avaliacao = :avaliacao, local = :local, bruto = :bruto, liquido = :liquido, reprovado = :reprovado, valor = :valor, pagar = :pagar, dia = :dia, data_nasc = '$data_nasc', data_cadastro = curDate() WHERE id = '$id'");
 
 }
 

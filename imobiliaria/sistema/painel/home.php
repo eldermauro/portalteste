@@ -270,7 +270,7 @@ if($totalTarefasConcluidasHoje > 0 and $totalTarefasHoje > 0){
 				<a href="index.php?pagina=bairros">
 				<div class="content-top-1">
 					<div class="col-md-6 top-content">
-						<h5>Processo oléos</h5>
+						<h5>Processo óleos</h5>
 						<label><?php echo $total_bairros ?></label>
 					</div>
 					<div class="col-md-6 top-content1">	   

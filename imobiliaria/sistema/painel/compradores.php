@@ -105,11 +105,11 @@ $pag = 'compradores';  //clientes
 							</div>						
 						</div>-->
 
-						<div class="col-md-2">
+						<!--<div class="col-md-2">
 						<div class="form-group"> 
 							<label>Responsável</small></label> 
-							<select class="form-control sel2" name="corretor" id="corretor" required style="width:100%;"> 
-									<?php 
+							<select class="form-control sel2" name="corretor" id="corretor"  style="width:100%;"> 
+									<//?php 
 									if($nivel_usu == 'Corretor'){
 										$query = $pdo->query("SELECT * FROM usuarios where id = '$id_usuario' order by id asc");
 									}else{
@@ -121,13 +121,13 @@ $pag = 'compradores';  //clientes
 										foreach ($res[$i] as $key => $value){}
 
 											?>	
-										<option value="<?php echo $res[$i]['id'] ?>"><?php echo $res[$i]['nome'] ?></option>
+										<option value="<//?php echo $res[$i]['id'] ?>"><//?php echo $res[$i]['nome'] ?></option>
 
-									<?php } ?>
+									<//?php } ?>
 
 								</select>
 						</div>
-					</div>	
+					</div>	-->
 
 
 						
