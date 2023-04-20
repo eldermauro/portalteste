@@ -50,7 +50,7 @@ if($total_reg == 0){
           <div class="row g-0">
             <div class="col-md-6 col-lg-5 d-none d-md-block">
 
-              <img src="imagens/apui.jpg"
+              <img src="imagens/asaga.png"
                 alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem; height:100%;" />
             </div>
             

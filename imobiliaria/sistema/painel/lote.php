@@ -1,7 +1,9 @@
-<?php 
+,<?php 
 require_once("verificar.php");
 require_once("../conexao.php");
 $pag = 'lote';
+
+
 
  ?>
 
@@ -851,10 +853,7 @@ $pag = 'lote';
 				<div class="modal-body">	
 					
 				<div class="row" style="border-bottom: 1px solid #cac7c7;">
-						<!--<div class="col-md-6">							
-							<span><b>Responsavel:</b></span>
-							<span id="corretor_mostrar"></span>							
-						</div>-->
+					
 						<div class="col-md-6">							
 								<span><b>Data de Cadastro: </b></span>
 								<span id="data_cadastro_mostrar"></span>
@@ -1212,11 +1211,11 @@ $pag = 'lote';
 					
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 						<button id="btnExportarPDF" type="button" class="btn btn-primary">Exportar PDF</button>
-						<button id="btn-gerar-qrcode" type="button" class="btn btn-primary" onclick="gerarQRCode()">Gerar QR Code</button>
-
+						<button   type="button" class="btn btn-primary" onclick="gerarQRCode()">Gerar QRCode em PDF</button>
+					
 					</div>	
 					
-								
+
 
 				</div>
 
@@ -1227,7 +1226,11 @@ $pag = 'lote';
 
 
 
+
+
 <script>
+	
+
 
 document.getElementById("btnExportarPDF").addEventListener("click", function () {
     var doc = new jsPDF();
@@ -1294,112 +1297,363 @@ document.getElementById("btnExportarPDF").addEventListener("click", function () 
 
 	var total_mostrar = document.getElementById("total_mostrar").textContent;
 
+	// Adicionando estilo ao documento PDF
 
-    doc.text("data_cadastro_mostrar: " + data_cadastro_mostrar, 10, 10);
-    doc.text("placa_mostrar: " + placa_mostrar, 10, 20);
-    doc.text("empressa_mostrar: " + empressa_mostrar, 10, 30);
-    doc.text("origem_mostrar: " + origem_mostrar, 10, 40);
-    doc.text("destino_mostrar: " + destino_mostrar, 10, 50);
-    doc.text("numero_mostrar: " + numero_mostrar, 10, 60);
-    doc.text("nota_mostrar: " + nota_mostrar, 10, 70);
-	doc.text("dono_mostrar: " + dono_mostrar, 10, 80);
-	doc.text("fisica_mostrar: " + fisica_mostrar, 10, 90);
-	doc.text("juridica_mostrar: " + juridica_mostrar, 10, 100);
+doc.setFontSize(12);
+doc.setFont('Helvetica', 'bold');
+doc.addImage('images/inatu-pt.png', 'PNG', 10, 10, 30, 16);
+doc.addImage('images/asaga-pt.png', 'PNG', 50, 10, 25, 16);
 
-	doc.text("produtor: " + produtor_mostrar, 10, 110);
-	doc.text("produto: " + produto_mostrar, 10, 120);
-	doc.text("emb: " + emb_mostrar, 10, 130);
-	doc.text("bruto: " + bruto_mostrar, 10, 140);
-	doc.text("liq: " + liq_mostrar, 10, 150);
-	doc.text("valor: " + valor_mostrar, 10, 160);
+doc.text(`Dados do Lote`, 10, 40);
 
-	doc.text("produtor: " + produtordois_mostrar, 10, 170);
-	doc.text("produto: " + produtodois_mostrar, 10, 180);
-	doc.text("emb: " + embdois_mostrar, 10, 190);
-	doc.text("bruto: " + brutodois_mostrar, 10, 200);
-	doc.text("liq: " + liqdois_mostrar, 10, 210);
-	doc.text("valor: " + valordois_mostrar, 10, 220);
+// Linha abaixo do título
+doc.setDrawColor(0, 0, 0);
+doc.line(10, 45, 200, 45);
 
-	doc.addPage()
+doc.setFontSize(11);
+doc.setFont('Helvetica', 'normal');
 
-	doc.text("produtor: " + produtortres_mostrar, 10, 10);
-	doc.text("produto: " + produtotres_mostrar, 10, 20);
-	doc.text("emb: " + embtres_mostrar, 10, 30);
-	doc.text("bruto: " + brutotres_mostrar, 10, 40);
-	doc.text("liq: " + liqtres_mostrar, 10, 50);
-	doc.text("valor: " + valortres_mostrar, 10, 60);
+doc.text(`data de cadastro: ${data_cadastro_mostrar}`, 10, 50);
+// Linha abaixo do bloco de informações
+doc.line(10, 55, 200, 55);
 
-	doc.text("produtor: " + produtorqua_mostrar, 10, 70);
-	doc.text("produto: " + produtoqua_mostrar, 10, 80);
-	doc.text("emb: " + embqua_mostrar, 10, 90);
-	doc.text("bruto: " + brutoqua_mostrar, 10, 100);
-	doc.text("liq: " + liqqua_mostrar, 10, 110);
-	doc.text("valor: " + valorqua_mostrar, 10, 120);
+doc.text(`Nome da Empressa: ${ empressa_mostrar}`, 80, 50);
+// Linha abaixo do bloco de informações
+doc.line(80, 55, 200, 55);
 
-	doc.text("produtor: " + produtorcinco_mostrar, 10, 130);
-	doc.text("produto: " + produtocinco_mostrar, 10, 140);
-	doc.text("emb: " + embcinco_mostrar, 10, 370);
-	doc.text("bruto: " + brutocinco_mostrar, 10, 150);
-	doc.text("liq: " + liqcinco_mostrar, 10, 160);
-	doc.text("valor: " + valorcinco_mostrar, 10, 170);
+doc.text(`Nº da placa/Barco: ${ placa_mostrar}`, 10, 60);
+doc.text(`Origem: ${origem_mostrar}`, 80, 60);
+doc.text(`Destino: ${destino_mostrar}`, 140, 60);
+// Linha abaixo do bloco de informações
+doc.line(10, 65, 200, 65);
 
-	doc.addPage()
+doc.text(`Numero Lote: ${numero_mostrar}`, 10, 70);
+doc.text(`Numero Nota fiscal: ${nota_mostrar}`, 80, 70);
+// Linha abaixo do bloco de informações
+doc.line(10, 75, 200, 75);
 
-	doc.text("produtor: " + produtorseis_mostrar, 10, 10);
-	doc.text("produto: " + produtoseis_mostrar, 10, 20);
-	doc.text("emb: " + embseis_mostrar, 10, 30);
-	doc.text("bruto: " + brutoseis_mostrar, 10, 40);
-	doc.text("liq: " + liqseis_mostrar, 10, 50);
-	doc.text("valor: " + valorseis_mostrar, 10, 60);
+doc.text(`Cliente - CPF / CNPJ - Inscrição Estadual - Telefone: \n ${dono_mostrar}`, 10, 80);
+// Linha abaixo do bloco de informações
+doc.line(10, 90, 200, 90);
 
-	doc.text("produtor: " + produtorsete_mostrar, 10, 70);
-	doc.text("produto: " + produtosete_mostrar, 10, 80);
-	doc.text("emb: " + embsete_mostrar, 10, 90);
-	doc.text("bruto: " + brutosete_mostrar, 10, 100);
-	doc.text("liq: " + liqsete_mostrar, 10, 110);
-	doc.text("valor: " + valorsete_mostrar, 10, 120);
+doc.text(`Endereço Pessoa Física:  ${fisica_mostrar}`, 10, 95);
+// Linha abaixo do bloco de informações
+doc.line(10, 100, 200, 100);
 
-    doc.save("resultados.pdf");
+doc.text(`Endereço Pessoa Jurídica: ${juridica_mostrar}`, 10, 105);
+// Linha abaixo do bloco de informações
+doc.line(10, 110, 200, 110);
+
+
+	doc.text(`Item \n 1`, 10, 120);
+	doc.text(`produtor: \n ${produtor_mostrar}`, 30, 120);
+	doc.text(`produto: \n ${produto_mostrar}`, 80, 120);
+	doc.text(`emb: \n ${emb_mostrar}`, 120, 120);
+	doc.text(`bruto: \n ${bruto_mostrar}`, 140, 120);
+	doc.text(`liq: \n ${liq_mostrar}`, 160, 120);
+	doc.text(`valor: \n ${valor_mostrar}`, 181, 120);
+// Linha abaixo do bloco de informações
+doc.line(10, 125, 200, 125);
+
+
+doc.text(`Item \n 2`, 10, 130);
+	doc.text(`\n ${produtordois_mostrar}`, 30, 130);
+	doc.text(`\n ${produtodois_mostrar}`, 80, 130);
+	doc.text(`\n ${embdois_mostrar}`, 120, 130);
+	doc.text(`\n ${brutodois_mostrar}`, 140, 130);
+	doc.text(`\n ${liqdois_mostrar}`, 160, 130);
+	doc.text(`\n ${valordois_mostrar}`, 181, 130);
+// Linha abaixo do bloco de informações
+doc.line(10, 135, 200, 135);
+
+doc.text(`Item \n 3`, 10, 140);
+	doc.text(`\n ${produtortres_mostrar}`, 30, 140);
+	doc.text(`\n ${produtotres_mostrar}`, 80, 140);
+	doc.text(`\n ${embtres_mostrar}`, 120, 140);
+	doc.text(`\n ${brutotres_mostrar}`, 140, 140);
+	doc.text(`\n ${liqtres_mostrar}`, 160, 140);
+	doc.text(`\n ${valortres_mostrar}`, 181, 140);
+	// Linha abaixo do bloco de informações
+doc.line(10, 145, 200, 145);
+
+
+doc.text(`Item \n 4`, 10, 150);
+	doc.text(`\n ${produtorqua_mostrar}`, 30, 150);
+	doc.text(`\n ${produtoqua_mostrar}`, 80, 150);
+	doc.text(`\n ${embqua_mostrar}`, 120, 150);
+	doc.text(`\n ${brutoqua_mostrar}`, 140, 150);
+	doc.text(`\n ${liqqua_mostrar}`, 160, 150);
+	doc.text(`\n ${valorqua_mostrar}`, 181, 150);
+	// Linha abaixo do bloco de informações
+doc.line(10, 155, 200, 155);
+
+
+
+doc.text(`Item \n 5`, 10, 160);
+	doc.text(`\n ${produtorcinco_mostrar}`, 30, 160);
+	doc.text(`\n ${produtocinco_mostrar}`, 80, 160);
+	doc.text(`\n ${embcinco_mostrar}`, 120, 160);
+	doc.text(`\n ${brutocinco_mostrar}`, 140, 160);
+	doc.text(`\n ${liqcinco_mostrar}`, 160, 160);
+	doc.text(`\n ${valorcinco_mostrar}`, 181, 160);
+	// Linha abaixo do bloco de informações
+doc.line(10, 165, 200, 165);
+
+
+doc.text(`Item \n 6`, 10, 170);
+	doc.text(`\n ${produtorseis_mostrar}`, 30, 170);
+	doc.text(`\n ${produtoseis_mostrar}`, 80, 170);
+	doc.text(`\n ${embseis_mostrar}`, 120, 170);
+	doc.text(`\n ${brutoseis_mostrar}`, 140, 170);
+	doc.text(`\n ${liqseis_mostrar}`, 160, 170);
+	doc.text(`\n ${valorseis_mostrar}`, 181, 170);
+	// Linha abaixo do bloco de informações
+doc.line(10, 175, 200, 175);
+
+
+doc.text(`Item \n 7`, 10, 180);
+	doc.text(`\n ${produtorsete_mostrar}`, 30, 180);
+	doc.text(`\n ${produtosete_mostrar}`, 80, 180);
+	doc.text(`\n ${embsete_mostrar}`, 120, 180);
+	doc.text(`\n ${brutosete_mostrar}`, 140, 180);
+	doc.text(`\n ${liqsete_mostrar}`, 160, 180);
+	doc.text(`\n ${valorsete_mostrar}`, 181, 180);
+	// Linha abaixo do bloco de informações
+doc.line(10, 185, 200, 185);
+doc.text(`Valor total: ${total_mostrar}`, 160, 192);
+doc.line(160, 195, 200, 195);
+
+
+	//doc.addPage() adiciona outra pagina
+
+
+	//doc.addPage()
+
+	
+
+	
+
+    doc.save("Lote.pdf");
   });
 
 </script>
 
+
+
+
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
 <script>
+/*
+function gerarQRCode() {
+  // Obter os dados do formulário
+  var data_cadastro = document.getElementById('data_cadastro_mostrar').innerHTML;
+  var placa = document.getElementById('placa_mostrar').innerHTML;
+  var empresa = document.getElementById('empressa_mostrar').innerHTML;
+  var origem = document.getElementById('origem_mostrar').innerHTML;
+  var destino = document.getElementById('destino_mostrar').innerHTML;
+  var numero_lote = document.getElementById('numero_mostrar').innerHTML;
+  var nota_fiscal = document.getElementById('nota_mostrar').innerHTML;
+  var dono = document.getElementById('dono_mostrar').innerHTML;
+  var endereco_fisica = document.getElementById('fisica_mostrar').innerHTML;
+  var endereco_juridica = document.getElementById('juridica_mostrar').innerHTML;
+  var produtor = document.getElementById('produtor_mostrar').innerHTML;
+  var produto = document.getElementById('produto_mostrar').innerHTML;
+  var emb = document.getElementById('emb_mostrar').innerHTML;
 
-</script>
+  // Montar o texto do QRCode
+  var qr_text = "Data de Cadastro: " + data_cadastro + "\n" +
+                "Nº da placa/Barco: " + placa + "\n" +
+                "Nome da Empressa: " + empresa + "\n" +
+                "Origem: " + origem + "\n" +
+                "Destino: " + destino + "\n" +
+                "Numero Lote: " + numero_lote + "\n" +
+                "Numero Nota fiscal: " + nota_fiscal + "\n" +
+                "Cliente - CPF / CNPJ - Inscrição Estadual - Telefone: " + dono + "\n" +
+                "Endereço Pessoa Física: " + endereco_fisica + "\n" +
+                "Endereço Pessoa Jurídica: " + endereco_juridica + "\n" +
+                "Produto: " + produto + "\n" +
+                "Produtor: " + produtor + "\n" +
+                "Código Eb.: " + emb;
 
+  // Gerar o QRCode
+  var qr_code = "https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=" + encodeURIComponent(qr_text);
 
-<script src="qrcode.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
-
-<script>
-  function gerarQRCode() {
-	var produto = document.getElementById("produto_mostrar").textContent;
-	var produtor = document.getElementById("produtor_mostrar").textContent;
-	var avaliacao = document.getElementById("avaliacao_mostrar").textContent;
-	var local = document.getElementById("local_mostrar").textContent;
-	var bruto = document.getElementById("bruto_mostrar").textContent;
-	var liquido = document.getElementById("liquido_mostrar").textContent;
-	var reprovado = document.getElementById("reprovado_mostrar").textContent;
-	var valor = document.getElementById("valor_mostrar").textContent;
-
-	var textoQRCode = "Produto: " + produto + " Produtor: " + produtor + " Avaliação da Coleta: " + avaliacao + " Locais de Coleta: " + local + " Peso bruto (kg): " + bruto + " Peso Liquido (kg): " + liquido + " Reprovado (kg): " + reprovado + " Valor por kg (R$): " + valor;
-
-	var qrcode = new QRCode("qrcode", {
-		text: textoQRCode,
-		width: 200,
-		height: 200,
-		colorDark : "#000000",
-		colorLight : "#ffffff",
-		correctLevel : QRCode.CorrectLevel.H
-	});
-
-	var canvas = document.getElementById("qrcode").getElementsByTagName("canvas")[0];
-
-	var pdf = new jsPDF('p', 'mm', 'a4');
-	pdf.addImage(canvas.toDataURL("image/png"), "PNG", 10, 10);
-	pdf.save("qrcode.pdf");
+  // Abrir a página em PDF com o QRCode
+  window.open("https://api.html2pdf.app/v1/generate?url=" + encodeURIComponent(qr_code) + "&inline=1", "_blank");
 }
+*/
+function gerarQRCode() {
+  // Obter os dados do formulário
+  var data_cadastro = document.getElementById('data_cadastro_mostrar').innerHTML;
+  var placa = document.getElementById('placa_mostrar').innerHTML;
+  var empresa = document.getElementById('empressa_mostrar').innerHTML;
+  var origem = document.getElementById('origem_mostrar').innerHTML;
+  var destino = document.getElementById('destino_mostrar').innerHTML;
+  var numero_lote = document.getElementById('numero_mostrar').innerHTML;
+  var nota_fiscal = document.getElementById('nota_mostrar').innerHTML;
+  var dono = document.getElementById('dono_mostrar').innerHTML;
+  var endereco_fisica = document.getElementById('fisica_mostrar').innerHTML;
+  var endereco_juridica = document.getElementById('juridica_mostrar').innerHTML;
+  var produtor = document.getElementById('produtor_mostrar').innerHTML;
+  var produto = document.getElementById('produto_mostrar').innerHTML;
+  var emb = document.getElementById('emb_mostrar').innerHTML;
+
+
+
+
+var qr_container = document.createElement('div');
+qr_container.style.marginBottom = '20px';
+
+var qr_title = document.createElement('h2');
+qr_title.innerText = 'Dados do Lote';
+qr_title.style.textAlign = 'center';
+qr_title.style.marginBottom = '10px';
+
+var qr_image = document.createElement('img');
+qr_image.src = 'images/inatu-pt.png';
+qr_image.style.display = 'block';
+qr_image.style.margin = '0 auto';
+qr_image.style.width = '200px';
+
+qr_container.appendChild(qr_title).innerHTML;
+qr_container.appendChild(qr_image).innerHTML;
+
+
+
+
+
+
+
+  // Montar o texto do QRCode
+  var qr_text = 
+ 
+ 
+  "Data de Cadastro: " + data_cadastro +  "\n" + 
+  "__________________________________________________\n\n" +
+  "Nº da placa/Barco: " + placa + "\n" +
+  "__________________________________________________\n\n" +
+  "Nome da Empresa: " + empresa + "\n" +
+  "__________________________________________________\n\n" +
+  "Origem: " + origem + "\n" +
+  "__________________________________________________\n\n" +
+  "Destino: " + destino + "\n" +
+  "__________________________________________________\n\n" +
+  "Numero Lote: " + numero_lote + "\n" +
+  "__________________________________________________\n\n" +
+  "Numero Nota fiscal: " + nota_fiscal + "\n" +
+  "__________________________________________________\n\n" +
+  "Cliente - CPF / CNPJ - Inscrição Estadual - Telefone: \n" + 
+  dono + "\n" +
+  "__________________________________________________\n\n" +
+  "Endereço Pessoa Física: \n" + endereco_fisica + "\n" +
+  "__________________________________________________\n\n" +
+  "Endereço Pessoa Jurídica: \n" + endereco_juridica + "\n" +
+  "__________________________________________________\n\n" +
+  "Produto: " + produto + "\n" +
+  "__________________________________________________\n\n" +
+  "Produtor: " + produtor + "\n" +
+  "__________________________________________________\n\n" +
+  "Código Eb.: " + emb;
+
+qr_container.innerText = qr_text;
+
+  // Gerar o QRCode
+  var qr_code = "https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=" + encodeURIComponent(qr_text);
+
+  // Gerar o PDF com o QRCode
+
+
+  var doc = new jsPDF();
+  doc.setFontSize(12);
+
+
+
+doc.setFontSize(11);
+doc.setFont('Helvetica', 'normal');
+
+
+
+
+// imagem qrcode
+  doc.text(qr_text, 10, 20);
+  doc.addImage(qr_code, 'JPEG', 10, 200, 80, 80);
+  doc.save("Lote.pdf");
+
+  // Criar botão para imprimir a página PDF com o QRCode
+  var printBtn = document.createElement('button');
+  printBtn.innerHTML = 'Imprimir QRCode';
+  printBtn.onclick = function() {
+    var pdfWindow = window.open('', '_blank');
+    pdfWindow.document.write('<iframe src="' + qr_code + '" frameborder="0" width="100%" height="100%"></iframe>');
+    pdfWindow.document.close();
+    pdfWindow.print();
+  };
+  document.body.appendChild(printBtn);
+}
+
+
+
+
+
+/*
+
+var qr_container = document.createElement('div');
+qr_container.style.marginBottom = '20px';
+
+var qr_title = document.createElement('h2');
+qr_title.innerText = 'Dados do Lote';
+qr_title.style.textAlign = 'center';
+qr_title.style.marginBottom = '10px';
+
+var qr_image = document.createElement('img');
+qr_image.src = 'images/inatu-pt.png';
+qr_image.style.display = 'block';
+qr_image.style.margin = '0 auto';
+qr_image.style.width = '200px';
+
+qr_container.appendChild(qr_title);
+qr_container.appendChild(qr_image);
+  var qr_text = 
+ 
+  "Data de Cadastro: " + data_cadastro + "\n" + 
+  "__________________________________________________\n\n" +
+  "Nº da placa/Barco: " + placa + "\n" +
+  "__________________________________________________\n\n" +
+  "Nome da Empresa: " + empresa + "\n" +
+  "__________________________________________________\n\n" +
+  "Origem: " + origem + "\n" +
+  "__________________________________________________\n\n" +
+  "Destino: " + destino + "\n" +
+  "__________________________________________________\n\n" +
+  "Numero Lote: " + numero_lote + "\n" +
+  "__________________________________________________\n\n" +
+  "Numero Nota fiscal: " + nota_fiscal + "\n" +
+  "__________________________________________________\n\n" +
+  "Cliente - CPF / CNPJ - Inscrição Estadual - Telefone: \n" + 
+  dono + "\n" +
+  "__________________________________________________\n\n" +
+  "Endereço Pessoa Física: \n" + endereco_fisica + "\n" +
+  "__________________________________________________\n\n" +
+  "Endereço Pessoa Jurídica: \n" + endereco_juridica + "\n" +
+  "__________________________________________________\n\n" +
+  "Produto: " + produto + "\n" +
+  "__________________________________________________\n\n" +
+  "Produtor: " + produtor + "\n" +
+  "__________________________________________________\n\n" +
+  "Código Eb.: " + emb;
+
+qr_container.innerText = qr_text;
+*/
+
+
+
+
+//
+
+
 </script>
 
 	<!-- Modal Arquivos -->

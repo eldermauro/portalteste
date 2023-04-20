@@ -89,7 +89,7 @@ if($nivel_usu != "Administrador"){
         integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs"
         crossorigin="anonymous"></script>
 
-		<script src="https://cdn.jsdelivr.net/npm/qrcode@0.17.0/lib/qrcode.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 		
 
 	
